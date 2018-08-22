@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+\draw [help lines,color=lightgray] (0,0) grid (5,3);
+
+\draw [thick] (0,0) coordinate (O)-- (5,0) coordinate (X);
+\draw [thick] (0,0) -- ++(15:5) coordinate (I);
+\draw (0,0) ++(15:2.5)  coordinate (Rcl);
+\draw pic["$\theta$",draw,angle eccentricity=1.2,angle radius=1cm] {angle=X--O--I};
+\begin{scope}[on background layer]
+\filldraw [fill,color=lightgray,rotate=15] (Rcl) rectangle +(35:1.5) coordinate (Rcr);
+
+\end{scope}
+
+\draw [fill] ($(Rcl)!0.5!(Rcr)$) circle (0.04) coordinate (Crl);
+\draw [thick,->] (Crl) -- ++(105:1.25) node () [above] {N};
+\draw [thick,->] (Crl) -- ++(195:1.25) node () [left] {$mg\sin \theta$};
+\draw [thick,->] (Crl) -- ++(270:1.55) coordinate (mg) node () [below] {mg};
+\draw [thick,->] (Crl) -- ++(285:1.55) coordinate (mgc) node () [right] {$mg\cos\theta$};
+\draw [thick,->] (Crl) -- ++(15:1.25) node () [right] {$f_s$} ;
+
+\draw pic["$\theta$",draw,angle eccentricity=1.2,angle radius=0.8cm] {angle=mg--Crl--mgc};
+
+
+
+\end{tikzpicture}

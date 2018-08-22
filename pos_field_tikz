@@ -1,0 +1,8 @@
+\begin{tikzpicture}[decoration={markings, mark=at position 0.5 with {\arrow{>}}}]
+
+\node [draw,circle,fill=black!10,inner sep=0.1cm] (P) at (0,0) {$+Q$};
+
+\foreach \y in {0,15,30,...,360}
+\draw [thick,postaction={decorate}](P) -- (\y:2.5cm);
+
+\end{tikzpicture}

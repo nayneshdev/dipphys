@@ -1,0 +1,10 @@
+\begin{tikzpicture}[decoration={markings, mark=at position 0.5 with {\arrow{>}}}] 
+
+%\draw [help lines,color=lightgray] (-1,-1) grid (4,4);
+
+\draw [-latex,ultra thick] (0,0) coordinate (tail) node [right] {tail} -- (2.5,3.5) coordinate (head) node [right]{head};
+
+
+
+
+\end{tikzpicture}

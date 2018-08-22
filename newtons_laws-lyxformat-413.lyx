@@ -1,0 +1,1746 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass memoir
+\begin_preamble
+\newsavebox{\savedimage}
+\newcommand{\saveimageheight}[2][]{%
+  \savebox{\savedimage}{\includegraphics[#1]{#2}}}
+\newcommand{\raiseimage}[2][]{%
+  \raisebox{.5\dimexpr\ht\savedimage-\height}{%
+    \includegraphics[#1]{#2}}}%
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing other 1.3
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapterstyle{demo2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Forces and Newton's laws of motion
+\end_layout
+
+\begin_layout Chapterprecis
+Concept of force, Newton's laws of motion, uniform circular motion and centrepet
+al force, conservative and non-conservative forces, concept of momentum
+ and its conservation, types of forces: friction, hooke's law, tension,
+ gravitation and their applications (5 lectures)
+\end_layout
+
+\begin_layout Section
+Concept of force
+\end_layout
+
+\begin_layout Standard
+A stone falls to the ground, a cricket ball crosses boundary, a swimmer
+ plunges into a swimming pool.
+ What causes the movement in each of these cases? In each of these examples
+ the motion is caused by a push or pull.
+ We use the word 
+\series bold
+force
+\series default
+ to describe pushes and pulls.
+ In all the examples above force has 
+\series bold
+changed the speed
+\series default
+ of an object.
+\end_layout
+
+\begin_layout Standard
+A force may change
+\end_layout
+
+\begin_layout Enumerate
+the speed of an object
+\end_layout
+
+\begin_layout Enumerate
+the direction of travelling
+\end_layout
+
+\begin_layout Enumerate
+the shape or size of an object.
+\end_layout
+
+\begin_layout Standard
+Force is an interaction between two objects.
+ Force is exerted by an object A on another object B.
+ Force is a vector quantity and if more than one forces act on a body/particle,
+ we can find the resultant using laws of vector addition.
+ Various types of forces in nature can be grouped as (a) gravitational (b)
+ electromagnetic (c) strong nuclear (d) weak nuclear.
+ The 
+\series bold
+SI
+\series default
+ unit of force is Newton writtten as 
+\series bold
+N
+\series default
+.
+\end_layout
+
+\begin_layout Section
+Newton's laws of motion
+\end_layout
+
+\begin_layout Standard
+Newton's laws of motion are central in physics.
+\end_layout
+
+\begin_layout Subsection
+First law of motion
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+A body remainins un-accelerated (at rest or in uniform motion) if total
+ force acting on it is zero.
+ 
+\end_layout
+
+\begin_layout Standard
+Mathematically;
+\begin_inset Formula 
+\begin{equation}
+\vec{a}=0\,\,\,\,\Leftrightarrow\,\,\,\,\vec{F}=0
+\end{equation}
+
+\end_inset
+
+Concept of rest, motion and acceleration requires specification of frame
+ of reference.
+ Acceleration can be different in different frames of reference.
+ 
+\end_layout
+
+\begin_layout Standard
+A frame of reference is a place from where measurements are made using different
+ instruments such as a metre scale and a clock.
+\end_layout
+
+\begin_layout Standard
+A frame of reference in which Newton's 1st law is valid is called an inertial
+ frame of reference.
+ And a frame in which Newton's 1st law is not valid is called a non-inertial
+ frame of reference.
+ Earth for most practical purposes can be considered as an inertial frame
+ of reference.
+ Further all frames moving uniformly(constant velocity) with respect to
+ an inertial frame are themselves inertial.
+ Thus a train moving with uniform velocty w.r.t.
+ ground, plane moving with uniform velocity w.r.t.
+ highway are examples of inertial frames.
+\end_layout
+
+\begin_layout Subsection
+Second law of motion
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+The acceleration of a particle is given by the resultant forces acting on
+ the particle divided by its mass.
+ 
+\end_layout
+
+\begin_layout Standard
+In symbols
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula 
+\begin{equation}
+\vec{a}=\vec{F}/m\,\,\text{or}\,\,\vec{F}=m\vec{a}.\label{eq:2ndlaw}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Momentum: The quantity of motion possessed by a body is called its momentum
+ and it is measured by the product of its mass and velocity.
+ In symbols
+\begin_inset Formula 
+\begin{equation}
+\vec{\overrightarrow{p}}=m\vec{v}.
+\end{equation}
+
+\end_inset
+
+It is a vector quantity and its SI unit is 
+\begin_inset Formula $kg\, m/s.$
+\end_inset
+
+ Newton's 2nd law can also be framed in terms of momentum as;
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+The rate of change of momentum of a body is directly proportional to the
+ impressed force and takes place in the direction of the force.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\vec{F} & \propto & \frac{\Delta\vec{p}}{\Delta t}\\
+\vec{F} & =k & \frac{\Delta\vec{p}}{\Delta t};
+\end{eqnarray}
+
+\end_inset
+
+where for simplicity(of the unit force) the constant of proportionality
+ 
+\begin_inset Formula $k=1.$
+\end_inset
+
+ Also
+\begin_inset Formula 
+\begin{equation}
+\vec{F}=\frac{\Delta\vec{p}}{\Delta t}=\frac{\Delta(m\vec{v})}{\Delta t}\label{eq:2ndlawmom}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\vec{F}=m\frac{\Delta\vec{v}}{\Delta t}=m\vec{a}
+\end{equation}
+
+\end_inset
+
+In equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2ndlaw"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\vec{F}=m\vec{a}
+\]
+
+\end_inset
+
+the L.H.S is the cause (
+\begin_inset Formula $\overrightarrow{F}$
+\end_inset
+
+) and the R.H.S.
+ (
+\begin_inset Formula $\overrightarrow{a}$
+\end_inset
+
+)is the effect.
+\end_layout
+
+\begin_layout Standard
+When dealing with an event(in a physical problem), if the formula for 
+\begin_inset Formula $\overrightarrow{F}$
+\end_inset
+
+ is not known one can find the value of 
+\begin_inset Formula $\overrightarrow{F}$
+\end_inset
+
+ by measuring 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $\overrightarrow{a}$
+\end_inset
+
+.
+ However one can predict the motion of an object in future (or in past)
+ if formula for 
+\begin_inset Formula $\overrightarrow{F}$
+\end_inset
+
+ is known.
+ Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2ndlaw"
+
+\end_inset
+
+ is therefore also known as equation of motion.
+ Since it is a vector eqation we can write
+\begin_inset Formula 
+\begin{equation}
+\vec{F}=F_{x}\hat{i}+F_{y}\hat{j}+F_{z}\hat{k}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\vec{a}=a_{x}\hat{i}+a_{y}\hat{j}+a_{z}\hat{k}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\vec{p}=p_{x}\hat{i}+p_{y}\hat{j}+p_{z}\hat{k}
+\end{equation}
+
+\end_inset
+
+Thus we have from equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2ndlaw"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2ndlawmom"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+F_{x}=\frac{dp_{x}}{dt}=ma_{x},\,\, F_{y}=\frac{dp_{y}}{dt}=ma_{y},\,\, F_{z}=\frac{dp_{z}}{dt}=ma_{z}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Third law of motion
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+To every action there is an equal and opposite reaction.
+\end_layout
+
+\begin_layout Standard
+Whenever a body exerts a force on another body, the second body exerts on
+ the first body a force equal in magnitude but in the opposite direction.
+ Forces always occur in pairs.
+ Thus
+\begin_inset Formula 
+\begin{equation}
+\vec{F}_{12}=-\vec{F}_{21}
+\end{equation}
+
+\end_inset
+
+There is no cuase-effect relationship i.e.
+ action is not the cause nor is reaction the effect.
+ They both co-exist.
+ Also they are not acting on the same body but represent interaction between
+ bodies.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\backslash
+rule{1
+\backslash
+columnwidth}{1.0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancybreak{
+\backslash
+sffamily 
+\backslash
+textbf{Numerical Problems}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule{1
+\backslash
+columnwidth}{1.0pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\family sans
+\series bold
+Example 1:
+\series default
+ 
+\series medium
+An automobile starting from rest gains a speed of 
+\begin_inset Formula $60$
+\end_inset
+
+ 
+\begin_inset Formula $km/h$
+\end_inset
+
+ after covering a distance of 
+\begin_inset Formula $60$
+\end_inset
+
+ 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ The mass of the automobile is 
+\begin_inset Formula $432$
+\end_inset
+
+ 
+\begin_inset Formula $kg$
+\end_inset
+
+.
+ Assuming that the air resistance and the friction, exert on the automobile
+ a uniform retarding force of 
+\begin_inset Formula $200$
+\end_inset
+
+ 
+\begin_inset Formula $N$
+\end_inset
+
+, calculate the pull exerted by the engine.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Example 2:
+\series default
+ 
+\series medium
+Calculate the resultant force on body of mass 
+\begin_inset Formula $200$
+\end_inset
+
+ 
+\begin_inset Formula $kg$
+\end_inset
+
+ moving with an acceleration of 
+\begin_inset Formula $5$
+\end_inset
+
+ 
+\begin_inset Formula $m/s^{2}.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Example 3:
+\series default
+ 
+\series medium
+A force of 
+\begin_inset Formula $\vec{F}=10\vec{i}+12\hat{j}+8\hat{k}$
+\end_inset
+
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ is acting on a block of mass 
+\begin_inset Formula $2$
+\end_inset
+
+ 
+\begin_inset Formula $kg$
+\end_inset
+
+.
+ Calculate the acceration of the particle along each of the directions.
+\family default
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancybreak{
+\backslash
+rule{1
+\backslash
+columnwidth}{1.2pt}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conservation of momentum
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ is the external force acting on a particle, then according to Newton's
+ second law of motion
+\begin_inset Formula 
+\[
+\vec{F}=\frac{d\vec{p}}{dt};
+\]
+
+\end_inset
+
+ when 
+\begin_inset Formula $\vec{F}=0$
+\end_inset
+
+; then 
+\begin_inset Formula 
+\begin{equation}
+\frac{d\vec{p}}{dt}=0
+\end{equation}
+
+\end_inset
+
+and therefore we have 
+\begin_inset Formula 
+\begin{eqnarray}
+\vec{p} & = & \text{constant}\\
+\vec{p_{i}} & = & \vec{p_{f}}.
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+When no resultant force acts on a system, the total linear momentum of the
+ system remains constant in magnitude and direction.
+\end_layout
+
+\begin_layout Standard
+This statement is called the principle of conservation of linear momentum.
+ Conservation of linear momentum is a very useful tool for solving many
+ mechanical problems.
+\end_layout
+
+\begin_layout Section
+Fundamental forces
+\end_layout
+
+\begin_layout Standard
+While there can be a number of forces existant on any given body, it has
+ been found that there are only a handful of fundamental forces.
+ All the other kinds of forces are menifestations of these fundamental forces.
+\end_layout
+
+\begin_layout Subsection
+Gravitational force
+\end_layout
+
+\begin_layout Standard
+Effects of the force of gravitation are most easily observed.
+ The systematic study of gravitational force was first carried out by Galileo
+ and Newton.
+ Newton after several experiments came up with a simple formula for gravitation.
+ According to Newton
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ch1grav.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Gravitational force between two masses.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+Mass is the source of gravitational force and the force between two point
+ masses 
+\begin_inset Formula $m_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{2}$
+\end_inset
+
+ separated by a distance 
+\begin_inset Formula $r$
+\end_inset
+
+ is directly proportional to the product of the masses and inversely proportiona
+l to the square of the distances.
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula 
+\begin{eqnarray}
+F & \propto & m_{1}m_{2}\,\,\text{and}\,\, F\propto\frac{1}{r^{2}}\\
+F & \propto & \frac{m_{1}m_{2}}{r^{2}}\\
+F & = & G\frac{m_{1}m_{2}}{r^{2}};\label{eq:gravforce}
+\end{eqnarray}
+
+\end_inset
+
+where 
+\begin_inset Formula $G=6.67\times10^{-11}\, Nm^{2}/kg^{2}$
+\end_inset
+
+ is called the universal gravitational constant.
+ The value of 
+\begin_inset Formula $G$
+\end_inset
+
+ does not change from place to place or from planet to planet and it even
+ does not depend on the medium between the bodies.
+ Due to the smallness of gravitational force the value of 
+\begin_inset Formula $G$
+\end_inset
+
+ is not measured with good accuracy.
+ The force of gravity is only attractive, part of the reason for which is
+ that there exists only one kind of mass (which is considered positive by
+ convention).
+\end_layout
+
+\begin_layout Standard
+The force with which the earth attracts other body of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ towards itself can be given with the formula; 
+\begin_inset Formula 
+\begin{equation}
+\vec{F}=m\vec{g}.\label{eq:fmg}
+\end{equation}
+
+\end_inset
+
+If we consider earth to be a sphere of uniform density then the entire mass
+ of the earth 
+\begin_inset Formula $M$
+\end_inset
+
+ can be considered to be located at its center.
+ A body of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ at the surface of the earth is at a distance of 
+\begin_inset Formula $R$
+\end_inset
+
+ which is equal to the radius of earth.
+ In such a case by making use of formula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:gravforce"
+
+\end_inset
+
+ we can write the force betwen earth and the object as
+\begin_inset Formula 
+\begin{equation}
+F=G\frac{Mm}{R^{2}}.\label{eq:earthforce}
+\end{equation}
+
+\end_inset
+
+Comparing equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:fmg"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:earthforce"
+
+\end_inset
+
+ we can write 
+\begin_inset Formula 
+\begin{equation}
+\vec{g}=\frac{GM}{R^{2}}.\label{eq:smallg}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Electromagnetic force
+\end_layout
+
+\begin_layout Standard
+Next to the gravitational force the effects of the force which are most
+ easily observed is the electromagnetic force.
+ In fact the electromagnetic force is actually about 
+\begin_inset Formula $10^{35}$
+\end_inset
+
+ times or more stronger than the gravitational force.
+ Both electric and magnetic forces are a result of charges.
+ Thus charge is the source of electric (and magnetic) force.
+ Systematic study of electric and magnetic forces was carried out by several
+ people; most notably Coulomb, Ampere, Faraday, Biot and Savart and their
+ unification was carried out by Maxwell.
+ 
+\end_layout
+
+\begin_layout Subsection
+Strong and weak nuclear forces
+\end_layout
+
+\begin_layout Standard
+The strongest of all fundamental force is commonly referred to as the Strong
+ force.
+ It is responsible for binding the nucleus together.
+ In fact the force that exists between protons and nutrons (not due to their
+ electric charge) is called the Strong force.
+ The strong force is a result of different kinds of charge called color
+ charge.
+ Unlike electric charge color charge exists in three flavors (red green
+ and blue) and exists on smaller particles (smaller than nucleons) called
+ quarks.
+ Proton and nutron are made up of quarks.
+ The strong force/interaction can be considered as a residual force of color
+ charges.
+ The strong force is attractive for distances upto 
+\begin_inset Formula $10^{-15}$
+\end_inset
+
+ m and becomes very small beyond that.
+ This short range property is called saturation.
+ The strong force is about 100 times stronger than the electromagnetic forces.
+ The effects of the strong force is only observable within the nucleus(
+ and some other particles known as hadrons), therefore in day to day life
+ we have not encountered it directly.
+ The initial systematic theoretical study of the strong force was carried
+ out by Yukawa and he concluded that the force is not an inverserse square
+ law such as the gravity or the electromagnetic forces.
+\end_layout
+
+\begin_layout Standard
+On the otherhand the weak force is a different type of force which is a
+ result of electromagnetic forces but acts upto 
+\begin_inset Formula $10^{-18}$
+\end_inset
+
+ m.
+ Hence this type of force is only observable in high energy experiments
+ with protons and nutrons.
+ The weak force is about 10,000 times weaker than the electromagnetic forces.
+ The weak force/interaction is responsible for several observable phenomena
+ such as beta decay.
+ Further it is crucial to the structure of the universe since the sun would
+ not burn without the beta decay(
+\begin_inset Formula $p\to n$
+\end_inset
+
+) and the formation of heavier nuclei.
+\end_layout
+
+\begin_layout Section
+Some useful non-fundamental forces
+\end_layout
+
+\begin_layout Standard
+We experience many kinds of forces in day to day life.
+ All these forces are a result of the fundamental forces that we saw.
+ However most forces are a result of just the electromagnetic force in one
+ way or the other.
+ For these forces usually a fundamental formula does not exist, however
+ one can find an operational formula (one that can be used for practical
+ calculations) based on experiments and events involved.
+ Here we review some of the most useful forces that occur during the course
+ of mechanics.
+\end_layout
+
+\begin_layout Subsection
+Normal reaction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+saveimageheight[width=0.45
+\backslash
+textwidth]{normal reaction dia 1.pdf}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename normal reaction dia 1.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Block on flat surface
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Figure-1a"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+raiseimage[width=0.45
+\backslash
+textwidth]{
+\backslash
+string"normal reaction dia 2
+\backslash
+string".pdf}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Block on incline surface
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Figure-1b"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Normal Reaction
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Normal-Reaction"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+When two bodies are pressed against each other, they exert forces on each
+ other.
+ In figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Figure-1a"
+
+\end_inset
+
+ one block is kept on the other block which is kept on ground.
+ Due to the gravitational force of the earth the upper block pushes the
+ lower block towards the center of the earth.
+ But as a common observation we find that the upper block remains at rest.
+ This is only possible if there is another force exerted by the lower block
+ on to the upper block which exactly balances the downward gravitational
+ pull.
+ This force is often called the Normal Force or the Normal Reaction.
+ This force is a result of contact between bodies and arises due to the
+ complicated electromagnetic interactions that take place between the bodies
+ at the contact surface.
+ The normal reaction is always perpendicular to the surface of the bodies
+ hence the name normal.
+ There are several symbols used in literature for normal reaction, most
+ notably 
+\begin_inset Formula $N,\,\, F_{N}$
+\end_inset
+
+ and 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ In fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Figure-1a"
+
+\end_inset
+
+ normal reaction 
+\begin_inset Formula $N=mg$
+\end_inset
+
+ whereas in the case of 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Figure-1b"
+
+\end_inset
+
+ the normal reaction is 
+\begin_inset Formula $R=mg\cos\theta.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Tension force
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename tension.pdf
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tension force
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tension-force"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+The tension force is the force that is transmitted through a string, rope,
+ cable or wire when it is pulled tight by forces acting from opposite ends.
+ It is directed along the length of the wire and pulls equally on the objects
+ on the opposite ends of the wire.
+ Tension force is again a result of electromagnetic forces.
+ Commonly used symbol for tension force is 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ The tension force is bi-directional along the length and acts to balance
+ the external force.
+ In the figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tension-force"
+
+\end_inset
+
+ if the sphere of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ is at rest then 
+\begin_inset Formula $T=mg$
+\end_inset
+
+.
+ However the value of tension force depends upon the elastic properties
+ of the material of the string/rope or cables.
+ In most cases these elastic properties balance the applied external force
+ if however the external force is large in such cases the tension may not
+ be able to balance and the string/rope can break.
+\end_layout
+
+\begin_layout Subsection
+Spring force
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename spring.pdf
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Spring force
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The spring force is the force exerted by a compressed or stretched spring
+ upon any object that is attached to it.
+ An object that compresses or stretches a spring is always acted upon by
+ a force that restores the object to its rest or equilibrium position.
+ The spring force is also a result of electromagnetic forces between molecules
+ of the spring.
+ The spring froce is given by Hooke's law.
+ According to Hooke's law
+\end_layout
+
+\begin_layout Quote
+
+\emph on
+the magnitude of the spring force is directly proportional to the amount
+ of stretch or compression of the spring and is always directed oppositie
+ to the direction of displacement.
+\end_layout
+
+\begin_layout Standard
+In symbols if 
+\begin_inset Formula $F$
+\end_inset
+
+ denotes the spring force and 
+\begin_inset Formula $x$
+\end_inset
+
+ denotes the extension(or compression) of the spring, then according to
+ Hooke's law
+\begin_inset Formula 
+\begin{equation}
+F\propto x
+\end{equation}
+
+\end_inset
+
+or
+\begin_inset Formula 
+\begin{equation}
+F=kx;
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $k$
+\end_inset
+
+ is know as the spring constant.
+ Its unit is 
+\begin_inset Formula $N/m$
+\end_inset
+
+.
+ The value of 
+\begin_inset Formula $k$
+\end_inset
+
+ denotes the stiffness of spring.
+ Higher 
+\begin_inset Formula $k$
+\end_inset
+
+ value spring require larger force to produce displacement.
+\end_layout
+
+\begin_layout Standard
+In general any force that is directly proportional to displacement of object
+ and in opposite directiron to displacement is known as harmonic oscillator
+ force.
+ Such a force causes oscillations of the object-which is a periodic motion.
+ 
+\end_layout
+
+\begin_layout Subsection
+Friction force
+\end_layout
+
+\begin_layout Standard
+The force of friction is yet another type of contact force that exists between
+ surfaces in contact.
+ There are three kinds friction forces that exist between solid surfaces.
+ Static frition, sliding friction and rolling or kinetic friction.
+ The friction force is always opposite to the direction of motion.
+ Static friction tends to oppose the motion of an object kept at rest.
+ It is found that the friction force directly proportional to the normal
+ reaction.
+ In case of static frictoin, the maximum or the limiting value of force
+ of friction is given by
+\begin_inset Formula 
+\begin{equation}
+F_{S}=\mu_{S}N;
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mu_{S}$
+\end_inset
+
+ is known as coefficient of static friction.
+ Once the object starts moving the friction force decreases and is known
+ as sliding friction.
+ The sliding friction is given by
+\begin_inset Formula 
+\begin{equation}
+F_{K}=\mu_{K}N;
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mu_{K}$
+\end_inset
+
+ is known as coefficient of kinetic friction.
+ In case of a round object rolling such as a wheel, the friction force that
+ exists between the surfaces is known as rolling friction.
+ The value of rolling friction is given by
+\begin_inset Formula 
+\begin{equation}
+F_{R}=\mu_{R}N.
+\end{equation}
+
+\end_inset
+
+In general it is found that 
+\begin_inset Formula 
+\begin{equation}
+\mu_{S}>\mu_{K}>\mu_{R}.
+\end{equation}
+
+\end_inset
+
+Friction force is a non-conservative force.
+ Presence of friction causes the mechanical energy to decrease or convert
+ into heat energy.
+\end_layout
+
+\begin_layout Subsection
+Viscosity
+\end_layout
+
+\begin_layout Standard
+Viscosity can be considered as a friction force that exists between fluids
+ and/or fluids and solids.
+ In general viscosity is a force that tends to depend upon the relative
+ motioe n speed of the adjacent parts of fluids.
+ Such a fluid is known as viscous fluid.
+ Viscosity like friction is a non-conservative force.
+\end_layout
+
+\begin_layout Section
+Uniform circular motion-centripetal force
+\end_layout
+
+\begin_layout Standard
+Often we come across examples of motion in which an object revolves in circular
+ path around a point called the center.
+ A merry-go-round, a stone tied to a string when revolved, a fan rotating
+ around its axis, the earth revolving around sun or the moon revolving around
+ earth, an electron revolving around nucleaus are all examples of motion
+ known as circular motion.
+ Circular motion is only possible if there exists a force that binds the
+ object towards the centre; such a force is therefore called the centripetal
+ force.
+ In uniform circular motion the speed of object remains constant while its
+ direction keeps on changing; hence it is an accelerated motion, the correspondi
+ng acceleration is known as centripetal acceleration.
+ Centripetal force is not a new kind of force but is just a term given in
+ reference to uniform circular motion.
+ The centripetal force can be any of the forces previously discussed.
+ For example in the case of a stone tied to string, the force that keeps
+ the stone in its path is the tension force; hence tension is the centripetal
+ force in this case.
+ In the case of earth revolving around sun, the centripetal force is the
+ gravitational force between the sun and the earth.
+ In the case of the electron it is the electromagnetic force which binds
+ it to the nucleus is the centripetal force.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circular.pdf
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Uniform circular motoin
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Uniform-circular-motoin"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the centripetal force is due to gravity we have the Newton's law of gravitati
+on.
+ If it is electromagnetic force we have the Coulomb's law.
+ But in most cases it may not possible to find an exact formula for centripetal
+ force.
+ But one can still calculate the value of centripetal force based on the
+ properties of the object that revolves.
+ Consider a stone of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ tied to a string of length 
+\begin_inset Formula $r$
+\end_inset
+
+ and is being revolved with a constant speed of 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ The formula for centripetal force is given by 
+\begin_inset Formula 
+\begin{equation}
+F=\frac{mv^{2}}{r}.
+\end{equation}
+
+\end_inset
+
+In case of the stone as long as the stone keeps revolving the tension force
+ is the centripetal force and we have 
+\begin_inset Formula 
+\begin{equation}
+T=\frac{mv^{2}}{r}.
+\end{equation}
+
+\end_inset
+
+If we observe from the frame of reference of the object the object feels
+ the force which pushes it away from the center (due to inertia).
+ This force is known as centrifugal force.
+ The centrifugal force is not a “real” force — the tendency to fly outwards
+ is observed because objects that are moving in a straight line tend to
+ continue moving in a straight line.
+ This is called inertia, and it makes objects resistant to the force that
+ makes them move in a curve.
+ The value of the centrifugal force is also given by 
+\begin_inset Formula 
+\begin{equation}
+F=\frac{mv^{2}}{r}.
+\end{equation}
+
+\end_inset
+
+If an object is properly rotating, both the centrifugal and centripetal
+ forces will be equal, so the object will not move towards the center of
+ revolution or outwards from it.
+ It will maintain a constant distance from the center.
+\end_layout
+
+\begin_layout Subsection
+Satellite motion
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename satellite.pdf
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Satellite motion
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Satellite-motion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+The problem of satellite motion can easily be solved iby making use of Newton's
+ law of gravitation and centripetal force.
+ Consider a satellite of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ which is to be launched at a definite height 
+\begin_inset Formula $h$
+\end_inset
+
+ from the surface of the earth.
+ Let mass of earth be 
+\begin_inset Formula $M$
+\end_inset
+
+ and raidus of earth be 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Now at this height 
+\begin_inset Formula $h$
+\end_inset
+
+ the gravitational attraction due to earth must be balanced by centrifugal
+ force exactly.
+ In other words 
+\begin_inset Formula $F_{G}=F_{C}.$
+\end_inset
+
+ If the speed of satellite is not sufficient then 
+\begin_inset Formula $F_{C}<F_{G}$
+\end_inset
+
+ and the satellite will fall to the surface of earth.
+ If speed of satellite more so that 
+\begin_inset Formula $F_{C}>F_{G}$
+\end_inset
+
+, then the satellite will escape the pull of earth.
+ Thus to keep it revolving at some height 
+\begin_inset Formula $h$
+\end_inset
+
+ it must be made to revolve with a definite speed 
+\begin_inset Formula $v$
+\end_inset
+
+ which will make 
+\begin_inset Formula $F_{G}=F_{C}$
+\end_inset
+
+.
+ Thus if 
+\begin_inset Formula $v$
+\end_inset
+
+ is the required orbital speed then at this speed we have
+\begin_inset Formula 
+\begin{eqnarray}
+F_{G} & = & F_{C}\\
+G\frac{Mm}{(R+h)^{2}} & = & \frac{mv^{2}}{(R+h)}\\
+v^{2} & = & \frac{GM}{(R+h)}
+\end{eqnarray}
+
+\end_inset
+
+the required speed is therefore
+\begin_inset Formula 
+\begin{equation}
+v=\sqrt{\frac{GM}{R+h}}.\label{eq:sateliite-speed}
+\end{equation}
+
+\end_inset
+
+We can also obtain the time period of the satellite.
+ Time period 
+\begin_inset Formula $T$
+\end_inset
+
+ is the time taken by the satellite to complete one revolution around the
+ earth.
+ In one revolution the distance covered by the satellite around the earth
+ is 
+\begin_inset Formula $2\pi(R+h)$
+\end_inset
+
+.
+ Therefore,
+\begin_inset Formula 
+\begin{eqnarray}
+T & = & \frac{\text{distance}}{\text{speed}}\\
+T & = & \frac{2\pi(R+h)}{v}\\
+T^{2} & = & \frac{4\pi^{2}(R+h)^{2}}{v^{2}}
+\end{eqnarray}
+
+\end_inset
+
+Substituting the value of 
+\begin_inset Formula $v$
+\end_inset
+
+ from equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sateliite-speed"
+
+\end_inset
+
+ we get
+\begin_inset Formula 
+\begin{equation}
+T^{2}=\frac{4\pi^{2}(R+h)^{3}}{GM}.\label{eq:time-period}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Banking of roads
+\end_layout
+
+\begin_layout Standard
+When a bike or car makes a turn at a road, the friction force prevents the
+ bike or car from slipping off the track.
+ However if the speed of the vehicle is large the friction force may not
+ be sufficient to provide the necessary centripetal force.
+ In that case the bike may slip.
+ So the maximum safe speed can be obtained easily.
+ If the mass of the bike is 
+\begin_inset Formula $m$
+\end_inset
+
+ and the coefficient of static friction of the track is 
+\begin_inset Formula $\mu_{S}$
+\end_inset
+
+ and radius of the turning arc is 
+\begin_inset Formula $r$
+\end_inset
+
+ then we have
+\begin_inset Formula 
+\begin{eqnarray}
+\mu_{S}N & = & \frac{mv_{\text{safe}}^{2}}{r}\\
+\mu_{S}mg & = & \frac{mv_{\text{safe}}^{2}}{r}\\
+v_{\text{safe}} & = & \sqrt{\mu_{S}rg}.
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Work energy and power
+\end_layout
+
+\begin_layout Chapterprecis
+Work and it sunits, concept of energy, kinetic energy and potential energy,
+ work-energy theorem, conservation of energy, equivalence of mass and energy-Ein
+stein's formula, collisions-elastic and inelastic collisions, power and
+ its units (5 lectures)
+\end_layout
+
+\begin_layout Section
+Concept of work
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

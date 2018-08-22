@@ -1,0 +1,10133 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass memoir
+\begin_preamble
+
+\usepackage{minitoc}
+\usepackage{morefloats}
+\usepackage{booktabs}
+\usepackage[math]{iwona}
+\newsavebox{\savedimage}
+\newcommand{\saveimageheight}[2][]{%
+  \savebox{\savedimage}{\includegraphics[#1]{#2}}}
+\newcommand{\raiseimage}[2][]{%
+  \raisebox{.5\dimexpr\ht\savedimage-\height}{%
+    \includegraphics[#1]{#2}}}%
+%\usepackage{pst-all}
+%\usepackage{pst-add}
+\usepackage{setspace}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{decorations.markings,decorations.pathreplacing,calc,patterns,angles,quotes,decorations.pathmorphing,arrows.meta}
+\usetikzlibrary{positioning,backgrounds}
+\usepackage{siunitx}
+\usepackage{multicol}
+\let\footruleskip\undefined
+\usepackage{fancyhdr}
+\renewcommand{\chaptermark}[1]{%
+\markboth{\thechapter.\ #1}{}}
+\usepackage{multicol}
+%\usepackage{lipsum}% dummy text
+
+\setlength{\columnseprule}{0.4pt}
+\end_preamble
+\use_default_options true
+\begin_modules
+tcolorbox
+multicol
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Linux Libertine"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing other 1.3
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Physics for Diploma Engineers
+\end_layout
+
+\begin_layout Author
+Dr.
+ N.B.
+ Devlani, Dr.
+ M.B.
+ Chawda,
+\begin_inset Newline newline
+\end_inset
+
+ Dr.
+ V.H.
+ Kher, Dr.
+ M.S.
+ Gadkari
+\begin_inset Newline newline
+\end_inset
+
+ and
+\begin_inset Newline newline
+\end_inset
+
+ Shri Ashish Jaituni
+\end_layout
+
+\begin_layout Address
+\align center
+Applied Physics Department, The M.S.University of Baroda Polytechnic, Baroda
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapterstyle{demo2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introductory Concepts
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+SI units
+\end_layout
+
+\begin_layout Standard
+Physics is a natural science.
+ One of the key objectives of physics is to predict the future or outcome
+ of events.
+ It is a known fact that the laws of nature can be discovered and put up
+ as simple relations of formulae using the language of Mathematics.
+ The process of discovery of laws follows the steps of observation, measurements
+ and finding the patterns.
+ The repeating pattern itself become the laws.
+ This can be termed as the scientific method.
+\end_layout
+
+\begin_layout Standard
+The key step in any natural science is the idea of measurement.
+ When we want to describe a phenomena or an event, it usually involves descripti
+on of a physical quantity in terms of a number and the number is obtained
+ through the process of measurement.
+ For example if we want to describe a room, we could give its length, breadth
+ and height, all of which will require measurements of length.
+ In measurement we compare the physical quantity with a given standard size
+ of the physical quantity which we call the unit of that physical quantity.
+ In the measurement of the length of room we compare the length with the
+ standard size-metre of the length and if we find that the room is 20 m
+ long only means that the standard metre is contained 20 times in the total
+ length.
+ 
+\end_layout
+
+\begin_layout Standard
+In nature we find that there are only a certain minimum number of quantities
+ that we need to measure, all the rest can be described in terms of this
+ minimum set of physical quantities.
+ These are traditionally called the fundamental physical quantities and
+ the units of these fundamental quantities are called fundamental or base
+ units.
+ In old times only length, mass and time were considered as fundamental
+ and various countries and kings followed different sets of units for these.
+ This often led to confusions and sometimes also critical accidents when
+ not properly converted from one set of units to the other.
+ In SI system of units there are seven quantities defined as the fundamental
+ or base quantities.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{table*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{llll} 
+\backslash
+toprule  Unit Name & Unit Symbol & Quantity name & Dimension symbol
+\backslash
+tabularnewline 
+\backslash
+midrule  metre & m & length & L
+\backslash
+tabularnewline kilogram & kg & mass & M
+\backslash
+tabularnewline second & s & time & T
+\backslash
+tabularnewline ampere & A & electric current & I
+\backslash
+tabularnewline kelvin & K & thermodynamic  & $
+\backslash
+Theta$
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+ & & temperature & 
+\backslash
+tabularnewline mole & mol & amount of substance & N
+\backslash
+tabularnewline candela & cd & luminous intensity & J
+\backslash
+tabularnewline 
+\backslash
+bottomrule  
+\backslash
+end{tabular} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{table*}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+All the quantities which are obtained as some combination of the base quantities
+ are known as the derived quantities.
+ Examples of derived quantities are force, velocity, acceleration, pressure,
+ energy etc.
+\end_layout
+
+\begin_layout Section
+Uncertainty/Errors in measurement
+\end_layout
+
+\begin_layout Standard
+The complete statement of a measured value should include an estimate of
+ the level of confidence associated with the value.
+ Properly reporting an experimental result along with its uncertainty allows
+ other people to make judgments about the quality of the experiment and
+ it facilitates meaningful comparisons with other similar values or a theoretica
+l prediction.
+ Without an estimated uncertainty, it would be impossible to answer the
+ basic scientific questions such as: “Does my result agree with theoretical
+ prediction or results from other experiments?” This question is fundamental
+ for deciding if a scientific hypothesis is to be confirmed or refuted.
+\end_layout
+
+\begin_layout Standard
+When we make a measurement, it is generally assumed that there exists a
+ true value for any physical quantity being measured.
+ 
+\end_layout
+
+\begin_layout Standard
+every measurement is approximate due to errors in measurement.
+ In general, the errors in measurement can be broadly classified as (a)
+ systematic errors and (b) random errors.
+\end_layout
+
+\begin_layout Subsection
+Systematic errors
+\end_layout
+
+\begin_layout Standard
+The systematic errors are those errors that tend to be in one direction,
+ either positive or negative.
+ Some of the sources of systematic errors are
+\end_layout
+
+\begin_layout Subsubsection
+Instrumental errors
+\end_layout
+
+\begin_layout Standard
+that arise from the errors due to imperfect design or calibration of the
+ measuring instrument, zero error in the instrument, etc.
+ For example, the temperature graduations of a thermometer may be inadequately
+ calibrated (it may read 104 °C at the boiling point of water at STP whereas
+ it should read 100 °C); in a vernier callipers the zero mark of vernier
+ scale may not coincide with the zero mark of the main scale, or simply
+ an ordinary metre scale may be worn off at one end.
+\end_layout
+
+\begin_layout Subsubsection
+Imperfection in experimental technique or procedure
+\end_layout
+
+\begin_layout Standard
+To determine the temperature of a human body, a thermometer placed under
+ the armpit will always give a temperature lower than the actual value of
+ the body temperature.
+ Other external conditions (such as changes in temperature, humidity, wind
+ velocity, etc.) during the experiment may systematically affect the measurement.
+\end_layout
+
+\begin_layout Subsubsection
+Personal errors
+\end_layout
+
+\begin_layout Standard
+that arise due to an individual’s bias, lack of proper setting of the apparatus
+ or individual’s carelessness in taking observations without observing proper
+ precautions, etc.
+ For example, if you, by habit, always hold your head a bit too far to the
+ right while reading the position of a needle on the scale, you will introduce
+ an error due to parallax.
+ 
+\end_layout
+
+\begin_layout Standard
+Systematic errors can be minimised by improving experimental techniques,
+ selecting better instruments and removing personal bias as far as possible.
+ For a given set-up, these errors may be estimated to a certain extent and
+ the necessary corrections may be applied to the readings.
+\end_layout
+
+\begin_layout Subsection
+Random errors 
+\end_layout
+
+\begin_layout Standard
+The random errors are those errors, which occur irregularly and hence are
+ random with respect to sign and size.
+ These can arise due to random and unpredictable fluctuations in experimental
+ conditions (e.g.
+ unpredictable fluctuations in temperature, voltage supply, mechanical vibration
+s of experimental set-ups, etc), personal (unbiased) errors by the observer
+ taking readings, etc.
+ For example, when the same person repeats the same observation, it is very
+ likely that he may get different readings everytime.
+\end_layout
+
+\begin_layout Subsection
+Estimation of errors
+\end_layout
+
+\begin_layout Subsubsection
+Mean
+\end_layout
+
+\begin_layout Standard
+If all sources of systematic uncertainties have been identified and reduced
+ to a negligible level, statistical theory says that the mean is the best
+ estimation to the true value.
+ In formal mathematical terms, the mean value x of a set of N measurements
+ is
+\begin_inset Formula 
+\begin{equation}
+\bar{x}=\frac{x_{1}+x_{2}+x_{3}+\cdots+x_{N}}{N}=\frac{1}{N}\sum_{i=1}^{N}
+\end{equation}
+
+\end_inset
+
+where the summation sign 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ is the shorthand notation indicating the sum of 
+\begin_inset Formula $N$
+\end_inset
+
+ measurements 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ to 
+\begin_inset Formula $x_{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Absolute and mean absolute error
+\end_layout
+
+\begin_layout Standard
+The magnitude of the difference between the individual measurement and the
+ true value of the quantity is called the absolute error of the measurement.
+ This is denoted by 
+\begin_inset Formula $\Delta x$
+\end_inset
+
+.
+ In absence of any other method of knowing true value, we considered arithmatic
+ mean as the true value.
+ Then the errors in the individual measurement values from the true value,
+ are
+\begin_inset Formula 
+\begin{align*}
+\Delta x_{1} & =x_{1}-\bar{x},\\
+\Delta x_{2} & =x_{2}-\bar{x},\\
+\ldots & \ldots\\
+\Delta x_{n} & =x_{n}-\bar{x}
+\end{align*}
+
+\end_inset
+
+The arithmetic mean of all the absolute errors is taken as the final or
+ mean absolute error of the value of the physical quantity 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ It is represented by 
+\begin_inset Formula $\Delta x_{\text{mean}}$
+\end_inset
+
+ or 
+\begin_inset Formula $\overline{\Delta x}$
+\end_inset
+
+.
+ Thus,
+\begin_inset Formula 
+\begin{align}
+\overline{\Delta x} & =\frac{\left|\Delta x_{1}\right|+\left|\Delta x_{2}\right|+\ldots+\left|\Delta x_{n}\right|}{n}\nonumber \\
+\overline{\Delta x} & =\Sigma_{i=1}^{n}\frac{\left|\Delta x_{n}\right|}{n}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Relative and percentage error
+\end_layout
+
+\begin_layout Standard
+The relative error is the ratio of the mean absolute error 
+\begin_inset Formula $\overline{\Delta x}$
+\end_inset
+
+ to the mean value 
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+ of the quantity measured.
+ Thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\text{Relative error}=\frac{\overline{\Delta x}}{\bar{x}}
+\end{equation}
+
+\end_inset
+
+ and the percentage error is given by
+\begin_inset Formula 
+\begin{equation}
+\delta x=\left(\frac{\overline{\Delta x}}{\bar{x}}\right)\times100\%
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Propagation/Combination of errors
+\end_layout
+
+\begin_layout Standard
+When a physical quantity defined as a combination of other physical quantities,
+ the error in the measurement of that physical quantity will be calculated
+ based on the errors of all of the physical quantities on which it depends.
+ The rules for combining errors are as follows:
+\end_layout
+
+\begin_layout Subsection
+Errors in addition and subtraction
+\end_layout
+
+\begin_layout Standard
+If a physical quantity 
+\begin_inset Formula $Z$
+\end_inset
+
+ appears as the sum or difference of other physical quantities 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ such as
+\begin_inset Formula 
+\begin{equation}
+Z=X\pm Y
+\end{equation}
+
+\end_inset
+
+and measurements of 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ yield the values 
+\begin_inset Formula $X\pm\triangle X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y\pm\Delta Y$
+\end_inset
+
+ then the error in 
+\begin_inset Formula $Z$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{equation}
+\triangle Z=\triangle X+\triangle Y.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Errors in multiplication and division
+\end_layout
+
+\begin_layout Standard
+If a physical quantity 
+\begin_inset Formula $Z$
+\end_inset
+
+ appears as the product or division of other physical quantities 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ such as
+\begin_inset Formula 
+\begin{equation}
+Z=X\times Y\,\,\,\text{OR}\,\,\,X/Y
+\end{equation}
+
+\end_inset
+
+and measurements of 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ yield the values 
+\begin_inset Formula $X\pm\triangle X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y\pm\Delta Y$
+\end_inset
+
+ then the fractional error in 
+\begin_inset Formula $Z$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{equation}
+\frac{\triangle Z}{Z}=\frac{\triangle X}{X}+\frac{\triangle Y}{Y}.
+\end{equation}
+
+\end_inset
+
+Error in a physical quantity that involves powers is also calculated using
+ the product rules, for example if
+\begin_inset Formula 
+\[
+Z=A^{2}=A\times A
+\]
+
+\end_inset
+
+we have 
+\begin_inset Formula 
+\[
+\frac{\triangle Z}{Z}=2\frac{\triangle A}{A}
+\]
+
+\end_inset
+
+or in general if 
+\begin_inset Formula $Z=A^{n}$
+\end_inset
+
+ then
+\begin_inset Formula 
+\[
+\frac{\triangle Z}{Z}=n\frac{\triangle A}{A}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Vectors and scalars
+\end_layout
+
+\begin_layout Standard
+In physics we come across many different measureable quantities.
+ It is observed that some quantities are plain additive for example if we
+ have 1 lt of water in one pot and 2 lt in another pot, then combining them
+ we get 
+\begin_inset Formula $1+2=3$
+\end_inset
+
+ lt of water.
+ Likewise in physics some quantities can be added like numbers called scalars
+ whereas others require special method for addition (or subtraction); these
+ are known as vectors.
+ Scalars are all those physical quantities whose measurement means only
+ its value which is a number (with proper unit).
+ Examples are temperature, pressure, volume, position, speed etc.
+ Vectors are all those quantities whose measurement means not only its value
+ but also its direction in space.
+ The measurement of direction is a necessity in order to carry out operations
+ (such as addition multiplication etc) on the physical quantity.
+ Although it is possible to formulate the laws of physics without introducing
+ the ideas of vectors; the laws of physics take a simple and beautiful form
+ when written in vector notation.
+\end_layout
+
+\begin_layout Subsection
+Displacement - A vector
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [help lines, color=lightgray] (0,1) grid (6,2); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick] (0,1) coordinate (init) node [below] {P} -- (6,1) coordinate
+ (med) node [below] {Q} -- (4,1) coordinate (fin) node [below] {R}; ; 
+\backslash
+draw [thick] (0,1.7)  to (5.5,1.7); 
+\backslash
+draw [thick] (5.5,1.7) to  [out=0,in=90] (6,1.5); 
+\backslash
+draw [thick,-latex] (6,1.5) to  [out=270,in=0] (5.5,1.3) to (4,1.3); 
+\backslash
+draw [fill=black]  (init) circle [radius=0.05]; 
+\backslash
+draw [fill=black]  (med) circle [radius=0.05]; 
+\backslash
+draw [fill=black]  (fin) circle [radius=0.05];
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Path length and displacement
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider an example where we walk; starting from a certain point and reaching
+ a destination.
+ The amount by which we travelled can be calculated in two different ways.
+ Firstly we can calculate the total distance covered without considering
+ the direction in which we travel or secondly we could only calculate the
+ shortest distance that we travel from the start to the end point.
+ The amount of travel defined in the first case is known as the path length.
+ It is the total distance travelled between the initial and final position
+ along the actual path of motion.
+ Whereas the travel defined in the second case is known as displacement.
+ Displacement can be defined as the shortest path between the initial and
+ final points.
+ This shortest path is a straight line in cartesian system (Euclidean geometry).
+ Consider an ant that starts moving from position 1 towards east and reaches
+ at 5 then turns back moving 2 steps towards west.
+ In this case the path length covered by the ant is 6 whereas the displacement
+ moved by the ant is only 2.
+ 
+\end_layout
+
+\begin_layout Standard
+Extending the previous example in two dimensions consider displacement of
+ a particle.
+ Suppose a particle starts from a point and moves 20 m to the east and then
+ turns 
+\begin_inset Formula $90^{\text{o}}$
+\end_inset
+
+ towards north and travels further by 30 m.
+ The displacement is the shortest distance between the initial and final
+ points.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\backslash
+begin{tikzpicture}[decoration={markings, mark=at position 0.5 with {
+\backslash
+arrow{>}}}] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [help lines,color=lightgray] (0,0) grid (7,3);
+\end_layout
+
+\begin_layout Plain Layout
+
+%drawing the displacemnet
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,postaction=decorate] (0,0) coordinate (O) -- (2,0) coordinate
+ (A); 
+\backslash
+draw [fill,thick] (O) circle (0.07); 
+\backslash
+node [anchor=north east] at (O) {Start};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,postaction=decorate] (A) -- (2,3) coordinate (B) node [anchor=south
+ west] {End}; 
+\backslash
+draw [fill,thick]  (B) circle (0.07);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [very thick,postaction=decorate] (O) -- (B);
+\end_layout
+
+\begin_layout Plain Layout
+
+%drawing directions
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (5,1.5) coordinate (D) [fill] circle (0.1cm); 
+\backslash
+draw [-latex] (D) -- +(1,0) node [right] {East}; 
+\backslash
+draw [-latex] (D) -- +(-1,0) node [left] {West}; 
+\backslash
+draw [-latex] (D) -- +(0,1) node [above] {North}; 
+\backslash
+draw [-latex] (D) -- +(0,-1) node [below] {South};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+From the Pythagoras theorem we can calculate the displacement to be 
+\begin_inset Formula $\sqrt{20^{2}+30^{2}}=36$
+\end_inset
+
+ m, whereas the total distance (path length) travelled by the particle is
+ 50 m.
+ Thus displacement the way it is defined does not follow the usual rules
+ of addition.
+ All such physical quantities which are added like the displacement are
+ termed as vector quantities.
+ Thus we take displacement as a physical quantity which defines vectors.
+\end_layout
+
+\begin_layout Subsection
+Representation of vectors
+\end_layout
+
+\begin_layout Standard
+We often draw vector quantities on a ruled (graph) paper as directed line
+ segments, where the length of the line segement is proportional to its
+ magnitude and the direction is represented on paper by showing a pointed
+ arrow.
+ The starting point of the segment is known as the tail of the vector and
+ the pointed arrow is known as the head.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+begin{tikzpicture}[decoration={markings, mark=at position 0.5 with {
+\backslash
+arrow{>}}}] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [help lines,color=lightgray] (0,0) grid (3,4);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [-latex,ultra thick] (0,0) coordinate (tail) node [anchor=north] {tail}
+ -- (2.5,3.5) coordinate (head) node [anchor=south]{head};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Representation of vectors.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Negative of a vector is a vector of the same magnitude whose direction is
+ flipped by 
+\begin_inset Formula $180^{\text{o}}$
+\end_inset
+
+.
+ In writing often the symbol 
+\begin_inset Formula $\vec{\thinspace\thinspace\thinspace\thinspace\thinspace}$
+\end_inset
+
+  is used.
+ For example we can write a force of as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+vec{F}=
+\backslash
+SI{10}{
+\backslash
+newton}$
+\end_layout
+
+\end_inset
+
+ towards east.
+ The follwoing diagram shows two force vectors towards east and north.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
+Addition and subtraction of vectors
+\end_layout
+
+\begin_layout Standard
+Graphical addition of vectors is carried out by placing the tail of the
+ second vector on to the head of the first vector.
+ Consider two vectors 
+\begin_inset Formula $\boldsymbol{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $\boldsymbol{B}$
+\end_inset
+
+, then the sum of these vectors 
+\begin_inset Formula $\boldsymbol{C}=\boldsymbol{A}+\boldsymbol{B}$
+\end_inset
+
+ is done as followingly 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+begin{tikzpicture} [scale=0.8]
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [help lines, color=lightgray] (0,-6) grid (8,4);
+\end_layout
+
+\begin_layout Plain Layout
+
+%plotting a line relative to the origin in polar coordinates
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,-latex] (0:0) -- (10:4) node [midway,below] {
+\backslash
+textbf{A}} ;
+\end_layout
+
+\begin_layout Plain Layout
+
+%by default a polar coordinate is always relative to origin, so in order
+ to draw relative to other coordinate use ++
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,-latex] (5,0) -- ++(55:4) coordinate (B) node [midway,below,right]
+ {
+\backslash
+textbf{B}} ;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,-latex] (0.5,-5) coordinate (A)  -- ++(10:4) coordinate (B) node
+ [midway,below] {
+\backslash
+textbf{A}} ;;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,-latex] (B) -- ++(55:4) coordinate (C)node [midway,below] {
+\backslash
+textbf{B}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [very thick,-latex] (A) -- (C) node [midway,above,rotate=35] {
+\backslash
+textbf{C=A+B}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} [scale=0.8]
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [help lines, color=lightgray] (0,-6) grid (8,4);
+\end_layout
+
+\begin_layout Plain Layout
+
+%plotting a line relative to the origin in polar coordinates
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,latex-] (0,1.5) -- ++(10:4) node [midway,below] {
+\backslash
+textbf{-A}} ;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,-latex] (0:0) -- (10:4) node [midway,below] {
+\backslash
+textbf{A}} ;
+\end_layout
+
+\begin_layout Plain Layout
+
+%by default a polar coordinate is always relative to origin, so in order
+ to draw relative to other coordinate use ++
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,-latex] (5,0) -- ++(55:4) coordinate (B) node [midway,below,right]
+ {
+\backslash
+textbf{B}} ;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw  (B)  +(1.5,0) coordinate (XY); 
+\backslash
+draw [thick,-latex] (XY) -- ++(235:4) coordinate (X) node [midway,below,right]
+ {
+\backslash
+textbf{-B}} ;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,-latex] (-0.5,-3) coordinate (A)  -- ++(10:4) coordinate (B)
+ node [midway,above] {
+\backslash
+textbf{A}} ;;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,-latex] (B) -- ++(235:4) coordinate (C)node [midway,below,right]
+ {
+\backslash
+textbf{B}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [very thick,-latex] (A) -- (C) node [midway,below,rotate=-55] {
+\backslash
+textbf{C=A-B}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,-latex] (6.5,-5.5) coordinate (A2) -- ++(55:4) coordinate (B1)
+ node [midway,below,right] {
+\backslash
+textbf{B}} ;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,-latex] (B1) -- ++(10:-4) coordinate (B2) node [midway,below]
+ {
+\backslash
+textbf{-A}} ;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [very thick, -latex] (A2) -- (B2) node [midway,below,rotate=-55] {
+\backslash
+textbf{-C=B-A}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Analytical addition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} [scale=0.8]
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [help lines,color=lightgray] (0,0) grid (8,4);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,-latex] (0,0) coordinate (O) -- (4.5,0) coordinate (A) node [midway,b
+elow] {
+\backslash
+textbf{A}}; 
+\backslash
+draw [thick,-latex] (A) -- (7,4) coordinate (C) node [midway,left] {
+\backslash
+textbf{B}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [very thick,-latex] (O) -- (C) node [midway,above,rotate=30] {$
+\backslash
+mathbf{C=A+B}$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,dashed] (C) -- (7,0) coordinate (P) node [midway,right] {$B
+\backslash
+sin
+\backslash
+theta$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,dashed] (A) -- (7,0) node [midway,below] {$B
+\backslash
+cos
+\backslash
+theta$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw pic [draw,thick,angle radius=1cm,"$
+\backslash
+theta$"] {angle = P--A--C}; 
+\backslash
+draw pic [draw,thick,angle radius=1cm,"$
+\backslash
+alpha$",angle eccentricity=1.3] {angle = A--O--C};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the diagram it can be easily seen that
+\begin_inset Formula 
+\begin{equation}
+C\cos\alpha=A+B\cos\theta
+\end{equation}
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\begin{equation}
+C\sin\alpha=B\sin\theta
+\end{equation}
+
+\end_inset
+
+Squaring and adding we get 
+\begin_inset Formula 
+\begin{equation}
+C^{2}=A^{2}+B^{2}+2AB\cos\theta\label{eq:analytical_magnitude}
+\end{equation}
+
+\end_inset
+
+and dividing we get
+\begin_inset Formula 
+\begin{equation}
+\tan\alpha=\frac{B\sin\theta}{A+B\cos\theta}.\label{eq:analytical_direction}
+\end{equation}
+
+\end_inset
+
+Equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:analytical_magnitude"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:analytical_direction"
+
+\end_inset
+
+ give the magnitude and direction of the resultant vector in terms of the
+ magnitudes of individual vectors and the angle between them.
+ The direction of the resultant vector is specified by the angle 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ that the resultant makes with the first vector 
+\begin_inset Formula $\boldsymbol{A}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Unit vector and resolution of vectors
+\end_layout
+
+\begin_layout Standard
+A unit vector iwith a unit magnitude is known as a unit vector.
+ If we divide any vector with its magnitude we het a unit vector along its
+ direction.
+ A unit vector is often represented by drawing a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikz 
+\backslash
+draw (0,0) -- (0.15,1ex) -- (0.3,0);
+\end_layout
+
+\end_inset
+
+ (known as cap or hat or carat) above the vector.
+ For example a unit vector in the direction of a vector 
+\begin_inset Formula $\boldsymbol{A}$
+\end_inset
+
+ is 
+\begin_inset Formula $\hat{\boldsymbol{A}}$
+\end_inset
+
+ and also
+\begin_inset Formula 
+\[
+\hat{\boldsymbol{A}}=\frac{\boldsymbol{A}}{\left|\boldsymbol{A}\right|}.
+\]
+
+\end_inset
+
+ Unit vectors along cartesian axes are the most useful set of unit vectors.
+ The unit vectors along the 
+\begin_inset Formula $x,$
+\end_inset
+
+ 
+\begin_inset Formula $y$
+\end_inset
+
+ and 
+\begin_inset Formula $z$
+\end_inset
+
+ are written as 
+\begin_inset Formula $\hat{i}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{j}$
+\end_inset
+
+ ank 
+\begin_inset Formula $\hat{k.}$
+\end_inset
+
+ Thus by defining unit vectors along the cartesian axes, it is possible
+ to write any vector as a sum of vectors along the cartesian axes by taking
+ the tail of the vector onto the origin of the coordinate system and noting
+ down the coordinates of the head of the vector.
+ Consider the vector 
+\begin_inset Formula $\vec{A}$
+\end_inset
+
+shown in the following figure.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\backslash
+begin{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzset{     vector/.style = {         semithick,         > = {Straight Barb[widt
+h=3pt,length=6pt]},     },     axis/.style = {         very thin,       
+  > = stealth',     }, 	component/.style={ 		thin, 		>={Straight Barb[width=3pt,l
+ength=6pt]}, 	} }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [help lines, color=lightgray] (0,0) grid  (4,5);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [axis,->] (0,0) -- (4,0) node [right] {x}; 
+\backslash
+draw [axis,->] (0,0) -- (0,5) node [above] {y};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[vector,->] (0,0) -- (3,4) node [above right] {$
+\backslash
+left(3,4
+\backslash
+right)$}; 
+\backslash
+draw (1.5,2) node [above left] {
+\backslash
+large $
+\backslash
+vec{A}$}; 
+\backslash
+draw (1.5,0) node [below] {
+\backslash
+large $
+\backslash
+vec{A}_x$}; 
+\backslash
+draw (3,2) node [right] {
+\backslash
+large $
+\backslash
+vec{A}_y$}; 
+\backslash
+draw[component,-{Straight Barb[width=2.5pt,length=5pt]}] (0,0) -- (3,0);
+ 
+\backslash
+draw[component,-{Straight Barb[width=2.5pt,length=5pt]}] (3,0) -- (3,4);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[vector,->] (-2,0) -- (-1,0); 
+\backslash
+draw (-1.5,0) node [below] {
+\backslash
+footnotesize $
+\backslash
+hat{i}$}; 
+\backslash
+draw[vector,->] (-2,0) -- (-2,1); 
+\backslash
+draw (-2,0.5) node [left] {
+\backslash
+footnotesize $
+\backslash
+hat{j}$}; 
+\backslash
+draw[vector,->] (0,0) -- (3,4) node [above right] {$
+\backslash
+left(3,4
+\backslash
+right)$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+foreach 
+\backslash
+x in {1,2,3}{ 
+\backslash
+draw [fill] (
+\backslash
+x,0) circle [radius=0.025];}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+foreach 
+\backslash
+y in {1,2,3,4}{ 
+\backslash
+draw [fill] (0,
+\backslash
+y) circle [radius=0.025]; }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resoving vectors along x and y components
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can write the vector 
+\begin_inset Formula $\vec{A}$
+\end_inset
+
+ as a sum of two vectors 
+\begin_inset Formula $\vec{A}_{x}$
+\end_inset
+
+(which is along 
+\begin_inset Formula $x$
+\end_inset
+
+ axis) and 
+\begin_inset Formula $\vec{A}_{y}$
+\end_inset
+
+(which is along 
+\begin_inset Formula $y$
+\end_inset
+
+ axis) as 
+\begin_inset Formula 
+\begin{equation}
+\vec{A}=\vec{A}_{x}+\vec{A}_{y};
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\vec{A}_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{A}_{y}$
+\end_inset
+
+ are the component vectors along the 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ axes respectively.
+ Since 
+\begin_inset Formula $\hat{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{j}$
+\end_inset
+
+ are the unit vectors along the 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ axes directions we can as well write 
+\begin_inset Formula 
+\begin{equation}
+\vec{A}_{x}=3\hat{i}\ \text{and}\ \vec{A}_{y}=4\hat{j}
+\end{equation}
+
+\end_inset
+
+since the coordinates of the tip are 
+\begin_inset Formula $(3,4).$
+\end_inset
+
+ Thus we can write 
+\begin_inset Formula 
+\begin{equation}
+\vec{A}=A_{x}\hat{i}+A_{y}\hat{j}.
+\end{equation}
+
+\end_inset
+
+Using the parallelogram law of vector addition we get 
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}A^{2} & =A_{x}^{2}+A_{y}^{2}+2A_{x}A_{y}\cos90^{\mathrm{o}}\\
+A^{2} & =A_{x}^{2}+A_{y}^{2}
+\end{aligned}
+.
+\end{equation}
+
+\end_inset
+
+In general for a 3D vector we have 
+\begin_inset Formula 
+\begin{equation}
+\vec{A}=A_{x}\hat{i}+A_{y}\hat{j}+A_{z}\hat{k}
+\end{equation}
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\begin{equation}
+A^{2}=A_{x}^{2}+A_{y}^{2}+A_{z}^{2}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering {
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+tdplotsetmaincoords{60}{110}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+begin{tikzpicture}[tdplot_main_coords,scale=0.8]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzset{     vector/.style = {         thick,         > = stealth',     },
+     axis/.style = {         very thin,         > = stealth',     }, 	component/.s
+tyle={ 		thin, 		>=stealth', 	} }
+\end_layout
+
+\begin_layout Plain Layout
+
+    % draw axes  
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw[axis,->] (0,0,0) coordinate (O) -- (5,0,0) node[anchor=north east]{$z$};
+      
+\backslash
+draw[axis,->] (0,0,0) -- (0,4.95,0) node[right,anchor=west]{$x$};      
+\backslash
+draw[axis,->] (0,0,0) -- (0,0,4.95) node[anchor=south]{$y$};
+\end_layout
+
+\begin_layout Plain Layout
+
+    % draw  
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+draw[vector,->] (O) -- node[anchor=south east]{${
+\backslash
+vec{V}}$} (2,4,3) coordinate (V);     
+\backslash
+draw[component,->] (O) -- node[below right]{$
+\backslash
+vec{v}_z$}(2,0,0)node[left]{$2$};     
+\backslash
+draw[component,->] (O) -- node[below]{$
+\backslash
+vec{v}_x$}(0,4,0)node[below right]{$4$};     
+\backslash
+draw[component,->] (O) -- node[below left]{$
+\backslash
+vec{v}_y$}(0,0,3)node[above left]{$3$};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+draw[densely dotted] (0,4,0) -- (2,4,0) -- (2,0,0);     
+\backslash
+draw[densely dotted] (V) -- (0,4,3) -- (0,0,3) -- (2,0,3) -- (2,0,0);  
+   
+\backslash
+draw[densely dotted] (2,0,3) -- (V) -- (2,4,0);     
+\backslash
+draw[densely dotted] (0,4,0) -- (0,4,3);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+foreach 
+\backslash
+s in{1,2,3,4}{         
+\backslash
+draw[fill](
+\backslash
+s,0,0)circle(0.75pt);         
+\backslash
+draw[fill](0,
+\backslash
+s,0)circle(0.75pt);         
+\backslash
+draw[fill](0,0,
+\backslash
+s)circle(0.75pt);     } 
+\backslash
+end{tikzpicture}}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resolution of vectors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+We can also obtain a formula for a unit vector in the direction of any vector
+\begin_inset Formula 
+\begin{equation}
+\hat{A}=\frac{\vec{A}}{\left|\vec{A}\right|}=\frac{A_{x}\hat{i}+A_{y}\hat{j}+A_{z}\hat{k}}{\sqrt{A_{x}^{2}+A_{y}^{2}+A_{z}^{2}}}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Scalar and vector product
+\end_layout
+
+\begin_layout Standard
+The product of vectors is also defined in a special way.
+ In fact there are two types of vector multiplications.
+\end_layout
+
+\begin_layout Subsubsection
+Dot product or scalar product
+\end_layout
+
+\begin_layout Standard
+If we have two vectors say 
+\begin_inset Formula $\vec{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{B}$
+\end_inset
+
+ then the dot product or scalar product between the two is defined as
+\begin_inset Formula 
+\begin{equation}
+\vec{A}\cdot\vec{B}=\left|\vec{A}\right|\left|\vec{B}\right|\cos\theta=AB\cos\theta
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the smaller angle between the vector 
+\begin_inset Formula $\vec{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{B}$
+\end_inset
+
+.
+ The scalar product is so called because it gives a number from the multiplicati
+on of vectors.
+ Geometrically scalar product is the product of the length of one vector
+ and the coponent of the other vector in the direction of the first vector.
+\end_layout
+
+\begin_layout Standard
+The unit vectors 
+\begin_inset Formula $\hat{i}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{j,}$
+\end_inset
+
+and 
+\begin_inset Formula $\hat{k}$
+\end_inset
+
+ satisfy the following properties 
+\begin_inset Formula 
+\begin{equation}
+\hat{i}\cdot\hat{i}=\left|\hat{i}\right|\left|\hat{i}\right|\cos0^{\mathrm{o}}=1=\hat{j}\cdot\hat{j}=\hat{k}\cdot\hat{k}
+\end{equation}
+
+\end_inset
+
+also
+\begin_inset Formula 
+\begin{equation}
+\hat{i}\cdot\hat{j}=\left|\hat{i}\right|\left|\hat{j}\right|\cos90^{\mathrm{o}}=0=\hat{j}\cdot\hat{k}=\hat{k}\cdot\hat{i}.
+\end{equation}
+
+\end_inset
+
+Using these identitities we can obtain the scalar product of vectors 
+\begin_inset Formula $\vec{A}=A_{x}\hat{i}+A_{y}\hat{j}+A_{z}\hat{k}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{B}=B_{x}\hat{i}+B_{y}\hat{j}+B_{z}\hat{k}$
+\end_inset
+
+ as 
+\begin_inset Formula 
+\begin{eqnarray}
+\vec{A}\cdot\vec{B} & = & (A_{x}\hat{i}+A_{y}\hat{j}+A_{z}\hat{k})\cdot(B_{x}\hat{i}+B_{y}\hat{j}+B_{z}\hat{k})\nonumber \\
+\vec{A}\cdot\vec{B} & = & A_{x}B_{x}+A_{y}B_{y}+A_{z}B_{z}.
+\end{eqnarray}
+
+\end_inset
+
+Thus we can obtain the angle between vectors using the following relation
+\begin_inset Formula 
+\begin{eqnarray}
+\cos\theta & = & \frac{\vec{A}\cdot\vec{B}}{\left|\vec{A}\right|\left|\vec{B}\right|}\\
+\cos\theta & = & \frac{A_{x}B_{x}+A_{y}B_{y}+A_{z}B_{z}}{\sqrt{A_{x}^{2}+A_{y}^{2}+A_{z}^{2}}\,\,\sqrt{B_{x}^{2}+B_{y}^{2}+B_{z}^{2}}}.
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Cross product or vector product
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+begin{tikzpicture}[         %Environment Styles 
+\end_layout
+
+\begin_layout Plain Layout
+
+       screw1/.style={             left color=black!50, right color=black!50,
+ middle color=black!25,             postaction={                 decorate,
+                 decoration={                     markings,            
+         mark=at position 0                      with {                
+         
+\backslash
+path [draw,left color=black!80, right color=black!25, middle color=white]
+                          (0,-0.5) -- ++(0.5,0.25) -- ++(0.5,0) arc (-90:90:1/6
+ and 0.25) -- ++(-0.5,0)-- (0,0.5) arc (90:-90:1/3 and 0.5);               
+          
+\backslash
+draw[fill=white] ellipse [x radius=1/3, y radius=0.5];                  
+       
+\backslash
+foreach 
+\backslash
+r in {45,-45,135,-135}{                             
+\backslash
+foreach 
+\backslash
+i [evaluate={
+\backslash
+s=30;}] in {0,2,...,30}{                                 
+\backslash
+fill [black, fill opacity=1/50]                                  (0,0) --
+ (
+\backslash
+r+
+\backslash
+s-
+\backslash
+i:1/3 and 0.5)                                  arc (
+\backslash
+r+
+\backslash
+s-
+\backslash
+i:
+\backslash
+r-
+\backslash
+s+
+\backslash
+i:1/3 and 0.5)  -- cycle;                                 }             
+            }                         
+\backslash
+begin{scope}[scale=2,cm={-1/3,0.5,1/3,0.5,(0,0)}]                        
+ 
+\backslash
+draw (45:2pt)                              |- (90:0.25) -| (135:2pt) -| (180:0.25)
+ |- (-135:2pt)                              |-(-90:0.25) -| (-45:2pt) -|
+ (0:0.25) |-cycle;                         
+\backslash
+end{scope}                     }                 }             },      
+        postaction={                 decorate,                 decoration={
+                     markings,                     mark=between positions
+ 0.5cm and 1 step 0.3cm                     with {                       
+  
+\backslash
+path [left color=black!40, right color=black!25, middle color=white]   
+                       (0,-0.25) arc (-90:90:1/6 and 0.25) -- ++(0.3,0) arc
+ (90:-90:1/6 and 0.25) -- cycle;                         
+\backslash
+draw(0,-.25) --++(0.12,0) coordinate (A);                         
+\backslash
+draw(0.08,.25) --++(0.2097,0);                         
+\backslash
+draw[left color=black!40, right color=black!25, middle color=white](0,.25)
+ [out=45,in=-135]                             to ++(0.05,0.05)[out=0,in=55]
+ to (0.2,-0.3)[out=180,in=0] to (A)[out=55,in=0]                         
+    to cycle;                     }                 }             },   
+          postaction={                 decorate,                 decoration={
+                     markings,                     mark=at position 1  
+                   with {                         
+\backslash
+path [draw,left color=black!40, right color=black!25, middle color=white]
+                          (0.1,0.25) -- ++(0.3,0) -- ++(0.8,-0.25) -- ++(-0.8,-0.25)
+ --++(-0.3,0) ;                         
+\backslash
+draw[left color=black!40, right color=black!25, middle color=white](0.1,.25)
+ [out=45,in=-135]                             to ++(0.05,0.05)[out=0,in=55]
+ to (0.25,-0.3)[out=180,in=0] to ++(-0.05,0.05)[out=55,in=0]               
+              to cycle;                         
+\backslash
+draw[left color=black!40, right color=black!25, middle color=white](0.45,.23)
+ [out=45,in=-135]                             to ++(0.05,0.02)[out=0,in=55]
+ to (0.65,-0.23)[out=180,in=0] to ++(-0.05,0.05)[out=55,in=0]              
+               to cycle;                         
+\backslash
+draw[left color=black!40, right color=black!25, middle color=white](0.8,.12)
+ [out=45,in=-135]                             to ++(0.05,0.02)[out=0,in=55]
+ to (0.95,-0.13)[out=180,in=0] to ++(-0.05,0.05)[out=55,in=0]              
+               to cycle;                     }                 }       
+      }         },         ]         
+\backslash
+draw[screw1](0,0)--++(0,-1.5);         
+\backslash
+draw [very thick,-{Straight Barb[]}] (0,-2.7) -- (4,-3.7) node [right] {$
+\backslash
+vec{A}$}; 	
+\backslash
+draw [very thick, -{Straight Barb[]}] (0,-2.7) -- (2.5, -1.5) node [above right]
+ {$
+\backslash
+vec{B}$}; 	
+\backslash
+draw [very thick, -{Straight Barb[]}] (0,0) -- (0, 1.5) node [above] {$
+\backslash
+hat{n}$}; 	
+\backslash
+draw [fill, color=black!10] (0,-2.7) -- (4,-3.7) -- (6.5,-2.5) -- (2.5,-1.5);
+ 	 
+\backslash
+draw [very thick,-{Straight Barb[]}] (0,-2.7) -- (4,-3.7) node [right] {$
+\backslash
+vec{A}$}; 	
+\backslash
+draw [very thick, -{Straight Barb[]}] (0,-2.7) -- (2.5, -1.5) node [above right]
+ {$
+\backslash
+vec{B}$}; 	
+\backslash
+draw [very thick, -{Straight Barb[]}] (0,0) -- (0, 1.5) node [above] {$
+\backslash
+hat{n}$}; 
+\backslash
+end{tikzpicture}}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cross product
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The vector product between two vectors 
+\begin_inset Formula $\vec{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{B}$
+\end_inset
+
+ is defined by 
+\begin_inset Formula 
+\begin{equation}
+\vec{A}\times\vec{B}=\left|\vec{A}\right|\left|\vec{B}\right|\sin\theta=AB\sin\theta\vec{n}.
+\end{equation}
+
+\end_inset
+
+Since the cross product results into another vector it also has a direction.
+ The direction can be found by rotating a right had screw from the first
+ vector to the second vector through the smaller angle, and the direction
+ of the advance of the screw is the direction of the vector formed through
+ the crosss product.
+ Thus the direction of 
+\begin_inset Formula $\hat{n}$
+\end_inset
+
+ is perpendicular to the plane formed by the vectors 
+\begin_inset Formula $\vec{A}$
+\end_inset
+
+and 
+\begin_inset Formula $\vec{B}$
+\end_inset
+
+ in this case in the upward direction.
+ The vector 
+\begin_inset Formula $\vec{B}\times\vec{A}$
+\end_inset
+
+ points exactly opposite to the vector 
+\begin_inset Formula $\vec{A}\times\vec{B}$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\begin{equation}
+\vec{A}\times\vec{B}=-\vec{B}\times\vec{A}
+\end{equation}
+
+\end_inset
+
+ Geometrically the magnitude of the cross product gives the area of the
+ parallelogram formed by the vectors 
+\begin_inset Formula $\vec{A}$
+\end_inset
+
+and 
+\begin_inset Formula $\vec{B.}$
+\end_inset
+
+Using this convection for the direction of the cross product, it is easy
+ to verify the following identities
+\begin_inset Formula 
+\begin{equation}
+\hat{i}\times\hat{i}=\hat{j}\times\hat{j}=\hat{k}\times\hat{k}=0\,\,\text{since}\,\,\sin90^{\mathrm{o}}=0
+\end{equation}
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\begin{equation}
+\hat{i}\times\hat{j}=\hat{k},\,\,\hat{j}\times\hat{k}=\hat{i},\,\,\hat{k}\times\hat{i}=\hat{j}
+\end{equation}
+
+\end_inset
+
+also
+\begin_inset Formula 
+\begin{equation}
+\hat{j}\times\hat{i}=-\hat{k},\,\,\hat{k}\times\hat{j}=-\hat{i},\,\,\hat{i}\times\hat{k}=-\hat{j}.
+\end{equation}
+
+\end_inset
+
+Using these identities it is straight forward to verify that for two vectors
+ 
+\begin_inset Formula $\vec{A}=A_{x}\hat{i}+A_{y}\hat{j}+A_{z}\hat{k}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{B}=B_{x}\hat{i}+B_{y}\hat{j}+B_{z}\hat{k}$
+\end_inset
+
+ as 
+\begin_inset Formula 
+\begin{eqnarray}
+\vec{A}\cdot\vec{B} & = & (A_{x}\hat{i}+A_{y}\hat{j}+A_{z}\hat{k})\times(B_{x}\hat{i}+B_{y}\hat{j}+B_{z}\hat{k})\nonumber \\
+\vec{A}\cdot\vec{B} & = & \hat{i}\left(A_{y}B_{z}-A_{z}B_{y}\right)-\hat{j}\left(A_{x}B_{z}-A_{z}B_{x}\right)\nonumber \\
+ &  & +\hat{k}\left(A_{x}B_{y}-A_{y}B_{x}\right).
+\end{eqnarray}
+
+\end_inset
+
+The cross product can be written in short as a determinant, thus
+\begin_inset Formula 
+\begin{equation}
+\vec{A}\times\vec{B}=\left|\begin{array}{ccc}
+\hat{i} & \hat{j} & \hat{k}\\
+A_{x} & A_{y} & A_{z}\\
+B_{x} & B_{y} & B_{z}
+\end{array}\right|.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Mechanics
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Concept of force
+\end_layout
+
+\begin_layout Standard
+A stone falls to the ground, a cricket ball crosses boundary, a swimmer
+ plunges into a swimming pool.
+ What causes the movement in each of these cases? In each of these examples
+ the motion is caused by a push or pull.
+ We use the word 
+\series bold
+force
+\series default
+ to describe pushes and pulls.
+ In all the examples above force has 
+\series bold
+changed the speed
+\series default
+ of an object.
+\end_layout
+
+\begin_layout Standard
+A force may change
+\end_layout
+
+\begin_layout Enumerate
+the speed of an object
+\end_layout
+
+\begin_layout Enumerate
+the direction of traveling
+\end_layout
+
+\begin_layout Enumerate
+the shape or size of an object.
+\end_layout
+
+\begin_layout Standard
+Force is an interaction between two objects.
+ Force is exerted by an object A on another object B.
+ Force is a vector quantity and if more than one forces act on a body/particle,
+ we can find the resultant using laws of vector addition.
+ Various types of forces in nature can be grouped as (a) gravitational (b)
+ electromagnetic (c) strong nuclear (d) weak nuclear.
+ The 
+\series bold
+SI
+\series default
+ unit of force is Newton written as 
+\series bold
+N
+\series default
+.
+\end_layout
+
+\begin_layout Section
+Newton's laws of motion
+\end_layout
+
+\begin_layout Standard
+Newton's laws of motion are central in physics.
+\end_layout
+
+\begin_layout Subsection
+First law of motion
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+A body remains un-accelerated (at rest or in uniform motion) if total force
+ acting on it is zero.
+ 
+\end_layout
+
+\begin_layout Standard
+Mathematically;
+\begin_inset Formula 
+\begin{equation}
+\vec{a}=0\,\,\,\,\Leftrightarrow\,\,\,\,\vec{F}=0
+\end{equation}
+
+\end_inset
+
+Concept of rest, motion and acceleration requires specification of frame
+ of reference.
+ Acceleration can be different in different frames of reference.
+ 
+\end_layout
+
+\begin_layout Standard
+A frame of reference is a place from where measurements are made using different
+ instruments such as a metre scale and a clock.
+\end_layout
+
+\begin_layout Standard
+A frame of reference in which Newton's 1st law is valid is called an inertial
+ frame of reference.
+ And a frame in which Newton's 1st law is not valid is called a non-inertial
+ frame of reference.
+ Earth for most practical purposes can be considered as an inertial frame
+ of reference.
+ Further all frames moving uniformly(constant velocity) with respect to
+ an inertial frame are themselves inertial.
+ Thus a train moving with uniform velocity w.r.t.
+ ground, plane moving with uniform velocity w.r.t.
+ highway are examples of inertial frames.
+\end_layout
+
+\begin_layout Subsection
+Second law of motion
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+The acceleration of a particle is given by the resultant forces acting on
+ the particle divided by its mass.
+ 
+\end_layout
+
+\begin_layout Standard
+In symbols
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula 
+\begin{equation}
+\vec{a}=\vec{F}/m\,\,\text{or}\,\,\vec{F}=m\vec{a}.\label{eq:2ndlaw}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Momentum: The quantity of motion possessed by a body is called its momentum
+ and it is measured by the product of its mass and velocity.
+ In symbols
+\begin_inset Formula 
+\begin{equation}
+\vec{\overrightarrow{p}}=m\vec{v}.
+\end{equation}
+
+\end_inset
+
+It is a vector quantity and its SI unit is 
+\begin_inset Formula $kg\,m/s.$
+\end_inset
+
+ Newton's 2nd law can also be framed in terms of momentum as;
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+The rate of change of momentum of a body is directly proportional to the
+ impressed force and takes place in the direction of the force.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\vec{F} & \propto & \frac{\Delta\vec{p}}{\Delta t}\\
+\vec{F} & =k & \frac{\Delta\vec{p}}{\Delta t};
+\end{eqnarray}
+
+\end_inset
+
+where for simplicity(of the unit force) the constant of proportionality
+ 
+\begin_inset Formula $k=1.$
+\end_inset
+
+ Also
+\begin_inset Formula 
+\begin{equation}
+\vec{F}=\frac{\Delta\vec{p}}{\Delta t}=\frac{\Delta(m\vec{v})}{\Delta t}\label{eq:2ndlawmom}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\vec{F}=m\frac{\Delta\vec{v}}{\Delta t}=m\vec{a}
+\end{equation}
+
+\end_inset
+
+In equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2ndlaw"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\vec{F}=m\vec{a}
+\]
+
+\end_inset
+
+the L.H.S is the cause (
+\begin_inset Formula $\overrightarrow{F}$
+\end_inset
+
+) and the R.H.S.
+ (
+\begin_inset Formula $\overrightarrow{a}$
+\end_inset
+
+)is the effect.
+\end_layout
+
+\begin_layout Standard
+When dealing with an event(in a physical problem), if the formula for 
+\begin_inset Formula $\overrightarrow{F}$
+\end_inset
+
+ is not known one can find the value of 
+\begin_inset Formula $\overrightarrow{F}$
+\end_inset
+
+ by measuring 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $\overrightarrow{a}$
+\end_inset
+
+.
+ However one can predict the motion of an object in future (or in past)
+ if formula for 
+\begin_inset Formula $\overrightarrow{F}$
+\end_inset
+
+ is known.
+ Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2ndlaw"
+
+\end_inset
+
+ is therefore also known as equation of motion.
+ Since it is a vector equation we can write
+\begin_inset Formula 
+\begin{equation}
+\vec{F}=F_{x}\hat{i}+F_{y}\hat{j}+F_{z}\hat{k}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\vec{a}=a_{x}\hat{i}+a_{y}\hat{j}+a_{z}\hat{k}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\vec{p}=p_{x}\hat{i}+p_{y}\hat{j}+p_{z}\hat{k}
+\end{equation}
+
+\end_inset
+
+Thus we have from equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2ndlaw"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2ndlawmom"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align}
+F_{x} & =\frac{dp_{x}}{dt}=ma_{x},\\
+F_{y} & =\frac{dp_{y}}{dt}=ma_{y},\\
+F_{z} & =\frac{dp_{z}}{dt}=ma_{z}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Third law of motion
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+To every action there is an equal and opposite reaction.
+\end_layout
+
+\begin_layout Standard
+Whenever a body exerts a force on another body, the second body exerts on
+ the first body a force equal in magnitude but in the opposite direction.
+ Forces always occur in pairs.
+ Thus
+\begin_inset Formula 
+\begin{equation}
+\vec{F}_{12}=-\vec{F}_{21}
+\end{equation}
+
+\end_inset
+
+There is no cuase-effect relationship i.e.
+ action is not the cause nor is reaction the effect.
+ They both co-exist.
+ Also they are not acting on the same body but represent interaction between
+ bodies.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\backslash
+rule{1
+\backslash
+columnwidth}{1.0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancybreak{
+\backslash
+sffamily 
+\backslash
+textbf{Numerical Problems}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule{1
+\backslash
+columnwidth}{1.0pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\family sans
+\series bold
+Example 1:
+\series default
+ 
+\series medium
+An automobile starting from rest gains a speed of 
+\begin_inset Formula $60$
+\end_inset
+
+ 
+\begin_inset Formula $km/h$
+\end_inset
+
+ after covering a distance of 
+\begin_inset Formula $60$
+\end_inset
+
+ 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ The mass of the automobile is 
+\begin_inset Formula $432$
+\end_inset
+
+ 
+\begin_inset Formula $kg$
+\end_inset
+
+.
+ Assuming that the air resistance and the friction, exert on the automobile
+ a uniform retarding force of 
+\begin_inset Formula $200$
+\end_inset
+
+ 
+\begin_inset Formula $N$
+\end_inset
+
+, calculate the pull exerted by the engine.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Example 2:
+\series default
+ 
+\series medium
+Calculate the resultant force on body of mass 
+\begin_inset Formula $200$
+\end_inset
+
+ 
+\begin_inset Formula $kg$
+\end_inset
+
+ moving with an acceleration of 
+\begin_inset Formula $5$
+\end_inset
+
+ 
+\begin_inset Formula $m/s^{2}.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Example 3:
+\series default
+ 
+\series medium
+A force of 
+\begin_inset Formula $\vec{F}=10\vec{i}+12\hat{j}+8\hat{k}$
+\end_inset
+
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ is acting on a block of mass 
+\begin_inset Formula $2$
+\end_inset
+
+ 
+\begin_inset Formula $kg$
+\end_inset
+
+.
+ Calculate the acceleration of the particle along each of the directions.
+\family default
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancybreak{
+\backslash
+rule{1
+\backslash
+columnwidth}{1.2pt}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conservation of momentum
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ is the external force acting on a particle, then according to Newton's
+ second law of motion
+\begin_inset Formula 
+\[
+\vec{F}=\frac{d\vec{p}}{dt};
+\]
+
+\end_inset
+
+ when 
+\begin_inset Formula $\vec{F}=0$
+\end_inset
+
+; then 
+\begin_inset Formula 
+\begin{equation}
+\frac{d\vec{p}}{dt}=0
+\end{equation}
+
+\end_inset
+
+and therefore we have 
+\begin_inset Formula 
+\begin{eqnarray}
+\vec{p} & = & \text{constant}\\
+\vec{p_{i}} & = & \vec{p_{f}}.
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+When no resultant force acts on a system, the total linear momentum of the
+ system remains constant in magnitude and direction.
+\end_layout
+
+\begin_layout Standard
+This statement is called the principle of conservation of linear momentum.
+ Conservation of linear momentum is a very useful tool for solving many
+ mechanical problems.
+\end_layout
+
+\begin_layout Section
+Uniform circular motion-centripetal force
+\end_layout
+
+\begin_layout Standard
+Often we come across examples of motion in which an object revolves in circular
+ path around a point called the center.
+ A merry-go-round, a stone tied to a string when revolved, a fan rotating
+ around its axis, the earth revolving around sun or the moon revolving around
+ earth, an electron revolving around nucleus are all examples of motion
+ known as circular motion.
+ Circular motion is only possible if there exists a force that binds the
+ object towards the center; such a force is therefore called the centripetal
+ force.
+ In uniform circular motion the speed of object remains constant while its
+ direction keeps on changing; hence it is an accelerated motion, the correspondi
+ng acceleration is known as centripetal acceleration.
+ Centripetal force is not a new kind of force but is just a term given in
+ reference to uniform circular motion.
+ The centripetal force can be any of the fundamental or non-fundamental
+ forces.
+ For example in the case of a stone tied to string, the force that keeps
+ the stone in its path is the tension force; hence tension is the centripetal
+ force in this case.
+ In the case of earth revolving around sun, the centripetal force is the
+ gravitational force between the sun and the earth.
+ In the case of the electron it is the electromagnetic force which binds
+ it to the nucleus.
+ 
+\end_layout
+
+\begin_layout Standard
+If the centripetal force is due to gravity we have the Newton's law of gravitati
+on.
+ If it is electromagnetic force we have the Coulomb's law.
+ But in most cases it may not be possible to find an exact formula for centripet
+al force.
+ But one can still calculate the value of centripetal force based on the
+ dynamics of the object that revolves.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [help lines,color=lightgray] (-2,-2) grid (2,2); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0,0) coordinate (origin) circle (1.8cm); 
+\backslash
+draw [thick] (origin) -- (1.8,0) coordinate (particle); 
+\backslash
+draw [fill] (particle) circle  (2pt); 
+\backslash
+draw [thick,-latex] (particle) -- +(0,1.5) coordinate (tangent); 
+\backslash
+draw [anchor=west] node at (particle) {$P$}; 
+\backslash
+draw [anchor=north west] node at (tangent) {$v_0$}; 
+\backslash
+draw [very thick,-latex] (particle) --  (1,0); 
+\backslash
+draw [anchor=north west] node at (1,0) {$T$}; 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Uniform circular motion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider a stone of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ tied to a string of length 
+\begin_inset Formula $r$
+\end_inset
+
+ and is being revolved with a constant speed of 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ The centripetal acceleration is found to be dependent on speed 
+\begin_inset Formula $v$
+\end_inset
+
+ and the distance 
+\begin_inset Formula $r$
+\end_inset
+
+ as given by
+\begin_inset Formula 
+\begin{equation}
+a=\frac{v^{2}}{r}\label{eq:centeri_acceleratio}
+\end{equation}
+
+\end_inset
+
+and the formula for centripetal force can be written as 
+\begin_inset Formula 
+\begin{equation}
+F=\frac{mv^{2}}{r}.\label{eq:centri_force}
+\end{equation}
+
+\end_inset
+
+In case of the stone; as long as the stone keeps revolving the tension force
+ is the centripetal force and we have 
+\begin_inset Formula 
+\begin{equation}
+T=\frac{mv^{2}}{r}.
+\end{equation}
+
+\end_inset
+
+If we keep on increasing the speed tension keeps on growing until a point
+ reaches where it may break.
+ 
+\end_layout
+
+\begin_layout Subsection
+Angular displacement, velocity and acceleration
+\end_layout
+
+\begin_layout Standard
+It is most natural to represent the circuar motion-revolution of objects
+ by polar coordinates.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzset{                    redarrows/.style={postaction={decorate},decoration={m
+arkings,mark=at position 0.1 with {
+\backslash
+arrow[draw=black]{>}}},            decoration={markings,mark=at position
+ -0.4 with {
+\backslash
+arrow[draw=black]{>}}},}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,redarrows] (2,2) circle [radius=2]; 
+\backslash
+draw [thick] (2,2)  coordinate (o1) node   [above left] {$O$} -- ++(20:2)
+ coordinate (p1)    [fill] circle [radius=0.035] +(-10:0.05) node  [below,
+ right]  {$P(t)$} ; 
+\backslash
+draw [thick] (2,2) -- ++(50:2) node[midway, left] {$r$} [fill] circle [radius=0.0
+35] coordinate (p2) +(-8:0.75) node  [above] {$P(t+
+\backslash
+triangle t)$}; 
+\backslash
+draw pic ["$
+\backslash
+triangle 
+\backslash
+theta$",draw, angle eccentricity=1.3, angle radius=1cm]  {angle=p1--o1--p2};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw  ($(p1) !0.5cm! (p2)$)  coordinate (mid) +(50:0.2) node [right] {
+\backslash
+scriptsize$
+\backslash
+triangle S$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [densely dotted,thick,latex-latex] (-0.5,2) -- (4.5,2) node () [right]
+ {x};  
+\backslash
+draw [densely dotted,thick,latex-latex] (2,-0.5) -- (2,4.5) node () [above]
+ {y}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (4,2) coordinate (x);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw pic["$
+\backslash
+theta$",draw,angle eccentricity=1.3,angle radius=0.8cm] {angle=x--o1--p1};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider a particle revolving anti-clockwise on a circular trajectory with
+ respect to a certain origin with linear speed 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ Consider the origin O of xy coordinate system to be situated at the center
+ of the particles path.
+ The position of the particle can be given by the values of the radius and
+ the angle it makes with the 
+\begin_inset Formula $x$
+\end_inset
+
+ axis.
+ These are known as the polar coordinates.
+ Let 
+\begin_inset Formula $r$
+\end_inset
+
+ be the radius of the circular path and 
+\begin_inset Formula $m$
+\end_inset
+
+ be the mass of the object.
+ Let at any instant 
+\begin_inset Formula $t$
+\end_inset
+
+ the particle be situated at point P as shown in the diagram.
+ After some time interval 
+\begin_inset Formula $\triangle t$
+\end_inset
+
+ (i.e.
+ at 
+\begin_inset Formula $t+\triangle t$
+\end_inset
+
+) the particle arrives at point 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+ Then the angle 
+\begin_inset Formula $\angle POQ=\triangle\theta$
+\end_inset
+
+ is known as the average angular displacement of the particle.
+ The angle covered in unit time is known as the angular velocity 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\begin{equation}
+\omega=\frac{\text{angle}}{\text{time}}
+\end{equation}
+
+\end_inset
+
+In this case the angle covered is 
+\begin_inset Formula $\triangle\theta$
+\end_inset
+
+ and the time taken is 
+\begin_inset Formula $t$
+\end_inset
+
+, so
+\begin_inset Formula 
+\begin{equation}
+\omega=\frac{\triangle\theta}{\triangle t}
+\end{equation}
+
+\end_inset
+
+is the average angular velocity.
+ The time required to complete one rotation is known as the time period
+ 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ And in one time period the particle traces a complete circle which is an
+ angle of 
+\begin_inset Formula $2\pi.$
+\end_inset
+
+ Thus
+\begin_inset Formula 
+\begin{equation}
+\omega=\frac{\theta}{t}=\frac{2\pi}{T}=2\pi f;
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $f$
+\end_inset
+
+ is known as the frequency of revolutions.
+ The frequency is the number of times the particle revolves in 1 s.
+ 
+\end_layout
+
+\begin_layout Standard
+From the geometry of the diagram one can easily verify that 
+\begin_inset Formula 
+\[
+\triangle\theta=\frac{\triangle S}{r}
+\]
+
+\end_inset
+
+ and therefore 
+\begin_inset Formula 
+\begin{align*}
+\omega & =\frac{1}{r}\frac{\triangle S}{\triangle t}\\
+\omega & =\frac{v}{r}
+\end{align*}
+
+\end_inset
+
+or
+\begin_inset Formula 
+\begin{equation}
+v=r\omega.
+\end{equation}
+
+\end_inset
+
+The above equation gives the relationship between linear and angular speed.
+ Making use of this relationship we can write the centripetal acceleration
+ eq 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:centeri_acceleratio"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ as 
+\begin_inset Formula 
+\begin{equation}
+a=\omega^{2}r
+\end{equation}
+
+\end_inset
+
+and the centripetal force eq 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:centri_force"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ can be written as
+\begin_inset Formula 
+\[
+F=m\omega^{2}r.
+\]
+
+\end_inset
+
+ The angular acceleration is defined as the change in angular velocity per
+ unit change in time, i.e.
+\begin_inset Formula 
+\begin{equation}
+\alpha=\frac{\triangle\omega}{\triangle t}.
+\end{equation}
+
+\end_inset
+
+In uniform circular motion there is no change in angular speed and thus
+ 
+\begin_inset Formula $\triangle\omega=0$
+\end_inset
+
+ giving 
+\begin_inset Formula $\alpha=0$
+\end_inset
+
+.
+ The angular acceleration can be related to the linear acceelration as
+\begin_inset Formula 
+\begin{align*}
+\alpha & =\frac{1}{r}\frac{\triangle v}{\triangle t}\\
+\alpha & =\frac{a}{r}
+\end{align*}
+
+\end_inset
+
+or
+\begin_inset Formula 
+\begin{equation}
+a=r\alpha.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The position vector 
+\begin_inset Formula $r$
+\end_inset
+
+ is always directed towards the particle along the radius while the force
+ is directed towards the center.
+ Thus taking directions into account we can write force equatoin as 
+\begin_inset Formula 
+\[
+F=-m\omega^{2}r.
+\]
+
+\end_inset
+
+ Since 
+\begin_inset Formula $\omega$
+\end_inset
+
+ is constant in uniform circular motion we can define 
+\begin_inset Formula $m\omega^{2}=k$
+\end_inset
+
+ as another constant giving,
+\begin_inset Formula 
+\[
+F=-kr
+\]
+
+\end_inset
+
+and
+\begin_inset Formula 
+\begin{equation}
+a=-kr\label{eq:shmeq}
+\end{equation}
+
+\end_inset
+
+ This is known as a linear restoring force, and it leads to a kind of periodic
+ motion known as simple harmonic motion
+\begin_inset Formula 
+\[
+\omega=\sqrt{\frac{k}{m}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+SHM as project of uniform circular motion
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} [scale=1.3,every node/.style={scale=1.3}]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzset{                    redarrows/.style={postaction={decorate},decoration={m
+arkings,mark=at position 0.17 with {
+\backslash
+arrow[draw=black]{>}}},            decoration={markings,mark=at position
+ -0.4 with {
+\backslash
+arrow[draw=black]{>}}}},};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node (orig) at (0,0) [left] {O}; 
+\backslash
+draw [thick,redarrows] (-3.5,0) coordinate (o1)  circle [radius=2];
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [densely dotted,thick,latex-latex] (-6,0) -- (-1,0) node () [right]
+ {x};  
+\backslash
+draw [densely dotted,thick,latex-latex] (-3.5,-2.5) -- (-3.5,2.5) node () [above]
+ {y}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[black, domain=0:4,samples=100,color=blue,thick] plot({
+\backslash
+x}, {2*sin((
+\backslash
+x)*3.141592 r/2)});
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,-latex] (0,0) -- (5,0) node () [right] {t};  
+\backslash
+draw [thick,latex-latex] (0,-2.5) -- (0,2.5) node () [above] {y}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (o1) ++(30:2) coordinate (p1) [fill] circle (0.04) [densely dashed]
+ -- (0.33,1) [fill] circle (0.04); 
+\backslash
+draw (o1) ++(30:1) node [above] {$A$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick] (-3.5,0) -- (p1); 
+\backslash
+coordinate (x1) at (-1.5,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw pic [ draw, ->, angle radius=1.45cm] {angle=x1--o1--p1};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-3.1,0.08)  node [right,rotate=20]{
+\backslash
+footnotesize$
+\backslash
+theta=
+\backslash
+omega t$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{scope}[shift={(-3.6,-0.1)}] 
+\backslash
+draw [decorate,{decoration=brace}] (1.8320,0) -- (0.1,0) ;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0.8,0) node [below] {
+\backslash
+tiny $x=A
+\backslash
+cos 
+\backslash
+omega t$}; 
+\backslash
+draw [decorate,{decoration=brace}] (0,0.1) -- (0,1.1); 
+\backslash
+draw (-0.4,0.68) node [below,rotate=90] {
+\backslash
+tiny $y=A
+\backslash
+sin 
+\backslash
+omega t$}; 
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-3.5,1) [fill,color=blue] circle(0.04) [densely dashed] edge[black]
+ (-1.768,1) [fill] circle (0.04);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw(-3.5,2) [fill,color=blue] circle (0.04) [densely dashed] edge[black]
+ (1,2) ; 
+\backslash
+draw [dashed] (1,2)  --  (1,0) node [pos=0.5,right] {
+\backslash
+footnotesize A}; 
+\backslash
+draw (1,2) [fill,color=black] circle (0.04);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+foreach 
+\backslash
+t in {1,2,3,4} { 
+\backslash
+node (
+\backslash
+t) at (
+\backslash
+t,0) [below] {$
+\backslash
+frac{
+\backslash
+t T}{4}$}  (
+\backslash
+t,0) [fill] circle (0.04); }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{scope}[shift={(-3.5,-3.5)}] 
+\backslash
+draw (-2,3) [black,rotate=270, domain=0:4,samples=100,color=red,thick] plot({
+\backslash
+x}, {2*cos((
+\backslash
+x)*3.141592 r/2)}); 
+\backslash
+foreach 
+\backslash
+t in {1,2,3,4} { 
+\backslash
+node (
+\backslash
+t) at (0,-
+\backslash
+t) [below,rotate=270] {$
+\backslash
+frac{
+\backslash
+t T}{4}$}  (0,-
+\backslash
+t) [fill] circle (0.04); } 
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [<->] (-3.5,-3) -- (-3.5,-8.5) node [right,rotate=270] {t}; 
+\backslash
+draw [<->] (-6,-3.5) -- (-1,-3.5) node [above, rotate=270] {x};
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [densely dashed] (p1) [fill] circle (0.04) -- (0,-4.8) [fill] circle
+ (0.04);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [densely dashed] (x1) [fill] circle (0.04) -- +(0,-3.5) [fill] circle
+ (0.04); 
+\backslash
+draw [densely dashed] (p1) -- +(0,-4.84) [fill] circle (0.03);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+SHM projection
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SHM-projection"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The uniform circular motion is an example of periodic motion.
+ Periodic motion is a motion in which the body moves along a path which
+ constinuously repeats after a fixed interval of time.
+ This path can be linear or circular.
+ We come across many such examples of periodic motion in daily life.
+ A pendulum of clock swings back and forth, a boat anchored at the shore
+ jumps up and down in water, motion of needle of sewing machine, wheels
+ of bicycles turning or fan blowing air etc are some common examples.
+ By repeatition of motion means the body assumes the same values of position
+ and velocity after the fixed interval of time.
+ The fixed interval of time after which the body repeats its motion (has
+ same position and velocity) is known as time period or periodic time denoted
+ with 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ The peiodic motion is also known as an oscillation or vibration.
+ Thus the periodic time 
+\begin_inset Formula $T$
+\end_inset
+
+ can also be defined as the time required to complete one oscillation or
+ vibration.
+ The number of times the body repeats its motion or the number of oscillations
+ executed by the body in 1 s is known as the frequency of oscillations and
+ the symbol used for frequency is 
+\begin_inset Formula $f$
+\end_inset
+
+ or 
+\begin_inset Formula $\nu$
+\end_inset
+
+ and its unit is Hz.
+ 
+\end_layout
+
+\begin_layout Standard
+In general the periodic motion can be quite complicated, but a periodic
+ motion known as the Simple Harmonic Motion (SHM) is encountered frequently
+ and is well understood mathematically.
+ Whenever a body executes periodic motion under the action of an acceleration
+ that is proportional to displacement but is always oppositely directed
+ to it, the motion is known as SHM.
+ Thus for SHM
+\begin_inset Formula 
+\begin{equation}
+a\propto-x.\label{eq:shm_projeq}
+\end{equation}
+
+\end_inset
+
+The SHM can be understood as the projection of uniform circular motion onto
+ any one of the diameters.
+ As can be seen from the diagram 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SHM-projection"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ the displacement of projection onto 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ axis can be written as
+\begin_inset Formula 
+\begin{equation}
+x=A\cos\omega t\,\,\,\,y=A\sin\omega t.\label{eq:shmsolu}
+\end{equation}
+
+\end_inset
+
+The particle completes one revolution in time period 
+\begin_inset Formula $T.$
+\end_inset
+
+ So each quadrant is covered in a time of 
+\begin_inset Formula $T/4$
+\end_inset
+
+.
+ Thus the position of the 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ coordinates are,
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+projection/time
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $T/4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2T/4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3T/4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4T/4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Projection positions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+similarly we can plot the graph of 
+\begin_inset Formula $\sin$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos$
+\end_inset
+
+ functions in eq 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:shmsolu"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ by noting that 
+\begin_inset Formula $\omega=2\pi/T,$
+\end_inset
+
+like
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+projection/
+\begin_inset Formula $\omega t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\pi}{2}\left(t=\frac{T}{4}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pi\left(t=\frac{2T}{4}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{3\pi}{2}\left(t=\frac{3T}{4}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2\pi\left(t=\frac{4T}{4}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x=A\cos\omega t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y=A\sin\omega t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Fundamental forces
+\end_layout
+
+\begin_layout Standard
+While there can be a number of forces existing on any given body, it has
+ been found that there are only a handful of fundamental forces.
+ All the other kinds of forces are manifestations of these fundamental forces.
+\end_layout
+
+\begin_layout Subsection
+Gravitational force
+\end_layout
+
+\begin_layout Standard
+Effects of the force of gravitation are most easily observed.
+ The systematic study of gravitational force was first carried out by Galileo
+ and Newton.
+ Newton after several experiments came up with a simple formula for gravitation.
+ According to Newton
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}  % grid lines
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [help lines] (-3,-3) grid (3,3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+shade [ball color=black!20] (-2.5,0) coordinate (c1) circle (0.4cm) (-2.5,0.3)
+ node [anchor=south] {$m_1$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+shade [ball color=black!20] (+2.5,0) coordinate (c2) circle (0.4cm) (+2.5,0.3)
+ node [anchor=south] {$m_2$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [very thick,dashed,latex-latex] (c1) -- (c2);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node [below] at (0,0) {$r$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gravitational force between two masses.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+Mass is the source of gravitational force and the force between two point
+ masses 
+\begin_inset Formula $m_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{2}$
+\end_inset
+
+ separated by a distance 
+\begin_inset Formula $r$
+\end_inset
+
+ is directly proportional to the product of the masses and inversely proportiona
+l to the square of the distances.
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula 
+\begin{eqnarray}
+F & \propto & m_{1}m_{2}\,\,\text{and}\,\,F\propto\frac{1}{r^{2}}\\
+F & \propto & \frac{m_{1}m_{2}}{r^{2}}\\
+F & = & G\frac{m_{1}m_{2}}{r^{2}};\label{eq:gravforce}
+\end{eqnarray}
+
+\end_inset
+
+where 
+\begin_inset Formula $G=6.67\times10^{-11}\,Nm^{2}/kg^{2}$
+\end_inset
+
+ is called the universal gravitational constant.
+ The value of 
+\begin_inset Formula $G$
+\end_inset
+
+ does not change from place to place or from planet to planet and it even
+ does not depend on the medium between the bodies.
+ Due to the smallness of gravitational force the value of 
+\begin_inset Formula $G$
+\end_inset
+
+ is not measured with good accuracy.
+ The force of gravity is only attractive, part of the reason for which is
+ that there exists only one kind of mass (which is considered positive by
+ convention).
+\end_layout
+
+\begin_layout Standard
+The force with which the earth attracts other body of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ towards itself can be given with the formula; 
+\begin_inset Formula 
+\begin{equation}
+\vec{F}=m\vec{g}.\label{eq:fmg}
+\end{equation}
+
+\end_inset
+
+If we consider earth to be a sphere of uniform density then the entire mass
+ of the earth 
+\begin_inset Formula $M$
+\end_inset
+
+ can be considered to be located at its center.
+ A body of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ at the surface of the earth is at a distance of 
+\begin_inset Formula $R$
+\end_inset
+
+ which is equal to the radius of earth.
+ In such a case by making use of formula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:gravforce"
+
+\end_inset
+
+ we can write the force between earth and the object as
+\begin_inset Formula 
+\begin{equation}
+F=G\frac{Mm}{R^{2}}.\label{eq:earthforce}
+\end{equation}
+
+\end_inset
+
+Comparing equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:fmg"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:earthforce"
+
+\end_inset
+
+ we can write 
+\begin_inset Formula 
+\begin{equation}
+\vec{g}=\frac{GM}{R^{2}}.\label{eq:smallg}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Electromagnetic force
+\end_layout
+
+\begin_layout Standard
+Next to the gravitational force the effects of the force which are most
+ easily observed is the electromagnetic force.
+ In fact the electromagnetic force is actually about 
+\begin_inset Formula $10^{35}$
+\end_inset
+
+ times or more stronger than the gravitational force.
+ Both electric and magnetic forces are a result of charges.
+ Thus charge is the source of electric (and magnetic) force.
+ Systematic study of electric and magnetic forces was carried out by several
+ people; most notably Coulomb, Ampere, Faraday, Biot and Savart and their
+ unification was carried out by Maxwell.
+ 
+\end_layout
+
+\begin_layout Subsection
+Strong and weak nuclear forces
+\end_layout
+
+\begin_layout Standard
+The strongest of all fundamental force is commonly referred to as the Strong
+ force.
+ It is responsible for binding the nucleus together.
+ In fact the force that exists between protons and neutrons (not due to
+ their electric charge) is called the Strong force.
+ The strong force is a result of different kinds of charge called color
+ charge.
+ Unlike electric charge color charge exists in three flavors (red green
+ and blue) and exists on smaller particles (smaller than nucleons) called
+ quarks.
+ Proton and neutron are made up of quarks.
+ The strong force/interaction can be considered as a residual force of color
+ charges.
+ The strong force is attractive for distances up-to 
+\begin_inset Formula $10^{-15}$
+\end_inset
+
+ m and becomes very small beyond that.
+ This short range property is called saturation.
+ The strong force is about 100 times stronger than the electromagnetic forces.
+ The effects of the strong force is only observable within the nucleus(
+ and some other particles known as hadrons), therefore in day to day life
+ we have not encountered it directly.
+ The initial systematic theoretical study of the strong force was carried
+ out by Yukawa and he concluded that the force is not an inverse square
+ law such as the gravity or the electromagnetic forces.
+\end_layout
+
+\begin_layout Standard
+On the other hand the weak force is a different type of force which is a
+ result of electromagnetic forces but acts up-to 
+\begin_inset Formula $10^{-18}$
+\end_inset
+
+ m.
+ Hence this type of force is only observable in high energy experiments
+ with protons and neutrons.
+ The weak force is about 10,000 times weaker than the electromagnetic forces.
+ The weak force/interaction is responsible for several observable phenomena
+ such as beta decay.
+ Further it is crucial to the structure of the universe since the sun would
+ not burn without the beta decay(
+\begin_inset Formula $p\to n$
+\end_inset
+
+) and the formation of heavier nuclei.
+\end_layout
+
+\begin_layout Section
+Some useful non-fundamental forces
+\end_layout
+
+\begin_layout Standard
+We experience many kinds of forces in day to day life.
+ All these forces are a result of the fundamental forces that we saw.
+ However most forces are a result of just the electromagnetic force in one
+ way or the other.
+ For these forces usually a fundamental formula does not exist, however
+ one can find an operational formula (one that can be used for practical
+ calculations) based on experiments and events involved.
+ Here we review some of the most useful forces that occur during the course
+ of mechanics.
+\end_layout
+
+\begin_layout Subsection
+Normal reaction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+begin{tikzpicture}[scale=1.0, every node/.style={scale=1.0}] 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [help lines,color=lightgray] (-2,-2) grid (2,2); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [pattern=north east lines,pattern color=black!50] (-2,-0.7) -- (2,-0.7)
+ -- (2,0) -- (-2,0) -- cycle; 
+\backslash
+draw [very thick] (-2,0)--(2,0); 
+\backslash
+draw [thick,fill=black!05] (-1,0) -- (1,0) -- (1,2) -- (-1,2) -- cycle;
+ 
+\backslash
+coordinate (obj) at (0,1); 
+\backslash
+draw [fill] (obj) circle (2pt); 
+\backslash
+draw [very thick,-latex] (obj) -- +(0,2.5) coordinate (top); 
+\backslash
+draw [very thick,-latex] (obj) -- +(0,-2.5) coordinate (bottom); 
+\backslash
+node [above] at (top) {$mg$}; 
+\backslash
+node [below] at (bottom) {$N$}; 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:normal"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[one end extended/.style={shorten >=-#1},  one end extended/.def
+ault=1cm,] 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [help lines,color=lightgray] (0,0) grid (5,5);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick] (4,0) -- (0,0) -- (4,4); 
+\backslash
+draw [thick,fill=black!05] (2,2) -- (3,3) -- (2,4) -- (1,3) -- cycle; 
+\backslash
+coordinate (obj) at (2,3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [fill] (obj) circle (2pt); 
+\backslash
+draw [very thick,-latex] (obj) -- (0.5,4.5) coordinate (top); 
+\backslash
+draw [very thick,dashed,one end extended=0.75cm,-latex] ($(obj)!(1,2)!(top)$)
+ -- (1,2); 
+\backslash
+draw [very thick,-latex] (obj) -- (2,0.5) coordinate (bottom); 
+\backslash
+node (bot) at (bottom) {}; 
+\backslash
+draw [very thick,dashed,-latex] (obj) -- (3.5,1.5); 
+\backslash
+node [above] at (top) {$N$}; 
+\backslash
+node [below] at (bottom) {$mg$}; 
+\backslash
+node (siny) [rotate=45] at (0,1) {$mg 
+\backslash
+sin{
+\backslash
+theta}$}; 
+\backslash
+coordinate (cosi) at (4,1); 
+\backslash
+node [rotate=-45] at (cosi) {$mg 
+\backslash
+cos{
+\backslash
+theta}$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (4,1) coordinate (A)  (2,3) coordinate (B)  (2,0.5) coordinate (C)
+\end_layout
+
+\begin_layout Plain Layout
+
+pic ["$
+\backslash
+theta$",draw,thick,angle eccentricity=1.25,angle radius=1.2cm] {angle = C--B--A};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (1,0) coordinate (X) (0,0) coordinate (O) (1,1) coordinate (Y)
+\end_layout
+
+\begin_layout Plain Layout
+
+pic ["$
+\backslash
+theta$",draw,thick,angle radius=1.2cm] {angle = X--O--Y}; 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Normal Reaction
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Normal-Reaction"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+When two bodies are pressed against each other, they exert forces on each
+ other.
+ In figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:normal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ one block is kept on the other block which is kept on ground.
+ Due to the gravitational force of the earth the upper block pushes the
+ lower block towards the center of the earth.
+ But as a common observation we find that the upper block remains at rest.
+ This is only possible if there is another force exerted by the lower block
+ on to the upper block which exactly balances the downward gravitational
+ pull.
+ This force is often called the Normal Force or the Normal Reaction.
+ This force is a result of contact between bodies and arises due to the
+ complicated electromagnetic interactions that take place between the bodies
+ at the contact surface.
+ The normal reaction is always perpendicular to the surface of the bodies
+ hence the name normal.
+ There are several symbols used in literature for normal reaction, most
+ notably 
+\begin_inset Formula $N,\,\,F_{N}$
+\end_inset
+
+ and 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ In fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:normal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ normal reaction 
+\begin_inset Formula $N=mg$
+\end_inset
+
+ whereas in the case of 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Normal-Reaction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ the normal reaction is 
+\begin_inset Formula $R=mg\cos\theta.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We humans feel the normal reaction as our weight.
+ Thus the weight that we feel inside a lift is different when the lift is
+ accelerated in the upward or the downward direction.
+ 
+\end_layout
+
+\begin_layout Subsection
+Tension force
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [pattern=north west lines,pattern color=black!50]  (-2,1) -- (2,1)
+ -- (2,1.7) -- (-2,1.7) -- cycle; 
+\backslash
+draw [very thick] (-2,1)--(2,1); 
+\backslash
+coordinate (top) at (0,1); 
+\backslash
+coordinate (ball) at (0,-4); 
+\backslash
+coordinate (bottom) at (0,-5.5); 
+\backslash
+draw [thick] (top) -- (ball) [very thick,-latex] -- (bottom); 
+\backslash
+draw[very thick,-latex] (ball) -- +(0,1.5) ; 
+\backslash
+draw [fill] (ball) circle (0.25); 
+\backslash
+node [anchor=west] (tension) at (0.1,-2.8) {$T$}; 
+\backslash
+node [anchor=west] (tension) at (0.1,-5.4) {$mg$}; 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tension in the string.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tension-force"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+The tension force is the force that is transmitted through a string, rope,
+ cable or wire when it is pulled tight by forces acting from opposite ends.
+ It is directed along the length of the wire and pulls equally on the objects
+ on the opposite ends of the wire.
+ Tension force is again a result of electromagnetic forces.
+ Commonly used symbol for tension force is 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ The tension force is bi-directional along the length and acts to balance
+ the external force.
+ In the figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tension-force"
+
+\end_inset
+
+ if the sphere of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ is at rest then 
+\begin_inset Formula $T=mg$
+\end_inset
+
+.
+ However the value of tension force depends upon the elastic properties
+ of the material of the string/rope or cables.
+ In most cases these elastic properties balance the applied external force
+ if however the external force is large in such cases the tension may not
+ be able to balance and the string/rope can break.
+\end_layout
+
+\begin_layout Subsection
+Spring force
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} [scale=0.7]
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [help lines] (-2,-2) grid (2,2);
+\end_layout
+
+\begin_layout Plain Layout
+
+%draw the rectangle support
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [pattern=north east lines] (-2.7,-0.7) rectangle (-2,1.3); 
+\backslash
+draw [very thick] (-2,-0.7) -- (-2,1.3);
+\end_layout
+
+\begin_layout Plain Layout
+
+%define coordinates and draw the spring
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [decorate, thick, decoration={coil,segment length=12pt,amplitude=4mm,pre
+ length=0.5cm,post length = 0.5cm}] (-2,0) -- (4,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+%draw the block of mass m 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [very thick,fill=black!30,thick] (4,0.7)--(4,-0.7)--(5.,-0.7)--(5.,0.7)--cycle;
+ 
+\backslash
+node  at (4.5,-0) {$m$};
+\end_layout
+
+\begin_layout Plain Layout
+
+%drawing the floor 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [pattern=north east lines] (-2.7,-0.72) rectangle (5,-1.3); 
+\backslash
+draw [very thick] (-2.0,-0.72) -- (5,-0.72); 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The spring force is the force exerted by a compressed or stretched spring
+ upon any object that is attached to it.
+ An object that compresses or stretches a spring is always acted upon by
+ a force that restores the object to its rest or equilibrium position.
+ The spring force is also a result of electromagnetic forces between molecules
+ of the spring.
+ The spring froce is given by Hooke's law.
+ According to Hooke's law
+\end_layout
+
+\begin_layout Quote
+
+\emph on
+the magnitude of the spring force is directly proportional to the amount
+ of stretch or compression of the spring and is always directed oppositie
+ to the direction of displacement.
+\end_layout
+
+\begin_layout Standard
+In symbols if 
+\begin_inset Formula $F$
+\end_inset
+
+ denotes the spring force and 
+\begin_inset Formula $x$
+\end_inset
+
+ denotes the extension(or compression) of the spring, then according to
+ Hooke's law
+\begin_inset Formula 
+\begin{equation}
+F\propto x
+\end{equation}
+
+\end_inset
+
+or
+\begin_inset Formula 
+\begin{equation}
+F=-kx;\label{eq:spring-force}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $k$
+\end_inset
+
+ is know as the spring constant and the negative sign denotes the fact that
+ the force is opposite to the displacement.
+ Its unit is 
+\begin_inset Formula $N/m$
+\end_inset
+
+.
+ The value of 
+\begin_inset Formula $k$
+\end_inset
+
+ denotes the stiffness of spring.
+ Higher 
+\begin_inset Formula $k$
+\end_inset
+
+ value spring require larger force to produce displacement.
+ If the block has mass 
+\begin_inset Formula $m$
+\end_inset
+
+ then from equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:spring-force"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ we can write the acceleration of the block as
+\begin_inset Formula 
+\begin{align}
+\vec{a} & =-\frac{k}{m}\vec{x}\\
+\vec{a} & =-\omega^{2}\vec{x}\label{eq:shm-acceleration}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\[
+\omega=\sqrt{\frac{k}{m}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This type of acceleration which is proportional to displacement and always
+ oppositely directed leads to a very special kind of motion known as the
+ Simple Harmonic Motion (SHM).
+ SHM is a kind of a periodic motion.
+ A In the case of the block attached to the spring the frequency of oscillations
+ can be obtained by 
+\begin_inset Formula 
+\begin{equation}
+\omega=\frac{2\pi}{T}=2\pi f=\sqrt{\frac{k}{m}}
+\end{equation}
+
+\end_inset
+
+or
+\begin_inset Formula 
+\[
+f=\frac{1}{2\pi}\sqrt{\frac{k}{m}}\,\,\,\text{and}\,\,\,T=2\pi\sqrt{\frac{m}{k}}.
+\]
+
+\end_inset
+
+Thus frequency of oscillations (how fast the block moves) depends on the
+ stiffness constant 
+\begin_inset Formula $k$
+\end_inset
+
+ and the mass 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The solution of the equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:shm-acceleration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ gives the position of the block as function of time which is given by 
+\begin_inset Formula 
+\begin{equation}
+x=A\cos(\omega t).
+\end{equation}
+
+\end_inset
+
+Thus the position is represented by the cosine function.
+ Historically the sine and cosine functions frequently appeared in music
+ theory and since the term harmony is related to music, these functions
+ are known as harmonic functions and the kind of motion they represent is
+ known as Harmonic Motion.
+ In SHM the word simple means single frequency (the most basic) harmonic
+ motion.
+\end_layout
+
+\begin_layout Standard
+Just like the spring case, in general any force that is directly proportional
+ to displacement of object and in opposite directiron to displacement is
+ known as harmonic oscillator force.
+ Such a force causes oscillations of the object.
+ 
+\end_layout
+
+\begin_layout Subsection
+Friction force
+\end_layout
+
+\begin_layout Standard
+The force of friction is yet another type of contact force that exists between
+ surfaces in contact.
+ There are three kinds friction forces that exist between solid surfaces.
+ Static friction, sliding friction and rolling or kinetic friction.
+ The friction force is always opposite to the direction of motion.
+ Static friction tends to oppose the motion of an object kept at rest.
+ It is found that the friction force directly proportional to the normal
+ reaction.
+ In case of static friction, the maximum or the limiting value of force
+ of friction is given by
+\begin_inset Formula 
+\begin{equation}
+F_{S}=\mu_{S}N;
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mu_{S}$
+\end_inset
+
+ is known as coefficient of static friction.
+ Once the object starts moving the friction force decreases and is known
+ as sliding friction.
+ The sliding friction is given by
+\begin_inset Formula 
+\begin{equation}
+F_{K}=\mu_{K}N;
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mu_{K}$
+\end_inset
+
+ is known as coefficient of kinetic friction.
+ In case of a round object rolling such as a wheel, the friction force that
+ exists between the surfaces is known as rolling friction.
+ The value of rolling friction is given by
+\begin_inset Formula 
+\begin{equation}
+F_{R}=\mu_{R}N.
+\end{equation}
+
+\end_inset
+
+In general it is found that 
+\begin_inset Formula 
+\begin{equation}
+\mu_{S}>\mu_{K}>\mu_{R}.
+\end{equation}
+
+\end_inset
+
+Friction force is a non-conservative force.
+ Presence of friction causes the mechanical energy to decrease or convert
+ into heat energy.
+\end_layout
+
+\begin_layout Subsection
+Viscosity
+\end_layout
+
+\begin_layout Standard
+Viscosity can be considered as a friction force that exists between fluids
+ and/or fluids and solids.
+ In general viscosity is a force that tends to depend upon the relative
+ motion n speed of the adjacent parts of fluids.
+ Such a fluid is known as viscous fluid.
+ Viscosity like friction is a non-conservative force.
+\end_layout
+
+\begin_layout Section
+Some applications of newton's laws
+\end_layout
+
+\begin_layout Subsection
+The simple pendulum
+\end_layout
+
+\begin_layout Standard
+An arrangement of a point mass attached to a weightless inextensible string
+ is known as a simple pendulum.
+ In reality a small spherical ball attached to a string is taken as a simple
+ pendulum.
+ The sphere is called the bob of the pendulum.
+ When the bob is taken to one of the sides and released it executes periodic
+ motion about the central equilibrium position.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\backslash
+hspace*{0.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}  %
+\backslash
+draw [help lines, color=lightgray] (0,0) grid (3,-7);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%drawing the support
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [pattern=north west lines] (0,-0.5) -- (3.0,-0.5) -- (3.0,0) -- (0,0) --cycle;
+ 
+\backslash
+draw [thick] (0,-0.5) -- (3.0,-0.5);
+\end_layout
+
+\begin_layout Plain Layout
+
+%draw the bob and string
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick] (1.5,-0.5) coordinate (O) -- (1.5,-6) coordinate (p1) node [midway,rig
+ht] {$l$}  [fill] circle [radius=0.1] ;  
+\end_layout
+
+\begin_layout Plain Layout
+
+%draw the rotated bob and string
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{scope}[rotate around={20:(O)}] 
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+draw [thick] (1.5,-0.5) -- (1.5,-6) coordinate (p2)  node [midway,right] {$l$}
+ [fill] circle [radius=0.1] ;   
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+%draw the angle theta
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw pic["$
+\backslash
+theta$",draw,angle eccentricity=1.2,angle radius=1cm] {angle=p1--O--p2};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{scope}[rotate around={-20:(O)}] 
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+draw [thick] (1.5,-0.5) -- (1.5,-6) coordinate (p10)   [fill] circle [radius=0.1]
+ ;   
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%draw the arc between bobs
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+centerarc[#1](#2)(#3:#4:#5)% Syntax: [draw options] (center) (initial angle:fina
+l angle:radius) 
+\end_layout
+
+\begin_layout Plain Layout
+
+   { 
+\backslash
+draw[#1] ($(#2)+({#5*cos(#3)},{#5*sin(#3)})$) arc (#3:#4:#5); }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerarc[densely dashed,very thin](O)(-110:-70:5.5)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,->](p2) -- ($(O)!1.25!(p2)$) coordinate (p3) node [below, right]
+ {
+\backslash
+scriptsize $mg
+\backslash
+cos
+\backslash
+theta$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+	%
+\backslash
+draw [thick,->,rotate=250](p2) -- ($(p2)!1.4!(p3)$) ;
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [thick] ($(O)!(p2)!(p3)$) -- (p2);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [->,thick] (p2) -- +(200:0.8) coordinate (p5) node [below] {
+\backslash
+scriptsize $mg
+\backslash
+sin
+\backslash
+theta$}; 
+\backslash
+draw [->,thick] (p2) -- +(270:1.4) coordinate (p6) node [below] {
+\backslash
+scriptsize $mg$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw pic["
+\backslash
+scriptsize $
+\backslash
+theta$", draw ,angle eccentricity=1.4,angle radius=0.5cm] {angle=p6--p2--p3};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,->](p2) -- ($(O)!0.77!(p2)$) node [above right] {$T$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (p1) +(0,-0.75) coordinate (dis1); 
+\backslash
+draw (p10) +(0,-0.75) coordinate (dis2); 
+\backslash
+draw [<->](dis2) -- ($(p1)!(dis2)!(dis1)$) node [midway, below] {$-x$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node [above right]  at  (0.5,-6) {S}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The simple pendulum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As shown in the diagram, applying Newton's laws the equations of motion
+ can be written as
+\begin_inset Formula 
+\begin{align}
+T-mg\cos\theta & =0\\
+-mg\sin\theta & =ma
+\end{align}
+
+\end_inset
+
+which gives
+\begin_inset Formula 
+\[
+T=mg\cos\theta
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\begin{equation}
+a=-g\sin\theta
+\end{equation}
+
+\end_inset
+
+where the negative sign indicates that the acceleration of the bob is opposite
+ to the displacementIf the angle of oscillations is kept sufficiently small,
+ so that 
+\begin_inset Formula $\lim_{\theta\to0}\sin\theta\simeq\theta$
+\end_inset
+
+ we have 
+\begin_inset Formula 
+\begin{equation}
+a=-g\theta.
+\end{equation}
+
+\end_inset
+
+From the geometry
+\begin_inset Formula 
+\begin{equation}
+\theta=\frac{\text{arc length}}{\text{radius}}=\frac{S}{l}=\frac{x}{l}
+\end{equation}
+
+\end_inset
+
+since 
+\begin_inset Formula $S\simeq x$
+\end_inset
+
+ for small 
+\begin_inset Formula $\theta$
+\end_inset
+
+, and hence
+\begin_inset Formula 
+\begin{equation}
+a=-\frac{g}{l}x.
+\end{equation}
+
+\end_inset
+
+Comparing this with the 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:shm-acceleration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ we see that the motion is approximately simple harmonic with angular frequency
+\begin_inset Formula 
+\begin{equation}
+\omega=\frac{2\pi}{T}=\sqrt{\frac{g}{l}},
+\end{equation}
+
+\end_inset
+
+from which the time period can be written as
+\begin_inset Formula 
+\begin{equation}
+T=2\pi\sqrt{\frac{l}{g}}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Satellite motion
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+begin{tikzpicture}[scale=1.0, every node/.style={scale=1.0}]
+\end_layout
+
+\begin_layout Plain Layout
+
+%grid with help lines
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [help lines] (-2,-2) grid (2,2) ;
+\end_layout
+
+\begin_layout Plain Layout
+
+% Drawing the Earth
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0,0) coordinate (orig) [fill=black!30,thick] circle  (0.75) node [,anchor=n
+orth] { Earth}; 
+\backslash
+draw (orig) [fill] circle (1pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% orbit of satellite 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (orig) [thick] circle (2);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% satellite and its components 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0,2) coordinate (sat) [fill] circle (2pt) node [anchor=south] {Satellite}
+ ; 
+\backslash
+draw [thick,-latex] (sat) -- +(-1.5,0) node [anchor=east] {$v_0$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%distances
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick] (orig) -- (sat); 
+\backslash
+draw [thick,latex-latex,dashed] (0.2,0) -- +(0,0.7) ; 
+\backslash
+draw (0.15,0.35) node [anchor=west] { R};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,latex-latex,dashed] (0.2,0.85) -- (0.2,1.9) ; 
+\backslash
+draw (0.15,1.35) node [anchor=west] {h}; 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+The problem of satellite motion can easily be solved by making use of Newton's
+ law of gravitation and centripetal force.
+ Consider a satellite of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ which is to be launched at a definite height 
+\begin_inset Formula $h$
+\end_inset
+
+ from the surface of the earth.
+ Let mass of earth be 
+\begin_inset Formula $M$
+\end_inset
+
+ and radius of earth be 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Now at this height 
+\begin_inset Formula $h$
+\end_inset
+
+ the gravitational attraction due to earth must provide the centripetal
+ force required to maintain the satellite in its orbit.
+ In other words 
+\begin_inset Formula $F_{G}=F_{C}.$
+\end_inset
+
+ If the speed of satellite is not sufficient then 
+\begin_inset Formula $F_{C}<F_{G}$
+\end_inset
+
+ and the satellite will fall to the surface of earth.
+ If speed of satellite is more so that 
+\begin_inset Formula $F_{C}>F_{G}$
+\end_inset
+
+, then the satellite will escape the pull of earth.
+ Thus to keep it revolving at some height 
+\begin_inset Formula $h$
+\end_inset
+
+ it must be made to revolve with a definite speed 
+\begin_inset Formula $v$
+\end_inset
+
+ which will make 
+\begin_inset Formula $F_{G}=F_{C}$
+\end_inset
+
+.
+ Thus if 
+\begin_inset Formula $v$
+\end_inset
+
+ is the required orbital speed then at this speed we must have
+\begin_inset Formula 
+\begin{eqnarray}
+F_{G} & = & F_{C}\\
+G\frac{Mm}{(R+h)^{2}} & = & \frac{mv^{2}}{(R+h)}\\
+v^{2} & = & \frac{GM}{(R+h)}
+\end{eqnarray}
+
+\end_inset
+
+the required speed is therefore
+\begin_inset Formula 
+\begin{equation}
+v=\sqrt{\frac{GM}{R+h}}.\label{eq:sateliite-speed}
+\end{equation}
+
+\end_inset
+
+Thus the satellite if launched at the required height 
+\begin_inset Formula $h$
+\end_inset
+
+ must be given this speed 
+\begin_inset Formula $v$
+\end_inset
+
+ in order to keep it revolving in its orbit.
+ We can also obtain the time period of the satellite.
+ Time period 
+\begin_inset Formula $T$
+\end_inset
+
+ is the time taken by the satellite to complete one revolution around the
+ earth.
+ In one revolution the distance covered by the satellite around the earth
+ is 
+\begin_inset Formula $2\pi(R+h)$
+\end_inset
+
+.
+ Therefore,
+\begin_inset Formula 
+\begin{eqnarray}
+T & = & \frac{\text{distance}}{\text{speed}}\\
+T & = & \frac{2\pi(R+h)}{v}\\
+T^{2} & = & \frac{4\pi^{2}(R+h)^{2}}{v^{2}}
+\end{eqnarray}
+
+\end_inset
+
+Substituting the value of 
+\begin_inset Formula $v$
+\end_inset
+
+ from equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sateliite-speed"
+
+\end_inset
+
+ we get
+\begin_inset Formula 
+\begin{equation}
+T^{2}=\frac{4\pi^{2}(R+h)^{3}}{GM}.\label{eq:time-period}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Banking of roads
+\end_layout
+
+\begin_layout Standard
+When a bike or car makes a turn at a road, the friction force prevents the
+ bike or car from slipping off the track.
+ However if the speed of the vehicle is large the friction force may not
+ be sufficient to provide the necessary centripetal force.
+ In that case the bike may slip.
+ So the maximum safe speed can be obtained easily.
+ If the mass of the bike is 
+\begin_inset Formula $m$
+\end_inset
+
+ and the coefficient of static friction of the track is 
+\begin_inset Formula $\mu_{S}$
+\end_inset
+
+ and radius of the turning arc is 
+\begin_inset Formula $r$
+\end_inset
+
+ then we have
+\begin_inset Formula 
+\begin{eqnarray}
+\mu_{S}N & = & \frac{mv_{\text{safe}}^{2}}{r}\\
+\mu_{S}mg & = & \frac{mv_{\text{safe}}^{2}}{r}\\
+v_{\text{safe}} & = & \sqrt{\mu_{S}rg}.
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circular_motion.jpg
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+motion on banked road
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The force acting on the vehicle are weight 
+\begin_inset Formula $mg$
+\end_inset
+
+ in the downard direction, normal force 
+\begin_inset Formula $N$
+\end_inset
+
+ perpendicular to the raod and friction force 
+\begin_inset Formula $f$
+\end_inset
+
+ parallel to the road.
+ As the acceleration of vehicle perpendicular to road is zero we have 
+\begin_inset Formula 
+\begin{align}
+N\cos\theta & =mg+f\sin\theta
+\end{align}
+
+\end_inset
+
+so
+\begin_inset Formula 
+\begin{equation}
+mg=N\cos\theta-f\sin\theta.
+\end{equation}
+
+\end_inset
+
+In the horizontal direction vehicle performs circular motion requiring centripet
+al force, which is provided by the horizontal components of 
+\begin_inset Formula $N$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+N\sin\theta+f\cos\theta=\frac{mv^{2}}{R}
+\end{equation}
+
+\end_inset
+
+to obtain 
+\begin_inset Formula $v_{\text{max}}$
+\end_inset
+
+ we put 
+\begin_inset Formula $f=\mu_{S}N$
+\end_inset
+
+ and we get
+\begin_inset Formula 
+\begin{equation}
+N\cos\theta=mg+\mu_{S}N\sin\theta
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+N\sin\theta+\mu_{S}N\cos\theta=\frac{mv^{2}}{R}.
+\end{equation}
+
+\end_inset
+
+We obtain 
+\begin_inset Formula 
+\begin{equation}
+N=\frac{mg}{\cos\theta-\mu_{S}\sin\theta}.
+\end{equation}
+
+\end_inset
+
+Substituting value of 
+\begin_inset Formula $N$
+\end_inset
+
+ we get
+\begin_inset Formula 
+\begin{equation}
+\frac{mg\left(\sin\theta-\mu_{S}\cos\theta\right)}{\cos\theta-\mu_{S}\sin\theta}=\frac{mv_{\text{max}}^{2}}{R}
+\end{equation}
+
+\end_inset
+
+or
+\begin_inset Formula 
+\begin{equation}
+v_{\text{max}}=\left(Rg\frac{\mu_{S}+\tan\theta}{1-\mu_{S}\tan\theta}\right)^{\frac{1}{2}}.
+\end{equation}
+
+\end_inset
+
+ For 
+\begin_inset Formula $\mu_{S}=0$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{equation}
+v_{0}=\left(Rg\tan\theta\right)^{1/2}.
+\end{equation}
+
+\end_inset
+
+At this speed frictional force is not needed at all to provide the necessary
+ centripetal force.
+ Driving at this speed will cause little wear and tear to the tyres of the
+ car.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\backslash
+rule{1
+\backslash
+columnwidth}{1.0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancybreak{
+\backslash
+sffamily 
+\backslash
+textbf{Numerical Problems}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule{1
+\backslash
+columnwidth}{1.0pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\family sans
+\series bold
+Example 1:
+\series default
+ 
+\series medium
+Three blocks of masses 
+\begin_inset Formula $m_{1}=1$
+\end_inset
+
+ kg, 
+\begin_inset Formula $m_{2}=2$
+\end_inset
+
+ kg and 
+\begin_inset Formula $m_{3}=3$
+\end_inset
+
+ kg are connected by massless strings and placed on a horizontal frictionless
+ surface as shown in fig.
+ A force 
+\begin_inset Formula $F=12$
+\end_inset
+
+ N is applied to mass 
+\begin_inset Formula $m_{1}$
+\end_inset
+
+ as shown.
+ Calculate (i) the acceleration of the system, (ii) tension 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.9,every node/.style={scale=0.9}]  
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+draw [thick] (0,0) rectangle (1.5,1.5) node [midway]  {$m_3$}; 
+\backslash
+draw [thick] (1.5,0.65) coordinate (t1) -- (3.25,0.65) coordinate (t2); 
+\backslash
+draw [thick,->] (t1) -- ($(t1)!0.32!(t2)$) node [above] {$T_3$}; 
+\backslash
+draw [thick,->] (t2) -- ($(t1)!0.68!(t2)$) node [below] {$T_3$}; 
+\backslash
+draw [thick] (3.25,0) rectangle (4.5,1.25) node [midway]  {$m_2$}; 
+\backslash
+draw [thick] (4.5,0.65) coordinate (t3) -- (6,0.65) coordinate (t4); 
+\backslash
+draw [thick,->] (t3) -- ($(t3)!0.32!(t4)$) node [above] {$T_2$}; 
+\backslash
+draw [thick,->] (t4) -- ($(t3)!0.68!(t4)$) node [below] {$T_2$}; 
+\backslash
+draw [thick] (6,0) rectangle (7,1)node [midway]  {$m_1$}; 
+\backslash
+draw [thick,->] (7,0.65) -- (8.0,0.65) node [right] {$F$}; 
+\backslash
+filldraw [pattern=north west lines] (-0.5,0) -- (8,0) -- (8,-0.5) -- (0,-0.5)
+ -- (-0.5,-0.5) --cycle;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\family sans
+\series bold
+Example 2:
+\series default
+ 
+\series medium
+A man of mass 60 kg stands on a spring balance inside an elevator.
+ What is the weight shown by the balance if the elevator (a) ascends with
+ an acceleration of 2 
+\begin_inset Formula $m/s^{2}$
+\end_inset
+
+ (b) descends with an acceleration of 
+\begin_inset Formula $2$
+\end_inset
+
+ 
+\begin_inset Formula $m/s^{2}$
+\end_inset
+
+.
+ If the cable of the elevator brakes down, what will be the weight shown
+ by the elevator? (Take 
+\begin_inset Formula $g=10$
+\end_inset
+
+ 
+\begin_inset Formula $m/s^{2}.$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Example 3:
+\series default
+ 
+\series medium
+A block of mass 4 kg rests on a horizontal plane
+\family default
+\series default
+.
+
+\family sans
+\series medium
+ The plane is gradually inclines until at an angle of 
+\begin_inset Formula $15^{\mathrm{o}}$
+\end_inset
+
+ with the horizontal, the block begins to slide.What is the coefficient of
+ static friction between the block and the surface?
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick] (0,0) coordinate (O)-- (5,0) coordinate (X); 
+\backslash
+draw [thick] (0,0) -- ++(15:5) coordinate (I); 
+\backslash
+draw (0,0) ++(15:2.5)  coordinate (Rcl); 
+\backslash
+draw pic["$
+\backslash
+theta$",draw,angle eccentricity=1.2,angle radius=1cm] {angle=X--O--I}; 
+\backslash
+begin{scope}[on background layer] 
+\backslash
+filldraw [fill,color=lightgray,rotate=15] (Rcl) rectangle +(35:1.5) coordinate
+ (Rcr);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [fill] ($(Rcl)!0.5!(Rcr)$) circle (0.04) coordinate (Crl); 
+\backslash
+draw [thick,->] (Crl) -- ++(105:1.25) node () [above] {N}; 
+\backslash
+draw [thick,->] (Crl) -- ++(195:1.25) node () [left] {$mg
+\backslash
+sin 
+\backslash
+theta$}; 
+\backslash
+draw [thick,->] (Crl) -- ++(270:1.55) coordinate (mg) node () [below] {mg};
+ 
+\backslash
+draw [thick,->] (Crl) -- ++(285:1.55) coordinate (mgc) node () [right] {$mg
+\backslash
+cos
+\backslash
+theta$}; 
+\backslash
+draw [thick,->] (Crl) -- ++(15:1.25) node () [right] {$f_s$} ;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw pic["$
+\backslash
+theta$",draw,angle eccentricity=1.2,angle radius=0.8cm] {angle=mg--Crl--mgc};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Incline plane
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\family sans
+\series bold
+Example 4:
+\series default
+ 
+\series medium
+Two blocks of masses 
+\begin_inset Formula $m_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{2}$
+\end_inset
+
+ (
+\begin_inset Formula $m_{1}>m_{2}$
+\end_inset
+
+) are connected via a light inextensible string that passes over a weightless
+ and frictionless pulley as shown in fig.
+ The arrangement is known as Atwood's machine.
+ Prove that the acceleration of any of the blocks is 
+\begin_inset Formula 
+\begin{equation}
+a=\frac{\left(m_{1}-m_{2}\right)}{\left(m_{1}+m_{2}\right)}g
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [fill,pattern=north west lines] (1,4) -- (4,4) -- (4,4.5) -- (1,4.5)
+ --cycle; 
+\backslash
+draw [fill] (2.35,2.7) -- (2.65,2.7) -- (2.65,4.25) -- (2.35,4.25) --cycle; 
+\backslash
+begin{scope} [on background layer] 
+\backslash
+draw [fill,color=gray] (2.5,2.9) coordinate (CrO) circle (0.6); 
+\backslash
+end{scope} 
+\backslash
+draw (CrO) ++(0:0.6) coordinate (Tr); 
+\backslash
+draw (CrO) ++(0:-0.6) coordinate (Tl);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick] (Tr) -- (3.1,-0.5); 
+\backslash
+draw [thick] (Tl) -- (1.9,0.5);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick] (Tr) arc (0:180:0.6);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [fill,color=black!40] (2.7,-0.5) rectangle (3.5,-1.15) node () [black,midway]
+ {$m_1$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [fill,color=black!40] (1.5,0.5) rectangle (2.3,-0.05)node () [black,midway]
+ {$m_2$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+Atwood's machine
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+e coefficient of static friction between the block and the surface?
+\family default
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancybreak{
+\backslash
+rule{1
+\backslash
+columnwidth}{1.2pt}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conservation of momentum
+\end_layout
+
+\begin_layout Section
+Concept of work
+\end_layout
+
+\begin_layout Standard
+In physics the concepts of work and energy are extremely useful tools to
+ solve many physical problems.
+ A principle known as the conservation of energy is a central idea behind
+ the happenings of any process in the entire universe.
+ The idea of work or energy can be assumed to be developed parallel to the
+ idea of force although we will begin the concept of work as a result of
+ force.
+ However it can be safely assumed that the conservation of energy can be
+ used to effectively to predict the future of an event.
+\end_layout
+
+\begin_layout Standard
+Whenever a force acting on a body produces a change in its position; work
+ is said to be done by the force.
+ 
+\end_layout
+
+\begin_layout Quotation
+Work is measured by the product of the applied force and the displacement
+ of the body in the direction of the force, i.e.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\text{work}=\text{force}\times\text{displacement parallel to force}.
+\end{equation}
+
+\end_inset
+
+Work is usually denoted with 
+\begin_inset Formula $W$
+\end_inset
+
+ and if denote the distance with 
+\begin_inset Formula $d$
+\end_inset
+
+, we have
+\begin_inset Formula 
+\begin{align}
+W & =\vec{F}\cdot\vec{d}\label{eq:workvectoreqn}\\
+W & =Fd\cos\theta.
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the angle between the force and displacement.
+ Thus work is a scalar product of force and displacement.
+ The SI unit of work is 
+\series bold
+Joule
+\series default
+ written in symbol as 
+\series bold
+J
+\series default
+.
+ We have
+\series bold
+
+\begin_inset Formula $J=Nm$
+\end_inset
+
+.
+
+\series default
+ One can easily see that when both the displacement and force are parallel
+ (or anti-parallel) the work done is maximum and when force and displacement
+ are mutually perpendicular; the work done is zero.
+ We later learn that positive work done increases the energy and negative
+ work done decreases (dissipates) the energy.
+\end_layout
+
+\begin_layout Standard
+The work done by a constant force and constant 
+\begin_inset Formula $\theta$
+\end_inset
+
+ can be calculated with equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:workvectoreqn"
+
+\end_inset
+
+, but if during the course of the objects motion the work done keeps on
+ changing or if the direction of the displacement keeps on changing, one
+ must divide the motion into small enough segments and consider adding the
+ work done during this small displacements (at which 
+\begin_inset Formula $F$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta$
+\end_inset
+
+ may be treated constants) to calculate the total work done during the motion.
+ In such a case the total work done may be written as 
+\begin_inset Formula 
+\begin{equation}
+W=\int\vec{F}\cdot\vec{dx}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $dx$
+\end_inset
+
+ denotes the small displacements in which the total displacement is broken
+ into.
+ Yet another way to calculate work done is through plotting the graph between
+ the applied force and the displacement.
+ If value of force is measured at each points of the displacement path and
+ plotted on xy plane, the area covered by the force graph with the x-axis
+ gives the total work done.
+\end_layout
+
+\begin_layout Section
+Energy
+\end_layout
+
+\begin_layout Quotation
+The energy of a body is defined as its capacity of doing work.
+ 
+\end_layout
+
+\begin_layout Standard
+Like work energy is also a scalar quantity and the dimensions are also identical
+ to that of work.
+ Therefore the SI unit of energy is also joule.
+ In a mechanical system energy is mainly classified as being either Kinetic
+ or Potential.
+ Sum of Kinetic and Potential energies is called the total mechanical energy.
+ 
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Subsection
+Kinetic energy
+\end_layout
+
+\begin_layout Standard
+The energy possessed by a body due to its motion is called its kinetic energy.
+ If an object of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ is moving with a (constant) speed 
+\begin_inset Formula $v$
+\end_inset
+
+, then the kinetic energy possessed by the body is 
+\begin_inset Formula 
+\begin{equation}
+K=\frac{1}{2}mv^{2}\label{eq:keliner}
+\end{equation}
+
+\end_inset
+
+Just as force was related to acceleration through 
+\begin_inset Formula $F=ma$
+\end_inset
+
+, so is work related to velocity through the Work-Energy Theorem.
+ 
+\end_layout
+
+\begin_layout Standard
+Consider an object of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ acted upon by a force 
+\begin_inset Formula $F.$
+\end_inset
+
+ Under the action of this force suppose the objects speed increases from
+ 
+\begin_inset Formula $u$
+\end_inset
+
+ to 
+\begin_inset Formula $v$
+\end_inset
+
+ within a displacement of 
+\begin_inset Formula $s.$
+\end_inset
+
+Then the work done (assuming 
+\begin_inset Formula $F$
+\end_inset
+
+ and 
+\begin_inset Formula $s$
+\end_inset
+
+ in the same direction),
+\begin_inset Formula 
+\[
+W=Fs
+\]
+
+\end_inset
+
+where if we use 
+\begin_inset Formula 
+\[
+s=\frac{v^{2}-u^{2}}{2a}\,\,\text{and}\,\,F=ma
+\]
+
+\end_inset
+
+we get
+\begin_inset Formula 
+\begin{align*}
+W & =ma\times\frac{v^{2}-u^{2}}{2a}\\
+W & =\frac{1}{2}mv^{2}-\frac{1}{2}mu^{2}
+\end{align*}
+
+\end_inset
+
+Or we can write
+\begin_inset Formula 
+\begin{equation}
+W_{\text{net}}=\Delta K=K_{f}-K_{i}=\frac{1}{2}mv_{f}^{2}-\frac{1}{2}mv_{i}^{2}\label{eq:work_energy}
+\end{equation}
+
+\end_inset
+
+The net work done by all the forces on a body of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ is equal to the change in kinetic energy of the body.
+ Positive work done will increase the kinetic energy whereas the negative
+ work done will decrease the kinetic energy of the body.
+ 
+\end_layout
+
+\begin_layout Subsection
+Conservative forces and Potential Energy
+\end_layout
+
+\begin_layout Standard
+Based on the idea of work, we can classify forces as conservative or non-conserv
+ative.
+ A conservative force is a force which conserves the total mechanical energy
+ of a body.
+ A body moving under conservative force does not loose energy.
+\end_layout
+
+\begin_layout Standard
+Work done under the action of a conservative force between any two end points
+ is independent of the path taken to perform the work.
+ Further the net work done along a closed path is always zero for a conservative
+ force.
+ Examples of conservative forces are Gravitational force, Electrostatic
+ and magnetic forces and spring force.
+ Positive Work done on a body against these conservative forces gets stored.
+ This stored form of energy is known as potential energy.
+ Thus potential energy can only be defined for conservative forces.
+ When a body is moved in the presence of a conservative force from one point
+ to another it can be interpreted as a change in potential energy.
+ Thus the change of potential energy from initial position to final position
+ is defined as the negative of the work done by the conservative force or
+ the positive of the work done by an external force equal in magnitude to
+ the conservative force.
+ Thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U(f)-U(i)=-W.\label{eq:poten_energy}
+\end{equation}
+
+\end_inset
+
+From equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:work_energy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:poten_energy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ we can write
+\begin_inset Formula 
+\begin{equation}
+U(f)-U(i)=\frac{1}{2}mv_{f}^{2}-\frac{1}{2}mv_{i}^{2}.
+\end{equation}
+
+\end_inset
+
+This equation tells that the decrease in potential energy is balanced by
+ an equal increase in kinetic energy and vice versa.
+ This equation can be rearranged to write
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{2}mv_{i}^{2}+U(i)=\frac{1}{2}mv_{f}^{2}+U(f).\label{eq:energy_cons}
+\end{equation}
+
+\end_inset
+
+This is known as the conservation of energy equation.
+ The sum of initial kinetic and potential energies is equal to the sum of
+ final kinetic and potential energies.
+ 
+\end_layout
+
+\begin_layout Standard
+The form for the potential energy depends upon the conservative force in
+ question.
+ The following table lists some of the formulae for potential energies of
+ common conservative forces.
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Force type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Force 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Potential energy
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Gravitational
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $F=\frac{Gm_{1}m_{2}}{r^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $U=-\frac{Gm_{1}m_{2}}{r}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Earths Gravity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $F=mg$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $U=mgh$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Electrostatic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $F=qE$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $U=\frac{kq_{1}q_{2}}{r}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Spring force
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $F=-kx$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $U=\frac{1}{2}kx^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Potential Energies of some conservative forces
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Angular momentum, torque and conservation of angular momentum
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} %
+\backslash
+draw [help lines,color=lightgray] (0,0) grid (4,4);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [->] (0,0) -- (4,0) node [below right] {x}; 
+\backslash
+draw [->] (0,0)  node [below left] {O} -- (0,4) node [above left] {y}; 
+\backslash
+draw (1.8,2) node  (p1) {} [fill] circle [radius=0.035] ;  
+\backslash
+draw [thick,->] (1.8,2)  -- (3.5,2.5) coordinate (p2) node [anchor=west]  
+ {$
+\backslash
+vec{p}$};  
+\backslash
+draw [thick,->] (0,0) -- (1.8,2) node [midway,right] {$
+\backslash
+vec{r}$};  
+\backslash
+draw [densely dotted,thick] (1.8,2) -- ($1.65*(1.8,2)$) coordinate (p0) node
+  {};  
+\backslash
+draw pic["$
+\backslash
+theta$", draw, angle eccentricity=1.2, angle radius=1cm] {angle = p2--p1--p0};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider a particle of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ moving with a velocity 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+.
+ The angular momentum 
+\begin_inset Formula $\vec{l}$
+\end_inset
+
+ of this particle about a certain orgin 
+\begin_inset Formula $O$
+\end_inset
+
+ is defined as
+\begin_inset Formula 
+\begin{equation}
+\vec{l}=\vec{r}\times\vec{p}.
+\end{equation}
+
+\end_inset
+
+Thus 
+\begin_inset Formula 
+\begin{equation}
+\vec{l}=rp\sin\theta\hat{n}.
+\end{equation}
+
+\end_inset
+
+Here 
+\begin_inset Formula $\vec{r}=x\hat{i}+y\hat{j}+z\hat{k}$
+\end_inset
+
+ is the position vector (a vector from the origin of the co-ordinate system
+ to the location of the particle) of the particle.
+\end_layout
+
+\begin_layout Standard
+Similarly if on a particle of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ a force 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ acts, then the torque on the particle is defined as
+\begin_inset Formula 
+\begin{equation}
+\vec{\tau}=\vec{r}\times\vec{F}
+\end{equation}
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\begin{equation}
+\vec{\tau}=rF\sin\theta\vec{n}.
+\end{equation}
+
+\end_inset
+
+If we find the change in in angular momentum then
+\begin_inset Formula 
+\[
+\frac{\triangle\vec{l}}{\triangle t}=\vec{r}\times\frac{\triangle\vec{p}}{\triangle t}+\frac{\triangle\vec{r}}{\triangle t}\times\vec{p}
+\]
+
+\end_inset
+
+which gives
+\begin_inset Formula 
+\begin{equation}
+\frac{\triangle\vec{l}}{\triangle t}=\vec{\tau}.
+\end{equation}
+
+\end_inset
+
+Thus if 
+\begin_inset Formula $\vec{\tau}=0,$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{l}=\text{constant}.
+\]
+
+\end_inset
+
+This fact is known as the conservation of angular momentum.
+  
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Electricity and Magnetism
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The electromagnetic force is one of the fundamental forces that is very
+ well understood at almost all levels.
+ It was known from ancient times that if we rub objects together then they
+ acquire a special thing or property due to which the objects can attract
+ or repel each other.
+ This special thing that the objects acquired is known as charge.
+ Charge will be denoted by the symbol 
+\begin_inset Formula $q$
+\end_inset
+
+ or 
+\begin_inset Formula $Q$
+\end_inset
+
+ and its unit is the coulomb or 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Now the property of charge must be looked as any other property of an object
+ such as color, shape or even mass.
+ Just like an object can possess the property of color it can possess charge.
+ Now there are several key things about charge itself that we should pay
+ attention to.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Charge comes in two varieties
+\begin_inset Newline newline
+\end_inset
+
+Traditionally termed positive and negative, the two types of charges lead
+ to both the attractive and repulsive forces.
+ Forces between like charges are repulsive whereas between opposite charges
+ are attractive.
+\end_layout
+
+\begin_layout Enumerate
+Charge is conserved
+\begin_inset Newline newline
+\end_inset
+
+The total charge in an isolated system always remains the same.
+ In other words charges cannot be created or destroyed.
+ Charges can be transferred from one body to other.
+\end_layout
+
+\begin_layout Enumerate
+Charge is quantized
+\begin_inset Newline newline
+\end_inset
+
+When we rub two objects together it is the electrons which move from one
+ object to the other.
+ Now the charge on an electron is 
+\begin_inset Formula $e=1.6\times10^{-19}C$
+\end_inset
+
+.
+ We can only transfer whole electrons on to other objects.
+ It means the total charge on an object can be a multiple of the number
+ of electrons charge i.e.
+ 
+\begin_inset Formula $Q=ne$
+\end_inset
+
+, where 
+\begin_inset Formula $n$
+\end_inset
+
+ is an integer.
+\end_layout
+
+\begin_layout Section
+Force between two charges-Coulomb's law
+\end_layout
+
+\begin_layout Standard
+Coulomb a french engineer studied the forces between charged objects for
+ several years and found a formula for the force between them.
+ He measured the force to be proportional to the product of charges and
+ inversely proportional to the square of the distance between the charges.
+ In symbols if the charges are labeled as 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ and if the distance between them is 
+\begin_inset Formula $r$
+\end_inset
+
+, then
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename coulombs.pdf
+	scale 200
+	BoundingBox 150bp 10bp 250bp 48bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Coulomb's law
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+F_{0} & \propto\frac{q_{1}q_{2}}{r^{2}}\\
+F_{0} & =\frac{kq_{1}q_{2}}{r^{2}}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $k=9\times10^{9}\,Nm^{2}/C^{2}$
+\end_inset
+
+ is an experimentally measured value.
+ If the value of force is positive then it denotes repuslive force and attractiv
+e if negative.
+ In this formula it is assumed that the charges are placed in vacuum or
+ air.
+ If instead we place any medium such as a paper in between the charges,
+ the force between the charges reduces by some factor.
+ If we denote the vacuum force by 
+\begin_inset Formula $F_{0}$
+\end_inset
+
+ then the force in a medium may be written as 
+\begin_inset Formula 
+\begin{equation}
+F_{1}=\frac{F_{0}}{\epsilon_{r}}.
+\end{equation}
+
+\end_inset
+
+Here the factor 
+\begin_inset Formula $\epsilon_{r}$
+\end_inset
+
+ by which the force reduces depends upon the type of material medium placed
+ between the charges.
+ It is a pure number and commonly know as dielectric constant of the material.
+ It is also know as the relative permittivity of the medium.
+ 
+\begin_inset Formula $\epsilon_{r}=1$
+\end_inset
+
+ for air.
+ The constant 
+\begin_inset Formula $k$
+\end_inset
+
+ can further be written in terms of another fundamental constant 
+\begin_inset Formula $\epsilon_{0}=8.8\times10^{-12}$
+\end_inset
+
+ 
+\begin_inset Formula $C^{2}/Nm^{2}$
+\end_inset
+
+as 
+\begin_inset Formula 
+\begin{equation}
+k=\frac{1}{4\pi\epsilon_{0}}.
+\end{equation}
+
+\end_inset
+
+Thus we get for vacuum
+\begin_inset Formula 
+\begin{equation}
+F_{0}=\frac{1}{4\pi\epsilon_{0}}\frac{q_{1}q_{2}}{r^{2}}
+\end{equation}
+
+\end_inset
+
+and for medium 
+\begin_inset Formula 
+\begin{equation}
+F_{1}=\frac{1}{4\pi\epsilon_{0}\epsilon_{r}}\frac{q_{1}q_{2}}{r^{2}}.
+\end{equation}
+
+\end_inset
+
+The product 
+\begin_inset Formula $\epsilon_{0}\epsilon_{r}=\epsilon$
+\end_inset
+
+ is known as the permittivity (absolute permittivity) of the medium.
+ Thus we have
+\begin_inset Formula 
+\begin{equation}
+\epsilon_{r}=\frac{\epsilon}{\epsilon_{0}}=\frac{F_{0}}{F_{1}}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Electric Field
+\end_layout
+
+\begin_layout Standard
+When we are given magnets to play with we get fascinated by the way they
+ exert forces onto one another even at a distance without any contact.
+ This kind of non-contact behaviour of forces used to puzzle the great minds
+ of Newton and Coulomb as well, since through a number of experiments we
+ have come to know that we need some kind of contact to exert forces.
+ Thus it was difficult for them to understand a force without contact.
+ So in order to restore the contact idea, it was thought that the charges
+ do exert forces via some kind of invisible contact.
+ They thought that the charges gave some invisible property to the space
+ around them due to which if any other charge entered into their proximity
+ will experience the force of electricity.
+ This invisible property is known as the Field.
+ So every charge produces its own field known as the electric field.
+ 
+\end_layout
+
+\begin_layout Standard
+Mathematically a field (of any charge distribution) is a function of position
+ and time; i.e.
+ its value changes from point to point and also with time.
+ Consider a situation in which some charge is kept hidden in a box.
+ If we ask a question whether a charge exists within the box or not? This
+ kind of question can not be answered just by looking at the box (since
+ charge does not glow).
+ In order to answer this question one can bring another charge and place
+ it outside the box but near the box and measure the force (if any) acting
+ onto the charge.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fieldtest43.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Testing the presence of charge
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+If we find that this charge experiences some force then we can infer that
+ the box contains some charge.
+ In this case we can see that the charge within the box produces One can
+ take the analogy of a perfume.
+\end_layout
+
+\begin_layout Standard
+Coulomb's law, electric field, electric potential, application for single
+ charge and dipole, Gauss' law and its applications, Concept of magnetic
+ field, Ampere's circuital law and its applications(wire, solenoid, toroid),
+ Lorentz force, Faraday's law of electromagnetic induction, experiments,
+ lenz law, self and mutual induction
+\end_layout
+
+\begin_layout Subsection
+Electric field lines
+\end_layout
+
+\begin_layout Standard
+Electric field lines are a convenient way to visualise the presence of fields.
+ The field lines can be drawn by imagining a curve drawn along the path
+ followed by a positive charge.
+ Thus the field lines are imaginary curves along which a positive charge
+ would tend to move if it were free to do so.
+ Lets take some examples.
+\end_layout
+
+\begin_layout Standard
+The field lines are diverging (going outwards) from single positive charge
+ and converging (going inwards) for a single negative charge.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[decoration={markings, mark=at position 0.5 with {
+\backslash
+arrow{>}}}]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node [draw,circle,fill=black!10,inner sep=0.1cm] (P) at (0,0) {$+Q$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+foreach 
+\backslash
+y in {0,20,40,...,340} 
+\backslash
+draw [thick,postaction={decorate}](P) -- (
+\backslash
+y:2.5cm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[decoration={markings, mark=at position 0.5 with {
+\backslash
+arrow{<}}}]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node [draw,circle,fill=black!10,inner sep=0.1cm] (P) at (0,0) {$-Q$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+foreach 
+\backslash
+y in {0,20,40,...,340} 
+\backslash
+draw [thick,postaction={decorate}](P) -- (
+\backslash
+y:2.5cm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.7,decoration={markings, mark=at position 0.5 with
+ {
+\backslash
+arrow{>}}}] 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [help lines,step=0.5cm,color=lightgray] (-7,-6) grid (7,6);
+\end_layout
+
+\begin_layout Plain Layout
+
+%drawing the charges
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+shade[ball color=black!10] (-3,0) node (P)  [draw,circle,fill=black!10]
+  {$+q$}; 
+\backslash
+shade[ball color=black!10] (+3,0) node (N) [draw,circle,fill=black!10] 
+ {$-q$};
+\end_layout
+
+\begin_layout Plain Layout
+
+%drawing the acutal field lines
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [thick,postaction={decorate}] (P)--(N);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+foreach 
+\backslash
+y in {0,0.7,1.4,2.7,4.2,6} 
+\backslash
+draw [thick,postaction={decorate}] (P) ..
+ controls (-2,
+\backslash
+y) and (2,
+\backslash
+y) ..
+ (N); 
+\backslash
+foreach 
+\backslash
+y in {0,0.7,1.4,2.7,4.2,6} 
+\backslash
+draw [thick,postaction={decorate}] (P) ..
+ controls (-2,-
+\backslash
+y) and (2,-
+\backslash
+y) ..
+ (N);
+\end_layout
+
+\begin_layout Plain Layout
+
+%drawing the rest of the lines 
+\backslash
+draw [thick,postaction=decorate] (P) ..
+ controls (-3.3,2) and (-2.4,4) ..
+ (-2,4.5); 
+\backslash
+draw [thick,postaction=decorate] (P) ..
+ controls (-3.3,-2) and (-2.4,-4) ..
+ (-2,-4.5); 
+\backslash
+draw [thick,postaction=decorate] (N) ..
+ controls (3.3,2) and (2.4,4) ..
+ (2,4.5); 
+\backslash
+draw [thick,postaction=decorate] (N) ..
+ controls (3.3,-2) and (2.4,-4) ..
+ (2,-4.5);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,postaction=decorate] (P) ..
+ controls (-4,2) and (-3,4.2) ..
+ (-3,4.4); 
+\backslash
+draw [thick,postaction=decorate] (P) ..
+ controls (-4,-2) and (-3,-4.2) ..
+ (-3,-4.4); 
+\backslash
+draw [thick,postaction=decorate] (N) ..
+ controls (4,2) and (3,4.2) ..
+ (3,4.4); 
+\backslash
+draw [thick,postaction=decorate] (N) ..
+ controls (4,-2) and (3,-4.2) ..
+ (3,-4.4);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,postaction=decorate] (P) ..
+ controls (-5.5,2) and (-4.7,4.2) ..
+ (-4.5,4.4); 
+\backslash
+draw [thick,postaction=decorate] (P) ..
+ controls (-5.5,-2) and (-4.7,-4.2) ..
+ (-4.5,-4.4); 
+\backslash
+draw [thick,postaction=decorate] (N) ..
+ controls (5.5,2) and (4.7,4.2) ..
+ (4.5,4.4); 
+\backslash
+draw [thick,postaction=decorate] (N) ..
+ controls (5.5,-2) and (4.7,-4.2) ..
+ (4.5,-4.4);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,postaction=decorate] (P) ..
+ controls (-6,1) and (-6.2,2.5) ..
+ (-6.3,3); 
+\backslash
+draw [thick,postaction=decorate] (P) ..
+ controls (-6,-1) and (-6.2,-2.5) ..
+ (-6.3,-3); 
+\backslash
+draw [thick,postaction=decorate] (N) ..
+ controls (6,1) and (6.2,2.5) ..
+ (6.3,3); 
+\backslash
+draw [thick,postaction=decorate] (N) ..
+ controls (6,-1) and (6.2,-2.5) ..
+ (6.3,-3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,postaction={decorate}] (P)--+(-3.5,0); 
+\backslash
+draw [thick,postaction={decorate}] (N)--+(3.5,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Electric field of a dipole
+\end_layout
+
+\begin_layout Standard
+A system of two equal but opposite charges separated by a small distance
+ are known as a dipole.
+ A dipole is electrically neutral yet in the proximity of a dipole the field
+ of the dipole at any point may not be zero since the nearness of any one
+ charge will contribute more field than the other.
+ This causes certain residual field to be generated.
+ The properties of this residual field are important not just for academic
+ purpose but also for practical purpose since many molecules can be treated
+ as dipoles to a good approximation.
+ Just as value of charge denotes the strength of electric field produced
+ by a single charge, in case of a dipole a related physical quantity called
+ the dipole moment is of great significance.
+ The symbol used for dipole moment is 
+\begin_inset Formula $p$
+\end_inset
+
+ and is defined as
+\begin_inset Formula 
+\begin{equation}
+p=2aq.
+\end{equation}
+
+\end_inset
+
+Axis passing through the line joining the charges is known as the axis of
+ the dipole.
+\end_layout
+
+\begin_layout Subsubsection
+Axial point
+\end_layout
+
+\begin_layout Standard
+Imagine a point at a distance 
+\begin_inset Formula $r$
+\end_inset
+
+ from the center of the dipole situated on the axis of the dipole, an axial
+ point.
+ We are interested in calculating the field produced by this dipole at this
+ location.
+ The net field at this point will be just the sum of the fields due to the
+ positive and the negative charges.
+ We have 
+\begin_inset Formula 
+\begin{equation}
+E_{\text{axial}}=E_{+q}+E_{-q}
+\end{equation}
+
+\end_inset
+
+where, we can write the formulae for 
+\begin_inset Formula $E_{+q}$
+\end_inset
+
+ and and 
+\begin_inset Formula $E_{-q}$
+\end_inset
+
+ by making use of the formula of a field due to a single charge, i.e.
+\begin_inset Formula 
+\begin{equation}
+E_{+q}=\frac{kq}{\left(r-a\right)^{2}}\,\,\,\,\text{and}\,\,\,\,E_{-q}=\frac{kq}{\left(r+a\right)^{2}}.
+\end{equation}
+
+\end_inset
+
+Thus we have
+\begin_inset Formula 
+\begin{align}
+E_{\text{axial}} & =\frac{kq}{\left(r-a\right)^{2}}-\frac{kq}{\left(r+a\right)^{2}}\\
+E_{\text{axial}} & =\frac{k\left(4aq\right)r}{\left(r^{2}-a^{2}\right)^{2}}\\
+E_{\text{axial}} & =k\frac{2pr}{\left(r^{2}-a^{2}\right)^{2}}\label{eq:dipole_axial}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:dipole_axial"
+
+\end_inset
+
+ gives the value of the electric field for a dipole.
+ If the point of observation lies far away from the tiny dipole i.e.
+ if 
+\begin_inset Formula $r\gg a$
+\end_inset
+
+, then neglecting 
+\begin_inset Formula $a$
+\end_inset
+
+ in the denominator
+\begin_inset Formula 
+\begin{align}
+E_{\text{axial}} & =k\frac{2pr}{r^{4}}\\
+E_{\text{axial}} & =k\frac{2p}{r^{3}};
+\end{align}
+
+\end_inset
+
+the equation says that the dipole field falls off as 
+\begin_inset Formula $1/r^{3}$
+\end_inset
+
+ from the charge.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} %
+\backslash
+draw [help lines] (-2,-1) grid (7,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+coordinate (origin) at (0,0); 
+\backslash
+coordinate (left) at (-1.5,0); 
+\backslash
+coordinate (right) at (1.5,0); 
+\backslash
+coordinate (point) at (6,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+shade [ball color=black!1] (left) circle (0.4cm) node (pos) {$-q$}; 
+\backslash
+shade [ball color=black!1] (right) circle (0.4cm) node (neg) {$+q$}; 
+\backslash
+draw [fill] (point) circle (0.05); 
+\backslash
+draw [fill] (origin) circle (0.05);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [very thick,-latex] (point) -- +(1.5,0) node [anchor=north] {$E_{+q}$};
+ 
+\backslash
+draw [very thick,-latex] (point) -- +(-1,0) node [anchor=north] {$E_{-q}$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node [anchor=south] at (3,0.5) {$r$}; 
+\backslash
+draw (0,0.2) -- (0,1); 
+\backslash
+draw (0,-0.2) -- (0,-1); %
+\backslash
+draw (1.5,0.2) -- (1.5,1); 
+\backslash
+draw (1.5,-0.4) -- (1.5,-1); %
+\backslash
+draw (-1.5,0.2) -- (-1.5,1); 
+\backslash
+draw (-1.5,-0.4) -- (-1.5,-1); 
+\backslash
+draw (6,0.2) -- (6,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,latex-latex](-1.5,-0.6) -- (0,-0.6) ; 
+\backslash
+draw [thick, latex-latex](+1.5,-0.6) -- (0,-0.6);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node [anchor=north] at (-.7,-0.6) {a}; 
+\backslash
+node [anchor=north] at (+.7,-0.6) {a};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,latex-latex](0,0.5) -- (6,+0.5);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick](-1.1,0) -- (1.1,0); 
+\backslash
+draw [thick,dashed](1.9,0) -- (point); 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+axis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Perpendicular bisector
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} %
+\backslash
+draw [step=1cm,thin, color=lightgray] (-3,-3) grid (4,3);
+\end_layout
+
+\begin_layout Plain Layout
+
+%charges
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [fill] (-2.5,2.5) coordinate(A) node [anchor=south] {$+Q$} circle [radius=0.1]
+; 
+\backslash
+draw [fill] (-2.5,-2.5) coordinate(B) node [anchor=north] {$-Q$}circle [radius=0.1]
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+%point and origin 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [fill] (2.0,0) coordinate (P) node [anchor=south west] {$P$} circle
+ [radius=0.05]; 
+\backslash
+draw [fill] (-2.5,0) coordinate (O) node [anchor=east] {$O$} circle [radius=0.05];
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [thick] (A) -> (P);
+\end_layout
+
+\begin_layout Plain Layout
+
+%dipole lines 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick] (O) -- (A) node [midway,left] {$a$}; 
+\backslash
+draw [thick] (O) -- (B) node [midway,left] {$a$}; 
+\backslash
+draw [thick] (O) -- (P) node [midway,above] {$r$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [thick,dashed] (A) -- ($(A) !1.35! (P)$) coordinate (X) node [midway,anchor=
+south east,rotate=-30] {$
+\backslash
+sqrt{r^2+a^2}$}; 
+\backslash
+node at (X) [anchor=west] {$E_{+Q}$}; 
+\backslash
+draw [very thick, -latex] (P) -- (X); 
+\backslash
+draw [very thick, -latex] (P) -- ($(P) !0.35! (B)$) coordinate (X1) node
+ [anchor=south east] {$E_{-Q}$}; 
+\backslash
+draw [thick, dashed] (P) -- (B) ; 
+\backslash
+draw [ultra thick,-latex] (P) -- +(0,-1.25) coordinate (Y) ;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node at (2.0,-1.5) {$E_{+Q}
+\backslash
+cos
+\backslash
+theta + E_{-Q}
+\backslash
+cos
+\backslash
+theta$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw pic [draw,thick,angle radius=0.7cm,"$
+\backslash
+theta$"] {angle = Y--P--X}; 
+\backslash
+draw pic [draw,thick,angle radius=0.7cm,"$
+\backslash
+theta$"] {angle = X1--P--Y}; 
+\backslash
+draw pic [draw,thick,angle radius=0.7cm,"$
+\backslash
+theta$"] {angle = O--A--P};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider now the point to be located at a distance 
+\begin_inset Formula $r$
+\end_inset
+
+ on the line passing through the center of the dipole and perperndicular
+ to its axis i.e.
+ its perpendicular bisector.
+ Since the point of observation now lies at an eqaul distance from both
+ the charges the fields of both the charges have same magnitude
+\begin_inset Formula 
+\begin{equation}
+E_{+q}=E_{-q}=\frac{kq}{(r+a)^{2}}.
+\end{equation}
+
+\end_inset
+
+But as can be seen from the diagram; only the vertically downward components
+ contribute to the total field whereas horizontal components being equal
+ and opposite cancel out, thus we have
+\begin_inset Formula 
+\begin{align}
+E_{\text{pb}} & =E_{+Q}\cos\theta+E_{-Q}\cos\theta\\
+ & =2E_{+Q}\cos\theta
+\end{align}
+
+\end_inset
+
+From the diagram we have
+\begin_inset Formula 
+\begin{equation}
+\cos\theta=\frac{a}{\sqrt{r^{2}+z^{2}}}
+\end{equation}
+
+\end_inset
+
+and so we have
+\begin_inset Formula 
+\begin{align}
+E_{\text{pb}} & =2\frac{kq}{\left(r+a\right)^{2}}\times\frac{a}{\sqrt{r^{2}+z^{2}}}\\
+E_{\text{pb}} & =\frac{\left(2aq\right)k}{\left(r^{2}+a^{2}\right)^{3/2}}\\
+E_{\text{pb}} & =\frac{pk}{\left(r^{2}+a^{2}\right)^{3/2}}.
+\end{align}
+
+\end_inset
+
+If the point of observation lies far away i.e.
+ 
+\begin_inset Formula $r\gg a$
+\end_inset
+
+ then neglecting 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+ in above equation
+\begin_inset Formula 
+\[
+E_{\text{pb}}=\frac{pk}{r^{3}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Electrostatic potential energy and potential
+\end_layout
+
+\begin_layout Standard
+Till now the discussion has been based on the idea of force and field (force
+ per unit charge).
+ In mechanics we had an alternative but equivalent approach based on energy
+ that allowed us to solve many problems without going into complicated calculati
+ons involving forces.
+ The electric force is also a conservative force.
+ Therefore a natural question arises that if we have a collection of charges
+ then what is the potential energy associated with it.
+ This can be calculated by just calculating the work required to assemble
+ the collection of charges.
+ Let us start with the simplest configuration of collection of charges i.e.
+ a pair of charges.
+ Suppose we have two positive charges 
+\begin_inset Formula $q$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+.
+ We shall treat the charge 
+\begin_inset Formula $q$
+\end_inset
+
+ as the source charge and 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ as the test charge.
+ Suppose initially the test charge 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ is at a distance of 
+\begin_inset Formula $y$
+\end_inset
+
+ from the source charge 
+\begin_inset Formula $q$
+\end_inset
+
+ and we want to bring it closer and place it at a distance 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ For this we will have to do some work against the electric force of repulsion.
+ The work done is 
+\begin_inset Formula 
+\begin{equation}
+W=F\times d\label{eq:workdoneele}
+\end{equation}
+
+\end_inset
+
+now here we can write for the displacement 
+\begin_inset Formula 
+\begin{equation}
+d=y-x
+\end{equation}
+
+\end_inset
+
+.
+ But the value of force changes on the entire path.
+ For example the value of forces at the intial and final points are 
+\begin_inset Formula 
+\begin{equation}
+F_{x}=\frac{kqq_{1}}{x^{2}}
+\end{equation}
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\begin{equation}
+F_{y}=\frac{kqq_{1}}{y^{2}}.
+\end{equation}
+
+\end_inset
+
+So which of these should we use in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:workdoneele"
+
+\end_inset
+
+.
+ The thing is that we have to take some kind of average of these two values.
+ In this case since the force changes as 
+\begin_inset Formula $1/r^{2}$
+\end_inset
+
+, i.e.
+ as a geometric progression we can take a geometric average of 
+\begin_inset Formula $F_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $F_{y}$
+\end_inset
+
+ as 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\begin{align}
+F & =\sqrt{F_{x}F_{y}}\\
+ & =\frac{kqq_{1}}{xy}
+\end{align}
+
+\end_inset
+
+, and we have for 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:workdoneele"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align}
+W & =\frac{kqq_{1}}{xy}\cdot\left(y-x\right)\\
+W & =kqq_{1}\left(\frac{1}{x}-\frac{1}{y}\right)
+\end{align}
+
+\end_inset
+
+This work done equals the change in potential energy
+\begin_inset Formula 
+\begin{equation}
+W=\Delta U=U_{x}-U_{y}=kqq_{1}\left(\frac{1}{x}-\frac{1}{y}\right).
+\end{equation}
+
+\end_inset
+
+Thus we can write for the potential energy of the system of source charge
+ and test charge separated by distance 
+\begin_inset Formula $r$
+\end_inset
+
+ as
+\begin_inset Formula 
+\begin{equation}
+U=\frac{kqq_{1}}{r}.
+\end{equation}
+
+\end_inset
+
+From the potential energy it is easy to define potential.
+ The potential at a point located at a distance 
+\begin_inset Formula $r$
+\end_inset
+
+ due to a single source charge 
+\begin_inset Formula $q$
+\end_inset
+
+ is obtained by calculating the work done in bringing a unit positive (test)
+ charge from infinity and placing it at 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ In other words it is the potential energy per unit charge, thus
+\begin_inset Formula 
+\begin{equation}
+V=\frac{W}{q_{1}}=\frac{U}{q_{1}}
+\end{equation}
+
+\end_inset
+
+and thus for a single (source) charge the potential at any distance 
+\begin_inset Formula $r$
+\end_inset
+
+ can be written as
+\begin_inset Formula 
+\begin{equation}
+V=\frac{kq}{r}.
+\end{equation}
+
+\end_inset
+
+Unlike electric field potential is a scalar quantity.
+ Its value is positive for a positive source charge and negative for a negative
+ source charge.
+ When we have a collection of charges the potential at a point is just the
+ algebraic sum of potentials due to individual charges at respective distances.
+ 
+\end_layout
+
+\begin_layout Subsection
+Potential of a dipole
+\end_layout
+
+\begin_layout Section
+Flux, Gauss' law and its applications
+\end_layout
+
+\begin_layout Standard
+The flux of an electric field through any surface area is the number of
+ field lines that pass through the area.
+ If we have a closed surface that encloses a volume, then the total flux
+ is the number of field lines entering minus the number of field lines leaving
+ the surface.
+ The field lines entering is the influx whereas those leaving is the out
+ flux.
+ Thus
+\begin_inset Formula 
+\[
+\text{flux}=\text{in flux}-\text{out flux}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Concept of magnetic field
+\end_layout
+
+\begin_layout Section
+Ampere's circuital law 
+\end_layout
+
+\begin_layout Subsection
+Wire
+\end_layout
+
+\begin_layout Subsection
+Solenoid
+\end_layout
+
+\begin_layout Subsection
+Toroid
+\end_layout
+
+\begin_layout Section
+Lorentz force
+\end_layout
+
+\begin_layout Section
+Faradays experiements
+\end_layout
+
+\begin_layout Subsection
+law of electromagnetic induction
+\end_layout
+
+\begin_layout Subsection
+lenz law
+\end_layout
+
+\begin_layout Subsection
+self and mutual induction
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Current Electricity
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Electric current
+\end_layout
+
+\begin_layout Standard
+The flow of charge from one point to the other is termed as electric current.
+ Charges can be put in motion by creating a potential difference or voltage.
+ Traditionally the motion of charges from higher potential(voltage) to lower
+ potential(voltage) is termed as current and it is due to the movement of
+ positive charges.
+ However in actual circuits current is due to the motion of negatively charged
+ electrons from lower potential to higher potential.
+ In general only conductors allow for easy movement of charges due to the
+ presence of fee electrons.
+ Thus if we apply some potential difference across the ends of a conductor
+ then current through the conductor is defined as the amount of (positive)
+ charges that flow about a cross section in unit time,
+\begin_inset Formula 
+\begin{equation}
+I=\frac{Q}{t}.
+\end{equation}
+
+\end_inset
+
+The SI unit of current is 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+si{J.s^{-1}}
+\end_layout
+
+\end_inset
+
+ also known as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+si{Ampere} or 
+\backslash
+si{A}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+EMF of a cell
+\end_layout
+
+\begin_layout Standard
+The electromotive force or EMF of a cell is defined as the work done by
+ the cell on to the charges to create a potential difference across its
+ plates.
+ It is numerically equal to the voltage across the plates of a cell when
+ no current flows through it.
+ Its unit is the same as that of potential difference i.e.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+si{V}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ohm's law, Resistance
+\end_layout
+
+\begin_layout Standard
+Ohm's law is a relationship between the current flowing through a conductor
+ and the voltage applied across its ends.
+ It states that 
+\begin_inset Quotes eld
+\end_inset
+
+At constant temperature, the current passing through a conductor is directly
+ proportional to the voltage applied across its ends
+\begin_inset Quotes erd
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align}
+I & \propto V\\
+V & =IR
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $R=V/I$
+\end_inset
+
+ is defined as the resistance of the conductor.
+ Its unit is 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+si{V/A}
+\end_layout
+
+\end_inset
+
+ known as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+si{Ohm}
+\end_layout
+
+\end_inset
+
+ or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+si{
+\backslash
+ohm}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Resistivity
+\end_layout
+
+\begin_layout Standard
+Resistance of a conductor depends on various factors including temperature.
+ It is found that 
+\begin_inset Formula 
+\[
+R\propto l\,\,\text{length of conductor}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R\propto\frac{1}{A}\,\,\text{area of conductor}.
+\]
+
+\end_inset
+
+ Thus we can write the resistance of the conductor as 
+\begin_inset Formula 
+\begin{equation}
+R=\rho\frac{l}{A}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is known as the resistivity of a conductor.
+ 
+\end_layout
+
+\begin_layout Subsection
+Combination of resistances
+\end_layout
+
+\begin_layout Subsubsection
+Resistors in series
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\backslash
+begin{circuitikz}[scale=0.8] 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw [help lines, color=lightgray] (0,0) grid (7,5);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-1,5) coordinate(A) to[resistor, l^ = $R_1$] (1.5,5) coordinate(B)
+  to[resistor, l=$R_2$] (4.5,5) coordinate(C) to[resistor, l= $R_3$] (7.5,5)
+ coordinate(D) to[short] (7.5,3) to[battery, l =$V$] (-1,3) to [short] (-1,5);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (A) node[circ] {}; 
+\backslash
+draw (B) node[circ] {}; 
+\backslash
+draw (C) node[circ] {}; 
+\backslash
+draw (D) node[circ] {};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw ($(A)!0.5!(B)$) +(0,-0.3) node [below]  {$V_1$}; 
+\backslash
+draw ($(B)!0.5!(C)$) +(0,-0.3) node [below]  {$V_2$}; 
+\backslash
+draw ($(C)!0.5!(D)$) +(0,-0.3) node [below]  {$V_3$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{circuitikz}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resistors in series
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Temperature dependence of resistance
+\end_layout
+
+\begin_layout Section
+Capacitors
+\end_layout
+
+\begin_layout Subsection
+Parallel plate capacitor
+\end_layout
+
+\begin_layout Subsection
+Combination of capacitors
+\end_layout
+
+\begin_layout Section
+Energy and power
+\end_layout
+
+\begin_layout Section
+Kirchoff's laws, applications
+\end_layout
+
+\begin_layout Section
+Wheatstone bridge
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+
+\series bold
+Semiconductor Physics
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conductors insulators and semiconductors
+\end_layout
+
+\begin_layout Section
+types of semiconductors
+\end_layout
+
+\begin_layout Subsection
+n-type and p-type semiconductors, 
+\end_layout
+
+\begin_layout Section
+PN junction diode and its characteristics
+\end_layout
+
+\begin_layout Section
+Types of diodes and their applications
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Heat and thermodynamics
+\end_layout
+
+\begin_layout Section
+Temperature and zeroth law of thermodynamics,
+\end_layout
+
+\begin_layout Section
+Heat and work
+\end_layout
+
+\begin_layout Section
+Specific heat capacity and latent heat
+\end_layout
+
+\begin_layout Section
+First and second laws of thermodynamics
+\end_layout
+
+\begin_layout Section
+Heat engine and its efficiency
+\end_layout
+
+\begin_layout Section
+Entropy and its non-conservation
+\end_layout
+
+\begin_layout Chapter
+Properties of Matter
+\end_layout
+
+\begin_layout Section
+Surface tension
+\end_layout
+
+\begin_layout Subsection
+molecular force: cohesive and adhesive force, molecular range
+\end_layout
+
+\begin_layout Subsection
+definition of surface tension, angle of contact, 
+\end_layout
+
+\begin_layout Subsection
+surface tension through capillary rise method,
+\end_layout
+
+\begin_layout Section
+Viscosity; definition of viscosity, coefficient of viscosity, 
+\end_layout
+
+\begin_layout Section
+stokes' law,
+\end_layout
+
+\begin_layout Section
+Fluid flow, 
+\end_layout
+
+\begin_layout Subsection
+equation of continuity,
+\end_layout
+
+\begin_layout Subsection
+Bernoulli's theorem and its applications
+\end_layout
+
+\begin_layout Chapter
+Optics
+\end_layout
+
+\begin_layout Section
+Light as a wave and its characteristics, 
+\end_layout
+
+\begin_layout Section
+equation of a plane progressive wave, 
+\end_layout
+
+\begin_layout Section
+Interference of light, 
+\end_layout
+
+\begin_layout Subsection
+principle of superposition, 
+\end_layout
+
+\begin_layout Subsection
+youngs double-slit experiment, 
+\end_layout
+
+\begin_layout Subsection
+constructive and destructive interference, 
+\end_layout
+
+\begin_layout Section
+diffraction of light,
+\end_layout
+
+\begin_layout Subsection
+types of diffraction, 
+\end_layout
+
+\begin_layout Subsection
+diffraction through grating, 
+\end_layout
+
+\begin_layout Section
+polarization,
+\end_layout
+
+\begin_layout Subsection
+types of polarization, 
+\end_layout
+
+\begin_layout Subsection
+brewsters law and malus law,
+\end_layout
+
+\begin_layout Subsection
+applications
+\end_layout
+
+\begin_layout Chapter
+Modern Physics
+\end_layout
+
+\begin_layout Section
+Black-body radiation
+\end_layout
+
+\begin_layout Subsection
+Planck's constant
+\end_layout
+
+\begin_layout Section
+Photoelectric effect:Einstein's equation
+\end_layout
+
+\begin_layout Subsection
+application of photoelectric effect
+\end_layout
+
+\begin_layout Section
+X-rays their production, 
+\end_layout
+
+\begin_layout Subsection
+properties and applications,
+\end_layout
+
+\begin_layout Section
+LASERS
+\end_layout
+
+\begin_layout Subsection
+properties and applications
+\end_layout
+
+\begin_layout Subsection
+types of LASER,
+\end_layout
+
+\begin_layout Section
+Fibre optics and its applications
+\end_layout
+
+\begin_layout Section
+Superconductivity
+\end_layout
+
+\begin_layout Subsection
+idea of superconductors
+\end_layout
+
+\begin_layout Subsection
+Properties of superconductors
+\end_layout
+
+\begin_layout Subsubsection
+Meissner effect
+\end_layout
+
+\begin_layout Subsubsection
+perfect diamagnetism
+\end_layout
+
+\begin_layout Subsubsection
+critical temperature
+\end_layout
+
+\begin_layout Subsection
+high Tc superconductors and their applications
+\end_layout
+
+\begin_layout Chapter
+Engineering applications of physical sciences
+\end_layout
+
+\begin_layout Section
+Radioactivity
+\end_layout
+
+\begin_layout Subsection
+Types of radioactivity
+\end_layout
+
+\begin_layout Subsection
+units of radioactivity
+\end_layout
+
+\begin_layout Subsection
+properties of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\beta$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ radiations,
+\end_layout
+
+\begin_layout Subsection
+Application of radioactivity
+\end_layout
+
+\begin_layout Subsubsection
+radioisotopes
+\end_layout
+
+\begin_layout Subsubsection
+energy generation and other applications
+\end_layout
+
+\begin_layout Section
+Non-Destructive Testing
+\end_layout
+
+\begin_layout Subsection
+Ultrasonic Testing(UT)
+\end_layout
+
+\begin_layout Subsection
+Radiography
+\end_layout
+
+\end_body
+\end_document

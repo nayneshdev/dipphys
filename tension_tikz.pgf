@@ -1,0 +1,14 @@
+
+\begin{tikzpicture}
+%\draw [help lines] (-2,-3) grid (2,2);
+\fill [pattern=north west lines,pattern color=black!50]  (-2,1) -- (2,1) -- (2,2) -- (-2,2) -- cycle;
+\draw [very thick] (-2,1)--(2,1);
+\coordinate (top) at (0,1);
+\coordinate (ball) at (0,-4);
+\coordinate (bottom) at (0,-5.5);
+\draw [thick] (top) -- (ball) [very thick,-latex] -- (bottom);
+\draw[very thick,-latex] (ball) -- +(0,1.5) ;
+\draw [fill] (ball) circle (0.25);
+\node [anchor=west] (tension) at (0.1,-2.8) {$T$};
+\node [anchor=west] (tension) at (0.1,-5.4) {$mg$};
+\end{tikzpicture}

@@ -1,0 +1,75 @@
+ \begin{tikzpicture}[
+        %Environment Styles
+        screw1/.style={
+            left color=black!50, right color=black!50, middle color=black!25,
+            postaction={
+                decorate,
+                decoration={
+                    markings,
+                    mark=at position 0 
+                    with {
+                        \path [draw,left color=black!80, right color=black!25, middle color=white] 
+                        (0,-0.5) -- ++(0.5,0.25) -- ++(0.5,0) arc (-90:90:1/6 and 0.25) -- ++(-0.5,0)-- (0,0.5) arc (90:-90:1/3 and 0.5);
+                        \draw[fill=white] ellipse [x radius=1/3, y radius=0.5];
+                        \foreach \r in {45,-45,135,-135}{
+                            \foreach \i [evaluate={\s=30;}] in {0,2,...,30}{
+                                \fill [black, fill opacity=1/50] 
+                                (0,0) -- (\r+\s-\i:1/3 and 0.5) 
+                                arc (\r+\s-\i:\r-\s+\i:1/3 and 0.5)  -- cycle;
+                                }
+                        }
+                        \begin{scope}[scale=2,cm={-1/3,0.5,1/3,0.5,(0,0)}]
+                        \draw (45:2pt) 
+                            |- (90:0.25) -| (135:2pt) -| (180:0.25) |- (-135:2pt) 
+                            |-(-90:0.25) -| (-45:2pt) -| (0:0.25) |-cycle;
+                        \end{scope}
+                    }
+                }
+            },
+             postaction={
+                decorate,
+                decoration={
+                    markings,
+                    mark=between positions 0.5cm and 1 step 0.3cm
+                    with {
+                        \path [left color=black!40, right color=black!25, middle color=white] 
+                        (0,-0.25) arc (-90:90:1/6 and 0.25) -- ++(0.3,0) arc (90:-90:1/6 and 0.25) -- cycle;
+                        \draw(0,-.25) --++(0.12,0) coordinate (A);
+                        \draw(0.08,.25) --++(0.2097,0);
+                        \draw[left color=black!40, right color=black!25, middle color=white](0,.25) [out=45,in=-135]
+                            to ++(0.05,0.05)[out=0,in=55] to (0.2,-0.3)[out=180,in=0] to (A)[out=55,in=0]
+                            to cycle;
+                    }
+                }
+            },
+            postaction={
+                decorate,
+                decoration={
+                    markings,
+                    mark=at position 1
+                    with {
+                        \path [draw,left color=black!40, right color=black!25, middle color=white] 
+                        (0.1,0.25) -- ++(0.3,0) -- ++(0.8,-0.25) -- ++(-0.8,-0.25) --++(-0.3,0) ;
+                        \draw[left color=black!40, right color=black!25, middle color=white](0.1,.25) [out=45,in=-135]
+                            to ++(0.05,0.05)[out=0,in=55] to (0.25,-0.3)[out=180,in=0] to ++(-0.05,0.05)[out=55,in=0]
+                            to cycle;
+                        \draw[left color=black!40, right color=black!25, middle color=white](0.45,.23) [out=45,in=-135]
+                            to ++(0.05,0.02)[out=0,in=55] to (0.65,-0.23)[out=180,in=0] to ++(-0.05,0.05)[out=55,in=0]
+                            to cycle;
+                        \draw[left color=black!40, right color=black!25, middle color=white](0.8,.12) [out=45,in=-135]
+                            to ++(0.05,0.02)[out=0,in=55] to (0.95,-0.13)[out=180,in=0] to ++(-0.05,0.05)[out=55,in=0]
+                            to cycle;
+                    }
+                }
+            }
+        },
+        ]
+        \draw[screw1](0,0)--++(0,-1.5);
+        \draw [very thick,-{Straight Barb[]}] (0,-2.7) -- (4,-3.7) node [right] {$\vec{A}$};
+	\draw [very thick, -{Straight Barb[]}] (0,-2.7) -- (2.5, -1.5) node [above right] {$\vec{B}$};
+	\draw [very thick, -{Straight Barb[]}] (0,0) -- (0, 1.5) node [above] {$\hat{n}$};
+	\draw [fill, color=black!10] (0,-2.7) -- (4,-3.7) -- (6.5,-2.5) -- (2.5,-1.5);
+	 \draw [very thick,-{Straight Barb[]}] (0,-2.7) -- (4,-3.7) node [right] {$\vec{A}$};
+	\draw [very thick, -{Straight Barb[]}] (0,-2.7) -- (2.5, -1.5) node [above right] {$\vec{B}$};
+	\draw [very thick, -{Straight Barb[]}] (0,0) -- (0, 1.5) node [above] {$\hat{n}$};
+\end{tikzpicture}

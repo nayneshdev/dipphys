@@ -1,0 +1,11 @@
+\begin{tikzpicture}[scale=1.6, every node/.style={scale=1.6}]
+%\draw [help lines,color=lightgray] (-2,-2) grid (2,2);
+\draw [thick,fill=black!25] (-2,-1) -- (2,-1) -- (2,0) -- (-2,0) -- cycle;
+\draw [thick,fill=black!05] (-1,0) -- (1,0) -- (1,2) -- (-1,2) -- cycle;
+\coordinate (obj) at (0,1);
+\draw [fill] (obj) circle (2pt);
+\draw [very thick,-latex] (obj) -- +(0,2.5) coordinate (top);
+\draw [very thick,-latex] (obj) -- +(0,-2.5) coordinate (bottom);
+\node [above] at (top) {$mg$};
+\node [below] at (bottom) {$N$};
+\end{tikzpicture}

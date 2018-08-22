@@ -1,0 +1,16 @@
+\begin{tikzpicture} 
+% grid lines
+
+%\draw [help lines] (-3,-3) grid (3,3);
+
+\shade [ball color=black!20] (-2.5,0) coordinate (c1) circle (0.4cm) (-2.5,0.3) node [anchor=south] {$m_1$};
+
+\shade [ball color=black!20] (+2.5,0) coordinate (c2) circle (0.4cm) (+2.5,0.3) node [anchor=south] {$m_2$};
+
+\draw [very thick,dashed,latex-latex] (c1) -- (c2);
+
+\node [below] at (0,0) {$r$};
+
+
+
+\end{tikzpicture}

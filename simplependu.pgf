@@ -1,0 +1,57 @@
+
+\begin{tikzpicture} 
+%\draw [help lines, color=lightgray] (0,0) grid (3,-7);
+
+%drawing the support
+\fill [pattern=north west lines] (0,-0.5) -- (3,-0.5) -- (3,0) -- (0,0) --cycle;
+\draw [thick] (0,-0.5) -- (3,-0.5);
+
+%draw the bob and string
+\draw [thick] (1.5,-0.5) coordinate (O) -- (1.5,-6) coordinate (p1) node [midway,right] {$l$}  [fill] circle [radius=0.1] ;  
+
+%draw the rotated bob and string
+\begin{scope}[rotate around={20:(O)}]
+	
+	\draw [thick] (1.5,-0.5) -- (1.5,-6) coordinate (p2)  node [midway,right] {$l$} [fill] circle [radius=0.1] ;  
+\end{scope}
+
+%draw the angle theta
+
+\draw pic["$\theta$",draw,angle eccentricity=1.2,angle radius=1cm] {angle=p1--O--p2};
+
+\begin{scope}[rotate around={-20:(O)}]
+	
+	\draw [thick] (1.5,-0.5) -- (1.5,-6) coordinate (p10)   [fill] circle [radius=0.1] ;  
+\end{scope}
+
+%draw the arc between bobs
+
+
+\def\centerarc[#1](#2)(#3:#4:#5)% Syntax: [draw options] (center) (initial angle:final angle:radius)
+    { \draw[#1] ($(#2)+({#5*cos(#3)},{#5*sin(#3)})$) arc (#3:#4:#5); }
+
+\centerarc[densely dashed,very thin](O)(-110:-70:5.5)
+
+\draw [thick,->](p2) -- ($(O)!0.75!(p2)$) node [above right] {$T$};
+
+\draw [thick,->](p2) -- ($(O)!1.25!(p2)$) coordinate (p3) node [below right] {\scriptsize $mg\cos\theta$};
+	%\draw [thick,->,rotate=250](p2) -- ($(p2)!1.4!(p3)$) ;
+
+%\draw [thick] ($(O)!(p2)!(p3)$) -- (p2);
+\draw [->,thick] (p2) -- +(200:0.8) coordinate (p5) node [below] {\scriptsize $mg\sin\theta$};
+\draw [->,thick] (p2) -- +(270:1.4) coordinate (p6) node [below] {\scriptsize $mg$};
+
+\draw pic["$\theta$", draw ,angle eccentricity=1.4,angle radius=0.5cm] {angle=p6--p2--p3};
+
+%drawing the arc length and displacemnet
+
+\draw (p1) +(0,-0.75) coordinate (dis1);
+\draw (p10) +(0,-0.75) coordinate (dis2);
+\draw [<->](dis2) -- ($(p1)!(dis2)!(dis1)$) node [midway, below] {$-x$};
+
+\node [above right]  at  (0.5,-6) {S};
+
+
+
+
+\end{tikzpicture}

@@ -1,0 +1,64 @@
+
+
+\begin{tikzpicture} 
+%\draw [help lines] (-6,-2) grid (5,2); 
+
+\tikzset{               
+    redarrows/.style={postaction={decorate},decoration={markings,mark=at position 0.17 with {\arrow[draw=black]{>}}},
+           decoration={markings,mark=at position -0.4 with {\arrow[draw=black]{>}}}},};
+
+%draw the circle
+\node (orig) at (0,0) [left] {O};
+\draw [thick,redarrows] (-3.5,0) coordinate (O1)  circle [radius=2];
+
+\draw [densely dotted,thick,latex-latex] (-6,0) -- (-1,0) node () [right] {x}; 
+\draw [densely dotted,thick,latex-latex] (-3.5,-2.5) -- (-3.5,2.5) node () [above] {y}; 
+
+\draw[black, domain=0:4,samples=100,color=blue,thick] plot({\x}, {2*sin((\x)*3.141592 r/2)});
+
+
+
+\draw [thick,-latex] (0,0) -- (5,0) node () [right] {t}; 
+\draw [thick,latex-latex] (0,-2.5) -- (0,2.5) node () [above] {y}; 
+
+\draw(-1.768,1) coordinate (p1) [fill] circle (0.03) [densely dashed] -- (0.33,1) [fill] circle (0.03);
+
+\draw [thick] (-3.5,0) -- (-1.768,1);
+\coordinate (x1) at (-1.5,0);
+
+\draw pic ["$\theta$", draw, angle eccentricity=1.2, angle radius=1] {angle=x1--O1--p1};
+
+\draw (-3.5,1) [fill,color=blue] circle(0.04) [densely dashed] edge[black] (-1.768,1) [fill] circle (0.03);
+
+\draw(-3.5,2) [fill,color=blue] circle (0.04) [densely dashed] edge[blue] (1,2) [fill,color=black] circle [radius=0.04];
+
+\foreach \t in {1,2,3,4} {
+\node (\t) at (\t,0) [below] {$\frac{\t T}{4}$}  (\t,0) [fill] circle (0.04);
+}
+
+
+
+\begin{scope}[rotate around={270:(O1)}]
+
+\draw [thick,-latex] (0,0) -- (5,0) node () [right] {t}; 
+\draw [thick,latex-latex] (0,-2.5) -- (0,2.5) node () [above] {x}; 
+	
+	\draw[black, domain=0:4,samples=100,color=red,thick] plot({\x}, {2*cos((\x)*3.141592 r/2)});  
+
+\draw(-1.768,1) [fill] circle (0.03) [densely dashed] -- (0.33,1) [fill] circle (0.03);
+
+\draw(-3.5,2) [fill] circle (0.03) [densely dashed] edge[black] (0,2) [fill,red] circle (0.04);
+\draw (-3.5,1) [fill,color=red] circle(0.04) [densely dashed] edge[black] (-1.768,1) [fill] circle (0.03);
+
+\node (t1) at (0.5,0) [below,rotate=270] {$\frac{T}{4}$};
+\node (t1) at (1,0) [below,rotate=270] {$\frac{2T}{4}$};
+\node (t1) at (1.5,0) [below,rotate=270] {$\frac{3T}{4}$};
+\node (t1) at (2,0) [below,rotate=270] {$\frac{4T}{4}$};
+
+\end{scope}
+
+%\draw (-1.5,0) edge[black] ;
+
+
+
+\end{tikzpicture}

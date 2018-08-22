@@ -1,0 +1,11 @@
+%Addition of vector
+
+\begin{tikzpicture} 
+
+\draw [help lines,step=1cm,color=lightgray] (0,-1) grid (5,5);
+
+\draw [thick,-latex] (0,0) coordinate (O)-- (0:2.5);
+\draw [thick,-latex] (2.5,0) -- (2.5,2.5) coordinate (P);
+\draw [very thick,-stealth] (O) -- (P);
+
+\end{tikzpicture}

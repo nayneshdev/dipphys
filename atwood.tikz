@@ -1,0 +1,21 @@
+\begin{tikzpicture} 
+%\draw [help lines,color=lightgray] (0,0) grid (5,5);
+
+\draw [fill,pattern=north west lines] (1,4) -- (4,4) -- (4,4.5) -- (1,4.5) --cycle;
+\draw [fill] (2.35,2.7) -- (2.65,2.7) -- (2.65,4.25) -- (2.35,4.25) --cycle;
+\begin{scope} [on background layer]
+\draw [fill,color=gray] (2.5,2.9) coordinate (CrO) circle (0.6);
+\end{scope}
+\draw (CrO) ++(0:0.6) coordinate (Tr);
+\draw (CrO) ++(0:-0.6) coordinate (Tl);
+
+\draw [thick] (Tr) -- (3.1,-0.5);
+\draw [thick] (Tl) -- (1.9,0.5);
+
+\draw [thick] (Tr) arc (0:180:0.6);
+
+\draw [fill,color=black!40] (2.7,-0.5) rectangle (3.5,-1.15) node () [black,midway] {$m_1$};
+
+\draw [fill,color=black!40] (1.5,0.5) rectangle (2.3,-0.05)node () [black,midway] {$m_2$};
+
+\end{tikzpicture}

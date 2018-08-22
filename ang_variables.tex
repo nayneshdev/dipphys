@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+
+
+\tikzset{               
+    redarrows/.style={postaction={decorate},decoration={markings,mark=at position 0.1 with {\arrow[draw=black]{>}}},
+           decoration={markings,mark=at position -0.4 with {\arrow[draw=black]{>}}},}}
+
+\draw [thick,redarrows] (2,2) circle [radius=2];
+\draw [thick] (2,2)  coordinate (o1) node   [above left] {$O$} -- ++(20:2) coordinate (p1)    [fill] circle [radius=0.035] +(-10:0.05) node  [below, right]  {$P(t)$} ;
+\draw [thick] (2,2) -- ++(50:2) node[midway, left] {$r$} [fill] circle [radius=0.035] coordinate (p2) +(-8:0.75) node  [above] {$P(t+\triangle t)$};
+\draw pic ["$\triangle \theta$",draw, angle eccentricity=1.3, angle radius=1cm]  {angle=p1--o1--p2};
+
+
+
+\draw  ($(p1) !0.5cm! (p2)$)  coordinate (mid) +(50:0.15) node [right] {\scriptsize$\triangle S$};
+
+
+
+
+\draw [densely dotted,thick,latex-latex] (-0.5,2) -- (4.5,2) node () [right] {x}; 
+\draw [densely dotted,thick,latex-latex] (2,-0.5) -- (2,4.5) node () [above] {y}; 
+
+\draw (4,2) coordinate (x);
+
+\draw pic["$\theta$",draw,angle eccentricity=1.3,angle radius=0.8cm] {angle=x--o1--p1};
+
+
+
+\end{tikzpicture}

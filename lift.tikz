@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+\draw [help lines,color=lightgray] (0,0) grid (10,10);
+
+\draw [thick] (0,7) -- (2.5,7) -- (2.5,10) -- (0,10) -- cycle;
+
+\draw [fill] (1.0,8.7) circle (0.2);
+\filldraw (0.95,8.6) -- (0.95,8.4) -- (1.05,8.4) -- (1.05,8.6)-- cycle;
+\filldraw (0.75,8.4) -- (0.75,7.8) -- (1.25,7.8) -- (1.25,8.4)-- cycle;
+\draw [ultra thick] (0.95,8.4) -- (0.78,7.5) -- (0.75,7)--(0.70,7);
+
+\begin{scope}[shift={(4,0)}]
+\draw [thick] (0,7) -- (2.5,7) -- (2.5,10) -- (0,10) -- cycle;
+\end{scope}
+
+\begin{scope}[shift={(8,0)}]
+\draw [thick] (0,7) -- (2.5,7) -- (2.5,10) -- (0,10) -- cycle;
+\end{scope}
+
+\end{tikzpicture}

@@ -1,0 +1,30 @@
+\begin{tikzpicture} [scale=0.8]
+
+%\draw [help lines, color=lightgray] (0,-6) grid (8,4);
+
+%plotting a line relative to the origin in polar coordinates
+
+\draw [thick,latex-] (0,1.5) -- ++(10:4) node [midway,below] {\textbf{-A}} ;
+
+\draw [thick,-latex] (0:0) -- (10:4) node [midway,below] {\textbf{A}} ;
+
+%by default a polar coordinate is always relative to origin, so in order to draw relative to other coordinate use ++
+
+\draw [thick,-latex] (5,0) -- ++(55:4) coordinate (B) node [midway,below,right] {\textbf{B}} ;
+
+\draw  (B)  +(1.5,0) coordinate (XY);
+\draw [thick,-latex] (XY) -- ++(235:4) coordinate (X) node [midway,below,right] {\textbf{-B}} ;
+
+\draw [thick,-latex] (-0.5,-3) coordinate (A)  -- ++(10:4) coordinate (B) node [midway,above] {\textbf{A}} ;;
+
+\draw [thick,-latex] (B) -- ++(235:4) coordinate (C)node [midway,below,right] {\textbf{B}};
+
+\draw [very thick,-latex] (A) -- (C) node [midway,below,rotate=-55] {\textbf{C=A-B}};
+
+\draw [thick,-latex] (6.5,-5.5) coordinate (A2) -- ++(55:4) coordinate (B1) node [midway,below,right] {\textbf{B}} ;
+
+\draw [thick,-latex] (B1) -- ++(10:-4) coordinate (B2) node [midway,below] {\textbf{-A}} ;
+
+\draw [very thick, -latex] (A2) -- (B2) node [midway,below,rotate=-55] {\textbf{C=B-A}};
+
+\end{tikzpicture}

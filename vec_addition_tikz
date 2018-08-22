@@ -1,0 +1,22 @@
+\begin{tikzpicture} 
+
+%\draw [help lines, color=lightgray] (0,-6) grid (8,4);
+
+%plotting a line relative to the origin in polar coordinates
+
+\draw [thick,-latex] (0:0) -- (10:4) node [midway,below] {\textbf{A}} ;
+
+%by default a polar coordinate is always relative to origin, so in order to draw relative to other coordinate use ++
+
+\draw [thick,-latex] (5,0) -- ++(55:4) coordinate (B) node [midway,below,right] {\textbf{B}} ;
+
+\draw [thick,-latex] (1,-5) coordinate (A)  -- ++(10:4) coordinate (B) node [midway,below] {\textbf{A}} ;;
+
+\draw [thick,-latex] (B) -- ++(55:4) coordinate (C)node [midway,below] {\textbf{B}};
+
+\draw [very thick,-latex] (A) -- (C) node [midway,above,rotate=35] {\textbf{C=A+B}};
+
+
+
+
+\end{tikzpicture}

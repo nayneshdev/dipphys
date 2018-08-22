@@ -1,0 +1,44 @@
+﻿\begin{tikzpicture} 
+
+\tikzset{
+    vector/.style = {
+        semithick,
+        > = {Straight Barb[width=3pt,length=6pt]},
+    },
+    axis/.style = {
+        very thin,
+        > = stealth',
+    },
+	component/.style={
+		thin,
+		>={Straight Barb[width=2.5pt,length=5pt]},
+	}
+}
+
+
+\draw [help lines, color=lightgray] (0,0) grid  (4,5);
+
+\draw [axis,->] (0,0) -- (4,0) node [right] {x};
+\draw [axis,->] (0,0) -- (0,5) node [above] {y};
+
+\draw[vector,->] (0,0) -- (3,4) node [above right] {$\left(3,4\right)$};
+\draw (1.5,2) node [above left] {\large $\vec{A}$};
+\draw (1.5,0) node [below] {\large $\vec{A_x}$};
+\draw (3,2) node [right] {\large $\vec{A_y}$};
+\draw[component,-{Straight Barb[width=2.5pt,length=5pt]}] (0,0) -- (3,0);
+\draw[component,-{Straight Barb[width=2.5pt,length=5pt]}] (3,0) -- (3,4);
+
+
+\draw[vector,->] (0,0) -- (1,0);
+\draw (0.5,0) node [below] {\footnotesize $\hat{i}$};
+\draw[vector,->] (0,0) -- (0,1);
+\draw (0,0.5) node [left] {\footnotesize $\hat{j}$};
+\draw[vector,->] (0,0) -- (3,4) node [above right] {$\left(3,4\right)$};
+
+\foreach \x in {1,2,3}{
+\draw [fill] (\x,0) circle [radius=0.025];}
+
+\foreach \y in {1,2,3,4}{
+\draw [fill] (0,\y) circle [radius=0.025]; }
+
+\end{tikzpicture}

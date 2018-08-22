@@ -1,0 +1,17 @@
+\begin{tikzpicture} 
+\draw [help lines,color=lightgray] (0,0) grid (10,4);
+
+%define arrows on circle
+
+\tikzset{               
+    redarrows/.style={postaction={decorate},decoration={markings,mark=at position 0.1 with {\arrow[draw=black]{>}}},
+           decoration={markings,mark=at position -0.4 with {\arrow[draw=black]{>}}},}}
+
+%draw the circle
+\draw [thick,redarrows] (2,2) circle [radius=2];
+\draw [thick] (2,2)  coordinate (o1) node   [above left] {$O$} -- ++(20:2) coordinate (p1)    [fill] circle [radius=0.035] +(-10:0.05) node  [below, right]  {$P(t)$} ;
+
+% draw the axis
+\draw [densely dotted,thick,latex-latex] (-0.5,2) -- (4.5,2) node () [right] {x}; 
+\draw [densely dotted,thick,latex-latex] (2,-0.5) -- (2,4.5) node () [above] {y}; 
+\end{tikzpicture}

@@ -1,0 +1,74 @@
+% code for 
+\begin{tikzpicture} 
+
+%\draw [help lines,color=lightgray](0,0) grid (7,6) ;
+
+%the road and incline
+\draw  (0,0) coordinate (O) -- (6,0) coordinate (A);
+\draw  (O)  +(30:8) coordinate (Inc);
+\draw  (O) -- +(30:7) coordinate (Inc2);
+\draw pic ["$\theta$",draw,thick,angle radius=1.2cm] {angle = A--O--Inc2};
+
+% draw the tires of vehicle
+\coordinate (T11) at ($(O)!0.4!(Inc)$);
+\coordinate (T12) at ($(O)!0.45!(Inc)$);
+
+\draw  (T12)  +(120:0.5) coordinate (T13);
+\draw  (T11)  +(120:0.5) coordinate (T14);
+
+\draw [thick,pattern=horizontal lines gray] (T11) -- (T12) -- (T13) -- (T14) -- cycle;
+
+\coordinate (T21) at ($(O)!0.65!(Inc)$);
+\coordinate (T22) at ($(O)!0.7!(Inc)$);
+
+\draw  (T21)  +(120:0.5) coordinate (T24);
+\draw  (T22)  +(120:0.5) coordinate (T23);
+
+\draw [thick,pattern=horizontal lines gray] (T21) -- (T22) -- (T23) -- (T24) -- cycle;
+
+%draw the vehical
+
+\coordinate (v2) at ($(T14)!1.2!(T23)$);
+\coordinate (v1) at ($(T14)!-0.2!(T23)$);
+\draw  (v1)  +(120:1.0) coordinate (v4);
+\draw  (v2)  +(120:1.0) coordinate (v3);
+\draw  (v3)  +(155:0.75) coordinate (v31);
+\draw  (v4)  +(85:0.75) coordinate (v41);
+
+\filldraw [thick,fill=black!30] (v1) -- (v2) -- (v3) --(v31)--(v41)-- (v4) -- cycle;
+\filldraw[fill=black!10] (v4) -- (v3) -- (v31) -- (v41);
+
+%draw the force vectors
+
+\coordinate (T2c) at ($(T21)!0.5!(T22)$);
+\coordinate (mid2) at ($(v2)!0.5!(v3)$);
+\coordinate (mid1) at ($(v1)!0.5!(v4)$);
+\coordinate (mid) at ($(mid1)!0.5!(mid2)$);
+
+%\draw [line width=2pt,-latex,cap=round] (mid) -- ($(T21)!9!(T22)$);
+\draw [line width=2pt,-latex,cap=round] (mid) -- +(120:2.3) coordinate (N) node [anchor=south east] {$N$};
+\draw [line width=2pt,-latex,cap=round] (mid) -- +(300:2.3) coordinate (cos) node [below,right,rotate=30] {$mg\cos\theta$};
+
+
+
+\draw [line width=2pt,-latex,cap=round] (mid) -- +(210:2.3) coordinate (F) node [left,rotate=30] {$f_s+mg\sin\theta$};
+\draw [line width=2pt,-latex,cap=round] (mid) -- +(270:2.3) coordinate (mg) node [below] {$mg$};
+
+\draw pic ["$\theta$",draw,thick,angle radius=1.4cm,angle eccentricity=1.2] {angle = mg--mid--cos};
+
+
+\draw (mid) [fill] circle (0.1);
+
+
+
+
+%\draw (4,5) -- (T12);
+%\draw (4,5) -- (T11);
+
+
+
+
+
+
+
+\end{tikzpicture}

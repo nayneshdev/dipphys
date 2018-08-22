@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+%\draw [help lines,color=lightgray] (-2,-2) grid (2,2);
+\draw (0,0) coordinate (origin) circle (2cm);
+\draw [thick] (origin) -- (2,0) coordinate (particle);
+\draw [fill] (particle) circle  (2pt);
+\draw [thick,-latex] (particle) -- +(0,1.5) coordinate (tangent);
+\draw [anchor=west] node at (particle) {$P$};
+\draw [anchor=north west] node at (tangent) {$v_0$};
+\draw [very thick,-latex] (particle) --  (1,0);
+\draw [anchor=north west] node at (1,0) {$T$};
+\end{tikzpicture}

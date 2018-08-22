@@ -1,0 +1,46 @@
+%Trying to draw electric field lines
+
+\begin{tikzpicture}[decoration={markings, mark=at position 0.5 with {\arrow{>}}}] 
+
+%\draw [help lines,step=0.5cm,color=lightgray] (-7,-6) grid (7,6);
+
+%drawing the charges
+
+\shade[ball color=black!10] (-3,0) node (P)  [draw,circle,fill=black!10]  {$+q$};
+\shade[ball color=black!10] (+3,0) node (N) [draw,circle,fill=black!10]  {$-q$};
+
+%drawing the acutal field lines
+
+%\draw [thick,postaction={decorate}] (P)--(N);
+
+\foreach \y in {0,0.7,1.4,2.7,4.2,6}
+\draw [thick,postaction={decorate}] (P) .. controls (-2,\y) and (2,\y) .. (N);
+\foreach \y in {0,0.7,1.4,2.7,4.2,6} \draw [thick,postaction={decorate}] (P) .. controls (-2,-\y) and (2,-\y) .. (N);
+
+%drawing the rest of the lines
+\draw [thick,postaction=decorate] (P) .. controls (-3.3,2) and (-2.4,4) .. (-2,4.5);
+\draw [thick,postaction=decorate] (P) .. controls (-3.3,-2) and (-2.4,-4) .. (-2,-4.5);
+\draw [thick,postaction=decorate] (N) .. controls (3.3,2) and (2.4,4) .. (2,4.5);
+\draw [thick,postaction=decorate] (N) .. controls (3.3,-2) and (2.4,-4) .. (2,-4.5);
+
+
+\draw [thick,postaction=decorate] (P) .. controls (-4,2) and (-3,4.2) .. (-3,4.4);
+\draw [thick,postaction=decorate] (P) .. controls (-4,-2) and (-3,-4.2) .. (-3,-4.4);
+\draw [thick,postaction=decorate] (N) .. controls (4,2) and (3,4.2) .. (3,4.4);
+\draw [thick,postaction=decorate] (N) .. controls (4,-2) and (3,-4.2) .. (3,-4.4);
+
+\draw [thick,postaction=decorate] (P) .. controls (-5.5,2) and (-4.7,4.2) .. (-4.5,4.4);
+\draw [thick,postaction=decorate] (P) .. controls (-5.5,-2) and (-4.7,-4.2) .. (-4.5,-4.4);
+\draw [thick,postaction=decorate] (N) .. controls (5.5,2) and (4.7,4.2) .. (4.5,4.4);
+\draw [thick,postaction=decorate] (N) .. controls (5.5,-2) and (4.7,-4.2) .. (4.5,-4.4);
+
+\draw [thick,postaction=decorate] (P) .. controls (-6,1) and (-6.2,2.5) .. (-6.3,3);
+\draw [thick,postaction=decorate] (P) .. controls (-6,-1) and (-6.2,-2.5) .. (-6.3,-3);
+\draw [thick,postaction=decorate] (N) .. controls (6,1) and (6.2,2.5) .. (6.3,3);
+\draw [thick,postaction=decorate] (N) .. controls (6,-1) and (6.2,-2.5) .. (6.3,-3);
+
+\draw [thick,postaction={decorate}] (P)--+(-3.5,0);
+\draw [thick,postaction={decorate}] (N)--+(3.5,0);
+
+
+\end{tikzpicture}

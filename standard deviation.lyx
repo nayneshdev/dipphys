@@ -1,0 +1,182 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsubsection
+Standard deviation
+\end_layout
+
+\begin_layout Standard
+Having obtained a set of measurements and determined the mean value, it
+ is helpful to report how widely the individual measurements are scattered
+ from the mean.
+ A quantitative description of this scatter of measurement will give an
+ idea of the precision of the experiment.
+ Statistical theory states that the precision of the measurement can be
+ determined by calculating a quantity called the standard deviation from
+ the mean of the measurements.
+ The standard deviation from the mean, which has a symbol of 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, is defined as
+\begin_inset Formula 
+\begin{equation}
+\sigma=\sqrt{\frac{1}{N-1}\sum_{i=1}^{N}\left(x_{i}-\bar{x}\right)^{2}}
+\end{equation}
+
+\end_inset
+
+The standard deviation answers the question “If, after having made a series
+ of measurement and averaging the results, I now make one more measurement,
+ how close is the new measurement likely to come to the previous mean?”
+ The quantity 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ gives the probability that the measurements fall within a certain range
+ of the measured mean.
+ Probability theory states that approximately 68.3% of all repeated measurements
+ should fall within a range of plus or minus 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ from the mean.
+ Furthermore, 95.5% of all repeated measurements should fall within a range
+ of 2
+\begin_inset Formula $\sigma$
+\end_inset
+
+ from the mean.
+ As a final note, 99.73% of all measurements should fall within 3
+\begin_inset Formula $\sigma$
+\end_inset
+
+ of the mean.
+ This implies that if one of the measurements is 3
+\begin_inset Formula $\sigma$
+\end_inset
+
+ or farther from the mean, it is very unlikely that it is a random uncertainty.
+\end_layout
+
+\begin_layout Subsubsection
+Standard Error
+\end_layout
+
+\begin_layout Standard
+To get a good estimate of some quantity, several repeated measurements have
+ to be taken.
+ Another issue that can be addressed by these repeated measurements is the
+ precision of the mean.
+ After all, this is what is really of concern, because the mean is the best
+ estimate of the true value.
+ The precision of the mean is indicated by a quantity called the standard
+ error.
+ Other common name is standard deviation of the mean.
+ Once the standard deviation has been calculated for N measurements, it
+ is very easy to calculate standard error (which has a symbol of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+) using the equation
+\begin_inset Formula 
+\begin{equation}
+\alpha=\frac{\sigma}{\sqrt{N}}
+\end{equation}
+
+\end_inset
+
+It is this quantity that answers the question, “If I repeat the entire series
+ of N measurements and get a second mean, how close can I expect this second
+ mean to come to the first one?” One needs not repeat the entire experiment
+ multiple times to get the standard error.
+ If the variation in data seem to be caused by a series of small random
+ events, then the above equation can be used to find the standard error.
+\end_layout
+
+\begin_layout Standard
+An important feature of the standard error is the factor N in the denominator.
+ The standard deviation 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ represents the average uncertainty in the individual measurements.
+ Thus, if we were to make some more measurements (using the same technique),
+ the standard deviation would not change appreciably.
+ However, the standard error would slowly decrease as expected.
+ If we make more measurements before computing the mean, we would naturally
+ expect the final result to be more reliable.
+ This is one of the obvious ways to improve the precision of our measurements.
+\end_layout
+
+\end_body
+\end_document

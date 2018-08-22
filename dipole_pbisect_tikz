@@ -1,0 +1,35 @@
+\begin{tikzpicture}
+%\draw [step=1cm,thin, color=lightgray] (-3,-3) grid (4,3);
+
+%charges
+
+\draw [fill] (-2.5,2.5) coordinate(A) node [anchor=south] {$+Q$} circle [radius=0.1];
+\draw [fill] (-2.5,-2.5) coordinate(B) node [anchor=north] {$-Q$}circle [radius=0.1];
+
+%point and origin
+\draw [fill] (2.0,0) coordinate (P) node [anchor=south west] {$P$} circle [radius=0.05];
+\draw [fill] (-2.5,0) coordinate (O) node [anchor=east] {$O$} circle [radius=0.05];
+
+%\draw [thick] (A) -> (P);
+
+%dipole lines
+\draw [thick] (O) -- (A) node [midway,left] {$a$};
+\draw [thick] (O) -- (B) node [midway,left] {$a$};
+\draw [thick] (O) -- (P) node [midway,above] {$x$};
+
+\draw [thick,dashed] (A) -- ($(A) !1.35! (P)$) coordinate (X) node [midway,anchor=south east,rotate=-30] {$\sqrt{x^2+a^2}$};
+\node at (X) [anchor=west] {$E_{+Q}$};
+\draw [very thick, -latex] (P) -- (X);
+\draw [very thick, -latex] (P) -- ($(P) !0.35! (B)$) coordinate (X1) node [anchor=south east] {$E_{-Q}$};
+\draw [thick, dashed] (P) -- (B) ;
+\draw [ultra thick,-latex] (P) -- +(0,-1.25) coordinate (Y) ;
+
+\node at (2.0,-1.5) {$E_{+Q}\cos\theta + E_{-Q}\cos\theta$};
+%\coordinate (mid) at ($(P) !0.7! (Y)$);
+%\coordinate (a_rc) at ($(A) !1.12! (P)$);
+%\draw [-latex] (mid) to [bend right] (a_rc);
+\draw pic [draw,thick,angle radius=0.7cm,"$\theta$"] {angle = Y--P--X};
+\draw pic [draw,thick,angle radius=0.7cm,"$\theta$"] {angle = X1--P--Y};
+\draw pic [draw,thick,angle radius=0.7cm,"$\theta$"] {angle = O--A--P};
+
+\end{tikzpicture}

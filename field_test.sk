@@ -1,0 +1,11 @@
+def p1 (0,0,0) def p2 (1,0,0)
+def p3 (0,1,0) def p4 (0,0,1)
+def p5 (1,1,1) def p6 (1,1,0)
+def p7 (1,0,1) def p8 (0,1,1)
+
+polygon[cull=false](p1)(p3)(p8)(p4)
+polygon[cull=false](p3)(p6)(p8)(p5)
+polygon[cull=false](p8)(p4)(p7)(p5)
+polygon[cull=false](p6)(p5)(p7)(p2)
+
+global {language tikz}

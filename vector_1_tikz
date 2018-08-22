@@ -1,0 +1,25 @@
+\begin{tikzpicture}[decoration={markings, mark=at position 0.5 with {\arrow{>}}}] 
+
+\draw [help lines,color=lightgray] (-1,-1) grid (8,4);
+
+%drawing the displacemnet
+
+\draw [thick,postaction=decorate] (0,0) coordinate (O) -- (2,0) coordinate (A);
+\draw [fill,thick] (O) circle (0.07);
+\node [anchor=north east] at (O) {Start};
+
+\draw [thick,postaction=decorate] (A) -- (2,3) coordinate (B) node [anchor=south west] {End};
+\draw [fill,thick]  (B) circle (0.07);
+
+\draw [very thick,postaction=decorate] (O) -- (B);
+
+%drawing directions
+
+\draw (5.5,1.5) coordinate (D) [fill] circle (0.1cm);
+\draw [-latex] (D) -- +(1,0) node [right] {East};
+\draw [-latex] (D) -- +(-1,0) node [left] {West};
+\draw [-latex] (D) -- +(0,1) node [above] {North};
+\draw [-latex] (D) -- +(0,-1) node [below] {South};
+
+
+\end{tikzpicture}

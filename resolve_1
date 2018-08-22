@@ -1,0 +1,43 @@
+﻿
+
+{\tdplotsetmaincoords{60}{110} 
+\begin{tikzpicture}[tdplot_main_coords,scale=0.8]
+
+\tikzset{
+    vector/.style = {
+        thick,
+        > = stealth',
+    },
+    axis/.style = {
+        very thin,
+        > = stealth',
+    },
+	component/.style={
+		thin,
+		>=stealth',
+	}
+}
+
+
+    % draw axes
+    \draw[axis,->] (0,0,0) coordinate (O) -- (5,0,0) node[anchor=north east]{$z$}; 
+    \draw[axis,->] (0,0,0) -- (0,4.95,0) node[right,anchor=west]{$x$}; 
+    \draw[axis,->] (0,0,0) -- (0,0,4.95) node[anchor=south]{$y$};
+
+    % draw 
+    \draw[vector,->] (O) -- node[anchor=south east]{$\mathrm{\vec{V}}$} (2,4,3) coordinate (V);
+    \draw[component,->] (O) -- node[below right]{$\mathrm{v_z}$}(2,0,0)node[left]{$2$};
+    \draw[component,->] (O) -- node[below]{$\mathrm{v_x}$}(0,4,0)node[below right]{$4$};
+    \draw[component,->] (O) -- node[below left]{$\mathrm{v_y}$}(0,0,3)node[above left]{$3$};
+
+    \draw[densely dotted] (0,4,0) -- (2,4,0) -- (2,0,0);
+    \draw[densely dotted] (V) -- (0,4,3) -- (0,0,3) -- (2,0,3) -- (2,0,0);
+    \draw[densely dotted] (2,0,3) -- (V) -- (2,4,0);
+    \draw[densely dotted] (0,4,0) -- (0,4,3);
+
+    \foreach \s in{1,2,3,4}{
+        \draw[fill](\s,0,0)circle(0.75pt);
+        \draw[fill](0,\s,0)circle(0.75pt);
+        \draw[fill](0,0,\s)circle(0.75pt);
+    }
+\end{tikzpicture}}

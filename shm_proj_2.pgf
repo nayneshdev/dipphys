@@ -1,0 +1,26 @@
+\begin{tikzpicture} 
+%\draw [help lines] (0,0) grid (7,7); 
+\coordinate (O) at (3,3);
+
+\tikzset{               
+    redarrows/.style={postaction={decorate},decoration={markings,mark=at position 0.17 with {\arrow[draw=black]{>}}},
+           decoration={markings,mark=at position -0.4 with {\arrow[draw=black]{>}}},}}
+
+\draw [very thick,redarrows] (3,3) circle [radius=2.5];
+\draw [densely dotted,<->] (0,3) -- (6,3) node [right] {$x$} ;
+\draw [densely dotted,<->] (3,0) -- (3,6) node [right] {$x$} ;
+
+\draw [very thick] (0.5,-0.5) coordinate (d1) -- (5.5,-0.5) coordinate (d2);
+
+\foreach \x in {0,30,60,90,120,...,330}
+{
+
+\draw [ultra thick] (O) -- +(\x:2.5) coordinate (p\x) [fill] circle [radius=0.05] ;
+\draw [densely dashed] (p\x) -- ($(d1)!(p\x)!(d2)$) [fill] circle [radius=0.05];
+
+};
+
+
+
+
+\end{tikzpicture}
